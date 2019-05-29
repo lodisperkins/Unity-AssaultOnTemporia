@@ -1,6 +1,8 @@
 # Unity-AssaultOnTemporia
 Year 1 - Tower Defense + Vehicle Combat Shmup (sp?)
 
+![img](/docs/mockup.png)
+
 ## About
 
 Add this
