@@ -1,5 +1,5 @@
 # Unity-AssaultOnTemporia
-Year 1 Production Project
+Year 1 - Tower Defense + Vehicle Combat Shmup (sp?)
 
 ## About
 
