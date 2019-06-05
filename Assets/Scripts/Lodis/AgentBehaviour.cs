@@ -12,7 +12,9 @@ namespace Lodis
         private string horizontalAxis;
         [SerializeField]
         private string verticalAxis;
-
+        [SerializeField]
+        private int speed;
+        private Vector3 velocity;
         private CharacterController controller;
         private void Start()
         {
@@ -21,7 +23,8 @@ namespace Lodis
         // Update is called once per frame
         void Update()
         {
-            controller.SimpleMove(new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis))*5);
+            velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
+            controller.SimpleMove(velocity*speed);
         }
     }
 }
