@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
 public class AgentBehaviour : MonoBehaviour {
     private Vector3 playerInput;
     [SerializeField]
