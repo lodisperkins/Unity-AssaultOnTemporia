@@ -9,6 +9,8 @@ namespace Lodis
     {
         private Vector3 playerInput;
         [SerializeField]
+        private string compareTag;
+        [SerializeField]
         private string horizontalAxis;
         [SerializeField]
         private string verticalAxis;
@@ -16,9 +18,27 @@ namespace Lodis
         private int speed;
         private Vector3 velocity;
         private CharacterController controller;
+        public bool hasKey;
+        [SerializeField]
+        UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
         private void Start()
         {
+            hasKey = false;
             controller = GetComponent<CharacterController>();
+        }
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag(compareTag))
+            {
+                hasKey = true;
+                OnTriggerEnterResponse.Invoke();
+            }
+        }
+        public void Carry(GameObject obj)
+        {
+            obj.GetComponent<MeshRenderer>().enabled = false;
+            obj.GetComponent<SphereCollider>().enabled = false;
+            obj.GetComponent<Transform>().SetParent(transform);
         }
         // Update is called once per frame
         void Update()
