@@ -13,12 +13,15 @@ namespace Lodis
         [SerializeField]
         private string verticalAxis;
 
-
+        private CharacterController controller;
+        private void Start()
+        {
+            controller = GetComponent<CharacterController>();
+        }
         // Update is called once per frame
         void Update()
         {
-            playerInput = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
-            transform.position += playerInput;
+            controller.SimpleMove(new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis))*5);
         }
     }
 }
