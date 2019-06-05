@@ -10,8 +10,10 @@ public class AgentBehaviour : MonoBehaviour {
     [SerializeField]
     private string verticalAxis;
 
+
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         playerInput = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
         GetComponent<NavMeshAgent>().destination = transform.position + playerInput;
 	}
