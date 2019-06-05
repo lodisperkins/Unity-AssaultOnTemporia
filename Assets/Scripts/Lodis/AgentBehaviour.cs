@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 namespace Lodis
 {
+
     public class AgentBehaviour : MonoBehaviour
     {
         private Vector3 playerInput;
@@ -12,20 +13,14 @@ namespace Lodis
         [SerializeField]
         private string verticalAxis;
 
-public class AgentBehaviour : MonoBehaviour {
-    private Vector3 playerInput;
-    [SerializeField]
-    private string horizontalAxis;
-    [SerializeField]
-    private string verticalAxis;
 
-
-	// Update is called once per frame
-	void Update ()
-    {
-        playerInput = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
-        GetComponent<NavMeshAgent>().destination = transform.position + playerInput;
-	}
+        // Update is called once per frame
+        void Update()
+        {
+            playerInput = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
+            transform.position += playerInput;
+        }
+    }
 }
 
 
