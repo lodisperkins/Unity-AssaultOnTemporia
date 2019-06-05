@@ -9,6 +9,8 @@ namespace Lodis
 
     public class GateBehaviour : MonoBehaviour
     {
+        //each camera would have a specific cinemachine camera
+        //the gate would know about the current camera and the one it should transition to
         [Cinemachine.TagField, SerializeField]
         string compareTag;
         [SerializeField]
@@ -16,13 +18,20 @@ namespace Lodis
         [SerializeField]
         private CinemachineVirtualCamera transitionCam;
 
+        [SerializeField]
+        UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(compareTag))
             {
-                currentCam.enabled = !currentCam.enabled;
-                transitionCam.enabled = !transitionCam.enabled;
+                OnTriggerEnterResponse.Invoke();                
             }
+        }
+
+        public void ToggleCameras()
+        {
+            currentCam.enabled = !currentCam.enabled;
+            transitionCam.enabled = !transitionCam.enabled;
         }
 
     }
