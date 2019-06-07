@@ -7,7 +7,6 @@ namespace Lodis
 
     public class AgentBehaviour : MonoBehaviour
     {
-        private Vector3 playerInput;
         [SerializeField]
         private string compareTag;
         [SerializeField]
@@ -19,21 +18,30 @@ namespace Lodis
         private Vector3 velocity;
         private CharacterController controller;
         public bool hasKey;
+        
         [SerializeField]
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
+        
         private void Start()
         {
+            
             hasKey = false;
             controller = GetComponent<CharacterController>();
         }
+      
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(compareTag))
             {
                 hasKey = true;
-                OnTriggerEnterResponse.Invoke();
+                Carry(other.gameObject);
             }
         }
+        /// <summary>
+        /// when a player picks up and object, the object is no lobger visible
+        /// and is childed to the players transform
+        /// </summary>
+        /// <param name="obj"></param>
         public void Carry(GameObject obj)
         {
             obj.GetComponent<MeshRenderer>().enabled = false;
