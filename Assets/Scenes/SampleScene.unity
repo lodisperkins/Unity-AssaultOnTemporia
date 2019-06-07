@@ -1700,8 +1700,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTag: Key
-  horizontalAxis: Horizontal
-  verticalAxis: Vertical
+  horizontalAxis: Horizontal1
+  verticalAxis: Vertical1
   speed: 5
   hasKey: 0
   OnTriggerEnterResponse:
@@ -3126,6 +3126,7 @@ GameObject:
   - component: {fileID: 1470872380}
   - component: {fileID: 1470872379}
   - component: {fileID: 1470872377}
+  - component: {fileID: 1470872378}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player2
@@ -3144,16 +3145,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f184680fb548149945bdce9a4d0688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: 
-  horizontalAxis: 
-  verticalAxis: 
-  speed: 0
+  compareTag: Key
+  horizontalAxis: Horizontal2
+  verticalAxis: Vertical2
+  speed: 5
   hasKey: 0
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!143 &1470872378
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1470872376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5000001
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &1470872379
 BoxCollider:
   m_ObjectHideFlags: 0
