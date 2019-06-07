@@ -22,12 +22,20 @@ namespace Lodis
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
         private void OnTriggerEnter(Collider other)
         {
+            
             if (other.CompareTag(compareTag))
             {
                 OnTriggerEnterResponse.Invoke();                
             }
         }
-
+        private void OnTriggerExit(Collider other)
+        {
+            GetComponent<Collider>().isTrigger = false;
+        }
+        public void Open()
+        {
+            GetComponent<Collider>().isTrigger = true;
+        }
         public void ToggleCameras()
         {
             currentCam.enabled = !currentCam.enabled;
