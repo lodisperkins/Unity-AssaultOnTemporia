@@ -14,6 +14,12 @@ namespace Lodis
         [Cinemachine.TagField, SerializeField]
         public string compareTag;
         [SerializeField]
+        Transform SpawnPoint1;
+        [SerializeField]
+        Transform SpawnPoint2;
+        [SerializeField]
+        private Matthew.Global Global;
+        [SerializeField]
         private CinemachineVirtualCamera currentCam;
         [SerializeField]
         private CinemachineVirtualCamera transitionCam;
@@ -22,11 +28,17 @@ namespace Lodis
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
         private void OnTriggerEnter(Collider other)
         {
-            
-            if (other.CompareTag(compareTag))
+            if (other.tag == "Player1")
             {
-                OnTriggerEnterResponse.Invoke();                
+                Global.Tag = "Player2";
+                Global.TeleportPlayerTo(SpawnPoint2);
             }
+            else
+            {
+                Global.Tag = "Player1";
+                Global.TeleportPlayerTo(SpawnPoint1);
+            }
+            OnTriggerEnterResponse.Invoke();
         }
         private void OnTriggerExit(Collider other)
         {
