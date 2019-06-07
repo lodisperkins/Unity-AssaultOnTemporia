@@ -12,7 +12,7 @@ namespace Lodis
         //each camera would have a specific cinemachine camera
         //the gate would know about the current camera and the one it should transition to
         [Cinemachine.TagField, SerializeField]
-        string compareTag;
+        public string compareTag;
         [SerializeField]
         private CinemachineVirtualCamera currentCam;
         [SerializeField]

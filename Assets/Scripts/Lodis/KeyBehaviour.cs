@@ -33,6 +33,7 @@ namespace Lodis
                     if (GateLocations[i].position.x > transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Open);
+                        GateBehaviours[i].compareTag = player;
                     }
                 }
                 else if (player == "Player2")
@@ -40,14 +41,14 @@ namespace Lodis
                     if (GateLocations[i].position.x < transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Open);
+                        GateBehaviours[i].compareTag = player;
                     }
                 }
             }
         }
-        private void OnTriggerEnter(Collider other)
-        {
+        private void OnTriggerEnter(Collider other){
             UpdateGates(other.tag);
-            OnTriggerEnterResponse.Invoke();
+            GateFuncs.Invoke();
         }
         // Update is called once per frame
         void Update() {
