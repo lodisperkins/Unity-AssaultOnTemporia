@@ -15,6 +15,12 @@ namespace Matthew
             }
         }
 
+        public void SpawnPrefab(GameObject prefab)
+        {
+            Instantiate(prefab);
+        }
+
+        
         private static Global s_instance;
 
         public void Print(string value)
