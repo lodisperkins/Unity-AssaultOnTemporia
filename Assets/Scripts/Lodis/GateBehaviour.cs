@@ -36,6 +36,10 @@ namespace Lodis
         {
             GetComponent<Collider>().isTrigger = true;
         }
+        public void Close()
+        {
+            GetComponent<Collider>().isTrigger = false;
+        }
         public void ToggleCameras()
         {
             currentCam.enabled = !currentCam.enabled;
