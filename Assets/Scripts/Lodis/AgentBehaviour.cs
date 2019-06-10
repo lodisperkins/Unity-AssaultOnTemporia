@@ -20,12 +20,8 @@ namespace Lodis
         private Vector3 velocity;
         private CharacterController controller;
         public bool hasKey;
-<<<<<<< Updated upstream
-        
-=======
         public GameObject Ball;
         public int DropDisplacement;
->>>>>>> Stashed changes
         [SerializeField]
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
         [SerializeField]
@@ -53,21 +49,16 @@ namespace Lodis
         /// <param name="obj"></param>
         public void Carry(GameObject obj)
         {
-<<<<<<< Updated upstream
-=======
             Ball = obj;
             PickUp(Ball);
         }
 
         public void PickUp(GameObject obj)
         {
->>>>>>> Stashed changes
             obj.GetComponent<MeshRenderer>().enabled = false;
             obj.GetComponent<SphereCollider>().enabled = false;
             obj.GetComponent<Transform>().SetParent(transform);
         }
-<<<<<<< Updated upstream
-=======
         public void Drop()
         {
             var obj = Ball;
@@ -79,19 +70,15 @@ namespace Lodis
             hasKey = false;
             
         }
->>>>>>> Stashed changes
         // Update is called once per frame
         void Update()
         {
             velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
             controller.SimpleMove(velocity*speed);
-<<<<<<< Updated upstream
-=======
             if(Input.GetButtonDown(Fire))
             {
                 Drop();
             }
->>>>>>> Stashed changes
         }
     }
 }
