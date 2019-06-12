@@ -12,8 +12,6 @@ public class BulletBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		if (Input.GetKeyDown("space"))
-        {
             GameObject Temporary_Bullet_handler;
             Temporary_Bullet_handler = Instantiate(Bullet, transform.position, transform.rotation) as GameObject;
            
@@ -25,6 +23,6 @@ public class BulletBehaviour : MonoBehaviour
             Temporary_rigidbody.AddForce(transform.up * Bullet_Forward_Force);
             Destroy(Temporary_Bullet_handler, 10.0f);
             Bullet_Emitter.transform.Rotate(Vector3.forward * 90);
-        }
+        
 	}
 }
