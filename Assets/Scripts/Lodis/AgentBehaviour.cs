@@ -14,17 +14,21 @@ namespace Lodis
         [SerializeField]
         private string verticalAxis;
         [SerializeField]
+        private string Fire;
+        [SerializeField]
         private int speed;
         private Vector3 velocity;
         private CharacterController controller;
         public bool hasKey;
         public GameObject Ball;
+        public int DropDisplacement;
         [SerializeField]
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
+        [SerializeField]
+        UnityEngine.Events.UnityEvent KeyDropped;
         
         private void Start()
         {
-            
             hasKey = false;
             controller = GetComponent<CharacterController>();
         }
@@ -34,6 +38,7 @@ namespace Lodis
             if (other.CompareTag(compareTag))
             {
                 hasKey = true;
+                KeyDropped.AddListener(other.GetComponent<KeyBehaviour>().CloseGates);
                 Carry(other.gameObject);
             }
         }
@@ -46,7 +51,6 @@ namespace Lodis
         {
             Ball = obj;
             PickUp(Ball);
-        
         }
 
         public void PickUp(GameObject obj)
@@ -58,16 +62,20 @@ namespace Lodis
         public void Drop()
         {
             var obj = Ball;
+            KeyDropped.Invoke();
             obj.GetComponent<MeshRenderer>().enabled = true;
             obj.GetComponent<SphereCollider>().enabled = true;
             obj.GetComponent<Transform>().SetParent(null);
+            obj.GetComponent<Transform>().position += new Vector3(DropDisplacement, 0, 0);
+            hasKey = false;
+            
         }
         // Update is called once per frame
         void Update()
         {
             velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
             controller.SimpleMove(velocity*speed);
-            if(Input.GetButtonDown("Fire1"))
+            if(Input.GetButtonDown(Fire))
             {
                 Drop();
             }

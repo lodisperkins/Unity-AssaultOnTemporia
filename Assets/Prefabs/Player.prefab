@@ -112,9 +112,17 @@ MonoBehaviour:
   compareTag: Key
   horizontalAxis: Horizontal1
   verticalAxis: Vertical1
+  Fire: Fire1
   speed: 5
   hasKey: 0
+  Ball: {fileID: 0}
+  DropDisplacement: 3
   OnTriggerEnterResponse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  KeyDropped:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
