@@ -15,15 +15,16 @@ public class BulletBehaviour : MonoBehaviour
 		if (Input.GetKeyDown("space"))
         {
             GameObject Temporary_Bullet_handler;
-            Temporary_Bullet_handler = Instantiate(Bullet, Bullet_Emitter.transform.position, Bullet_Emitter.transform.rotation) as GameObject;
-
-            Bullet_Emitter.transform.Rotate(Vector3.left * 90);
+            Temporary_Bullet_handler = Instantiate(Bullet, transform.position, transform.rotation) as GameObject;
+           
+            
 
             Rigidbody Temporary_rigidbody;
             Temporary_rigidbody = Temporary_Bullet_handler.GetComponent<Rigidbody>();
 
-            Temporary_rigidbody.AddForce(transform.forward * Bullet_Forward_Force);
+            Temporary_rigidbody.AddForce(transform.up * Bullet_Forward_Force);
             Destroy(Temporary_Bullet_handler, 10.0f);
+            Bullet_Emitter.transform.Rotate(Vector3.forward * 90);
         }
 	}
 }
