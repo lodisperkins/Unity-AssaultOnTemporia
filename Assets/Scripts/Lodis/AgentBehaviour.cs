@@ -8,8 +8,6 @@ namespace Lodis
     public class AgentBehaviour : MonoBehaviour
     {
         [SerializeField]
-        private string compareTag;
-        [SerializeField]
         private string horizontalAxis;
         [SerializeField]
         private string verticalAxis;
@@ -17,6 +15,9 @@ namespace Lodis
         private string Fire;
         [SerializeField]
         private int speed;
+        [SerializeField]
+        private GameObject BulletEmitter;
+        private int health;
         private Vector3 velocity;
         private CharacterController controller;
         public bool hasKey;
@@ -29,17 +30,22 @@ namespace Lodis
         
         private void Start()
         {
+            health = 3;
             hasKey = false;
             controller = GetComponent<CharacterController>();
         }
       
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag(compareTag))
+            if (other.CompareTag("Key"))
             {
                 hasKey = true;
                 KeyDropped.AddListener(other.GetComponent<KeyBehaviour>().CloseGates);
                 Carry(other.gameObject);
+            }
+            else if (other.CompareTag("Bullet"))
+            {
+                TakeDamage();
             }
         }
         /// <summary>
@@ -52,7 +58,10 @@ namespace Lodis
             Ball = obj;
             PickUp(Ball);
         }
-
+        private void TakeDamage()
+        {
+            health -= 1;
+        }
         public void PickUp(GameObject obj)
         {
             obj.GetComponent<MeshRenderer>().enabled = false;
@@ -70,6 +79,11 @@ namespace Lodis
             hasKey = false;
             
         }
+        public void PullTrigger()
+        {
+            BulletBehaviour Gun = BulletEmitter.GetComponent<BulletBehaviour>();
+            Gun.Fire();
+        }
         // Update is called once per frame
         void Update()
         {
@@ -77,7 +91,15 @@ namespace Lodis
             controller.SimpleMove(velocity*speed);
             if(Input.GetButtonDown(Fire))
             {
-                Drop();
+                PullTrigger();
+            }
+            if(health <= 0)
+            {
+                if(hasKey==true)
+                {
+                    Drop();
+                }
+                Destroy(gameObject);
             }
         }
     }

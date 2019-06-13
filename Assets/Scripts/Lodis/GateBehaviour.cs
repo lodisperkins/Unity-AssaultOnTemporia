@@ -28,17 +28,22 @@ namespace Lodis
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
         private void OnTriggerEnter(Collider other)
         {
-            if (other.tag == "Player1")
+            if (other.CompareTag("Player1"))
             {
                 Global.Tag = "Player2";
                 Global.TeleportPlayerTo(SpawnPoint2);
+                OnTriggerEnterResponse.Invoke();
             }
-            else
+            else if (other.CompareTag("Player2"))
             {
                 Global.Tag = "Player1";
                 Global.TeleportPlayerTo(SpawnPoint1);
+                OnTriggerEnterResponse.Invoke();
             }
-            OnTriggerEnterResponse.Invoke();
+            else if (other.CompareTag("Bullet"))
+            {
+                return;
+            }
         }
         private void OnTriggerExit(Collider other)
         {
