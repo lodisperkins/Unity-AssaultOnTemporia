@@ -20,9 +20,9 @@ namespace Lodis
         [SerializeField]
         private Matthew.Global Global;
         [SerializeField]
-        private CinemachineVirtualCamera currentCam;
+        private CinemachineVirtualCamera CurrentCam;
         [SerializeField]
-        private CinemachineVirtualCamera transitionCam;
+        private CinemachineVirtualCamera TransitionCam;
 
         [SerializeField]
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
@@ -54,8 +54,8 @@ namespace Lodis
         }
         public void ToggleCameras()
         {
-            currentCam.enabled = !currentCam.enabled;
-            transitionCam.enabled = !transitionCam.enabled;
+            CurrentCam.enabled = !CurrentCam.enabled;
+            TransitionCam.enabled = !TransitionCam.enabled;
         }
 
     }
