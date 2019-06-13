@@ -73,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1298476621861226}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6, y: 0.49, z: -0}
+  m_LocalPosition: {x: -6, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4559365795269670}
@@ -87,7 +87,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1309313882021214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.99}
+  m_LocalPosition: {x: -0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4829852690709096}
@@ -229,12 +229,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f184680fb548149945bdce9a4d0688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Key
   horizontalAxis: Horizontal1
   verticalAxis: Vertical1
   Fire: Fire1
   speed: 5
-  Bullet: {fileID: 0}
+  BulletEmitter: {fileID: 1309313882021214}
   hasKey: 0
   Ball: {fileID: 0}
   DropDisplacement: 3
@@ -260,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet_Emitter: {fileID: 1309313882021214}
-  Bullet: {fileID: 1524858387795514}
+  Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
 --- !u!136 &136882911501313528
 CapsuleCollider:

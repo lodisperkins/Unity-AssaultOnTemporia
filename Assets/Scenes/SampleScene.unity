@@ -232,8 +232,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 500166144}
   SpawnPoint2: {fileID: 1119538287}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
-  currentCam: {fileID: 1201867045}
-  transitionCam: {fileID: 1648515}
+  CurrentCam: {fileID: 1201867045}
+  TransitionCam: {fileID: 1648515}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls:
@@ -508,8 +508,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 1705170630}
   SpawnPoint2: {fileID: 432854740}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
-  currentCam: {fileID: 1826724283}
-  transitionCam: {fileID: 1624412852}
+  CurrentCam: {fileID: 1826724283}
+  TransitionCam: {fileID: 1624412852}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls:
@@ -923,6 +923,107 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &542155262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542155266}
+  - component: {fileID: 542155265}
+  - component: {fileID: 542155264}
+  - component: {fileID: 542155263}
+  - component: {fileID: 542155267}
+  m_Layer: 0
+  m_Name: Goal(P2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &542155263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542155262}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &542155264
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542155262}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 07f7896d7ace4074fb592989d754d592, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &542155265
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542155262}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &542155266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542155262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -46.94176, y: 1.59, z: 0.53}
+  m_LocalScale: {x: 2.6234, y: 2.6234, z: 2.6234}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 51
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542155267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542155262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e84b5fe0e5920648ae62bf1ea2b363a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CompareTag: Player2
+  Restart: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
+  CurrentCam: {fileID: 1624412852}
+  StartCam: {fileID: 1709781222}
 --- !u!1 &585813459
 GameObject:
   m_ObjectHideFlags: 3
@@ -1155,8 +1256,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 0}
   SpawnPoint2: {fileID: 0}
   Global: {fileID: 0}
-  currentCam: {fileID: 0}
-  transitionCam: {fileID: 0}
+  CurrentCam: {fileID: 0}
+  TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls: []
@@ -1269,8 +1370,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 1911536939}
   SpawnPoint2: {fileID: 1334314883}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
-  currentCam: {fileID: 1709781222}
-  transitionCam: {fileID: 1826724283}
+  CurrentCam: {fileID: 1709781222}
+  TransitionCam: {fileID: 1826724283}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls:
@@ -1505,8 +1606,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 0}
   SpawnPoint2: {fileID: 0}
   Global: {fileID: 0}
-  currentCam: {fileID: 0}
-  transitionCam: {fileID: 0}
+  CurrentCam: {fileID: 0}
+  TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls: []
@@ -2261,8 +2362,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 0}
   SpawnPoint2: {fileID: 0}
   Global: {fileID: 0}
-  currentCam: {fileID: 0}
-  transitionCam: {fileID: 0}
+  CurrentCam: {fileID: 0}
+  TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls: []
@@ -2812,10 +2913,11 @@ GameObject:
   - component: {fileID: 1298222402}
   - component: {fileID: 1298222403}
   - component: {fileID: 1298222404}
+  - component: {fileID: 1298222405}
   m_Layer: 0
   m_Name: PLAYER1SPAWN(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2873,6 +2975,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameStartEvent: {fileID: 11400000, guid: 1f8ef6d1824260d45b70bf942483a358, type: 2}
+--- !u!114 &1298222405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298222401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
+        m_MethodName: TeleportPlayer1To
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1298222402}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1334314882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,6 +3012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334314883}
   - component: {fileID: 1334314884}
+  - component: {fileID: 1334314885}
   m_Layer: 0
   m_Name: PLAYER2SPAWN(0)
   m_TagString: Untagged
@@ -2924,6 +3055,34 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1764669942966494, guid: fb49f1a0d536c8948a06b79bb1072399,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &1334314885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334314882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
+        m_MethodName: TeleportPlayer2To
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1334314883}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3300,8 +3459,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 0}
   SpawnPoint2: {fileID: 0}
   Global: {fileID: 0}
-  currentCam: {fileID: 0}
-  transitionCam: {fileID: 0}
+  CurrentCam: {fileID: 0}
+  TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls: []
@@ -4266,8 +4425,9 @@ GameObject:
   - component: {fileID: 2067891810}
   - component: {fileID: 2067891809}
   - component: {fileID: 2067891808}
+  - component: {fileID: 2067891812}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Goal(P1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4280,7 +4440,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067891807}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4300,7 +4460,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 07f7896d7ace4074fb592989d754d592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4334,12 +4494,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067891807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.94176, y: 2.8165083, z: 0.53}
+  m_LocalPosition: {x: 46.94176, y: 1.59, z: 0.53}
   m_LocalScale: {x: 2.6234, y: 2.6234, z: 2.6234}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2067891812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067891807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e84b5fe0e5920648ae62bf1ea2b363a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CompareTag: 
+  Restart: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
+  CurrentCam: {fileID: 1648515}
+  StartCam: {fileID: 1709781222}
 --- !u!1 &2070517244
 GameObject:
   m_ObjectHideFlags: 0
@@ -4418,8 +4593,8 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 1298222402}
   SpawnPoint2: {fileID: 1200247809}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
-  currentCam: {fileID: 1709781222}
-  transitionCam: {fileID: 1201867045}
+  CurrentCam: {fileID: 1709781222}
+  TransitionCam: {fileID: 1201867045}
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls:
