@@ -232,6 +232,7 @@ MonoBehaviour:
   Bullet_Emitter: {fileID: 1512394841432278}
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
+  Player: 
 --- !u!114 &114971262495581036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,15 +246,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalAxis: Horizontal2
   verticalAxis: Vertical2
+  horizontalAxis2: RotateHorizontal2
+  verticalAxis2: RotateVertical2
   Fire: Fire2
   speed: 5
   BulletEmitter: {fileID: 1512394841432278}
   RespawnDelay: 3
-  health: 0
+  health: 6
   hasKey: 0
+  Transitioning: 0
   isAlive: 0
   Ball: {fileID: 0}
-  DropDisplacement: 3
+  DropDisplacement: 0
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls: []

@@ -12,6 +12,10 @@ namespace Lodis
         [SerializeField]
         private string verticalAxis;
         [SerializeField]
+        private string horizontalAxis2;
+        [SerializeField]
+        private string verticalAxis2;
+        [SerializeField]
         private string Fire;
         [SerializeField]
         private int speed;
@@ -25,6 +29,7 @@ namespace Lodis
         private Vector3 velocity;
         private CharacterController controller;
         public bool hasKey;
+        public bool Transitioning;
         public bool HasKey
         {
             get { return hasKey; }
@@ -41,7 +46,7 @@ namespace Lodis
         private void Start()
         {
             isAlive = true;
-            health = 3;
+            health = 6;
             hasKey = false;
             controller = GetComponent<CharacterController>();
         }
@@ -56,8 +61,12 @@ namespace Lodis
             }
             else if (other.CompareTag("Bullet"))
             {
-                TakeDamage();
+                TakeDamage(other.gameObject);
             }
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            Transitioning = false;
         }
         /// <summary>
         /// when a player picks up and object, the object is no lobger visible
@@ -69,9 +78,24 @@ namespace Lodis
             Ball = obj;
             PickUp(Ball);
         }
-        private void TakeDamage()
+        public void AreaTransition()
         {
-            health -= 1;
+            Transitioning = true;
+        }
+        private void TakeDamage(GameObject bullet)
+        {
+            if (CompareTag(bullet.GetComponent<BulletBehaviour>().shooter))
+            {
+                return;
+            }
+            else
+            {
+                health -= 1;
+                CheckHealth();
+            } 
+        }
+        private void CheckHealth()
+        {
             if (health <= 0)
             {
                 if (hasKey == true)
@@ -100,7 +124,8 @@ namespace Lodis
         }
         public void PullTrigger()
         {
-            BulletBehaviour Gun = BulletEmitter.GetComponent<BulletBehaviour>();
+            GunBehaviour Gun = BulletEmitter.GetComponent<GunBehaviour>();
+            Gun.Player = tag;
             Gun.Fire();
         }
         public void Die()
@@ -116,7 +141,7 @@ namespace Lodis
             if(Time.time >= RespawnTime)
             {
                 isAlive = true;
-                health = 3;
+                health = 6;
                 gameObject.GetComponent<MeshRenderer>().enabled = true;
                 gameObject.GetComponent<BoxCollider>().enabled = true;
                 gameObject.GetComponent<CharacterController>().enabled = true;
@@ -130,12 +155,22 @@ namespace Lodis
                 Respawn();
                 return;
             }
-            velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
-            controller.SimpleMove(velocity*speed);
-            if(Input.GetButtonDown(Fire))
+            if(Transitioning == true)
             {
-                PullTrigger();
-                Debug.Log(Fire + "has fired");
+                controller.SimpleMove(velocity * speed);
+                return;
+            }
+            else if(Transitioning == false)
+            {
+                velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
+                controller.SimpleMove(velocity*speed);
+                transform.forward = new Vector3(Input.GetAxis(horizontalAxis2), 0, Input.GetAxis(verticalAxis2));
+                Debug.Log("Rotation is" + Input.GetAxis(horizontalAxis2) + ",0," + Input.GetAxis(verticalAxis2));
+                if (Input.GetButtonDown(Fire))
+                {
+                    PullTrigger();
+                    Debug.Log(Fire + "has fired");
+                }
             }
         }
     }

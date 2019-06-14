@@ -231,12 +231,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalAxis: Horizontal1
   verticalAxis: Vertical1
+  horizontalAxis2: RotateHorizontal1
+  verticalAxis2: RotateVertical1
   Fire: Fire1
   speed: 5
   BulletEmitter: {fileID: 1309313882021214}
   RespawnDelay: 3
-  health: 0
+  health: 6
   hasKey: 0
+  Transitioning: 0
   isAlive: 1
   Ball: {fileID: 0}
   DropDisplacement: 0
@@ -264,6 +267,7 @@ MonoBehaviour:
   Bullet_Emitter: {fileID: 1309313882021214}
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
+  Player: 
 --- !u!136 &136882911501313528
 CapsuleCollider:
   m_ObjectHideFlags: 1

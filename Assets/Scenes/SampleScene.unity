@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 28597584}
   m_Layer: 0
   m_Name: Gate(1,2)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 500166144}
   TransitionSpawn2: {fileID: 1119538287}
   AreaSpawn1: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 301541196}
   m_Layer: 0
   m_Name: Gate(-1,-2)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 1705170630}
   TransitionSpawn2: {fileID: 432854740}
   AreaSpawn1: {fileID: 1911536939}
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 0}
   TransitionSpawn2: {fileID: 0}
   AreaSpawn1: {fileID: 0}
@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 708788369}
   m_Layer: 0
   m_Name: Gate(0,-1)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 1911536939}
   TransitionSpawn2: {fileID: 1334314883}
   AreaSpawn1: {fileID: 1298222402}
@@ -1641,7 +1641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 0}
   TransitionSpawn2: {fileID: 0}
   AreaSpawn1: {fileID: 0}
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 0}
   TransitionSpawn2: {fileID: 0}
   AreaSpawn1: {fileID: 0}
@@ -3508,7 +3508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 0}
   TransitionSpawn2: {fileID: 0}
   AreaSpawn1: {fileID: 0}
@@ -4618,7 +4618,7 @@ GameObject:
   - component: {fileID: 2143639573}
   m_Layer: 0
   m_Name: Gate(0,1)
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4649,7 +4649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyHolder: 
+  KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 1298222402}
   TransitionSpawn2: {fileID: 1200247809}
   AreaSpawn1: {fileID: 500166144}

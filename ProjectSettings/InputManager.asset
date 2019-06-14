@@ -6,37 +6,69 @@ InputManager:
   serializedVersion: 2
   m_Axes:
   - serializedVersion: 3
-    m_Name: Horizontal
+    m_Name: RotateHorizontal1
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
-    altNegativeButton: a
-    altPositiveButton: d
-    gravity: 3
-    dead: 0.001
-    sensitivity: 3
-    snap: 1
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
     invert: 0
-    type: 0
+    type: 2
     axis: 3
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Vertical
+    m_Name: RotateHorizontal2
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
-    altNegativeButton: s
-    altPositiveButton: w
-    gravity: 3
-    dead: 0.001
-    sensitivity: 3
-    snap: 1
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
     invert: 0
-    type: 0
+    type: 2
+    axis: 3
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: RotateVertical1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 1
+    type: 2
     axis: 4
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: RotateVertical2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 4
+    joyNum: 2
   - serializedVersion: 3
     m_Name: Fire3
     descriptiveName: 
@@ -186,7 +218,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 1 button 0
+    positiveButton: joystick 1 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -202,7 +234,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 2 button 0
+    positiveButton: joystick 2 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

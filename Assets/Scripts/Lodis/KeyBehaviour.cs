@@ -26,12 +26,12 @@ namespace Lodis
             }
             
         }
-        private void OpenGates(string player)
+        private void OpenGates(GameObject player)
         {
             GateFuncs.RemoveAllListeners();
             for (int i = 0; i < GateLocations.Count; i++)
             {
-                if (player == "Player1")
+                if (player.tag == "Player1")
                 {
                     if (GateLocations[i].position.x > transform.position.x)
                     {
@@ -39,7 +39,7 @@ namespace Lodis
                         GateBehaviours[i].KeyHolder= player;
                     }
                 }
-                else if (player == "Player2")
+                else if (player.tag == "Player2")
                 {
                     if (GateLocations[i].position.x < transform.position.x)
                     {
@@ -60,7 +60,6 @@ namespace Lodis
                     if (GateLocations[i].position.x > transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Close);
-                        GateBehaviours[i].KeyHolder = carrier;
                     }
                 }
                 else if (carrier == "Player2")
@@ -68,14 +67,13 @@ namespace Lodis
                     if (GateLocations[i].position.x < transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Close);
-                        GateBehaviours[i].KeyHolder = carrier;
                     }
                 }
             }
             GateFuncs.Invoke();
         }
         private void OnTriggerEnter(Collider other){
-            OpenGates(other.tag);
+            OpenGates(other.gameObject);
             carrier = other.tag;
         }
         // Update is called once per frame

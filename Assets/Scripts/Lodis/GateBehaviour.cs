@@ -12,7 +12,7 @@ namespace Lodis
         //each camera would have a specific cinemachine camera
         //the gate would know about the current camera and the one it should transition to
         [Cinemachine.TagField, SerializeField]
-        public string KeyHolder;
+        public GameObject KeyHolder;
         [SerializeField]
         Transform TransitionSpawn1;
         [SerializeField]
@@ -36,27 +36,29 @@ namespace Lodis
         private void OnTriggerEnter(Collider other)
         {
             //needs to be made better
-            if (other.CompareTag(KeyHolder))
+            if (other.CompareTag(KeyHolder.tag))
             {
-                MoveToNextArea(KeyHolder);
+                MoveToNextArea();
             }
             else
             {
                 RemainInArea(other.tag);
             }
         }
-        private void MoveToNextArea(string player)
+        private void MoveToNextArea()
         {
-            if (player == "Player1")
+            if (KeyHolder.tag == "Player1")
             {
                 Global.Tag = "Player2";
                 Global.TeleportPlayerTo(TransitionSpawn2);
+                OnTriggerEnterResponse.AddListener(KeyHolder.GetComponent<AgentBehaviour>().AreaTransition);
                 OnTriggerEnterResponse.Invoke();
             }
-            else if (player =="Player2")
+            else if (KeyHolder.tag =="Player2")
             {
                 Global.Tag = "Player1";
                 Global.TeleportPlayerTo(TransitionSpawn1);
+                OnTriggerEnterResponse.AddListener(KeyHolder.GetComponent<AgentBehaviour>().AreaTransition);
                 OnTriggerEnterResponse.Invoke();
             }
         }
@@ -81,7 +83,7 @@ namespace Lodis
         }
         private void OnTriggerExit(Collider other)
         {
-            if (other.tag!= KeyHolder)
+            if (other.tag!= KeyHolder.tag)
             {
                 return;
             }
