@@ -15,16 +15,20 @@ namespace Lodis
         UnityEvent OnTriggerEnterResponse;
         // Use this for initialization
         void Start() {
+            InitializeKey();
+        }
+        private void InitializeKey()
+        {
             GateLocations = new List<Transform>();
             GateBehaviours = new List<GateBehaviour>();
             GateFuncs = new UnityEvent();
-            
+
             foreach (GameObject obj in Gates)
             {
                 GateLocations.Add(obj.transform);
                 GateBehaviours.Add(obj.GetComponent<GateBehaviour>());
             }
-            
+
         }
         private void OpenGates(GameObject player)
         {
@@ -71,6 +75,12 @@ namespace Lodis
                 }
             }
             GateFuncs.Invoke();
+        }
+        public void Restart(Transform keyspawn)
+        {
+            CloseGates();
+            InitializeKey();
+            transform.position = keyspawn.position;
         }
         private void OnTriggerEnter(Collider other){
             OpenGates(other.gameObject);

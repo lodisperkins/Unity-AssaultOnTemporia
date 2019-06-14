@@ -2,27 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-
-public class GoalBehaviour : MonoBehaviour {
-    [SerializeField]
-    private string CompareTag;
-    [SerializeField]
-    private Matthew.GameEvent Restart;
-    [SerializeField]
-    CinemachineVirtualCamera CurrentCam;
-    [SerializeField]
-    CinemachineVirtualCamera StartCam;
-    private void OnTriggerEnter(Collider other)
+namespace Lodis
+{
+    public class GoalBehaviour : MonoBehaviour
     {
-        if(other.CompareTag(CompareTag))
+        [SerializeField]
+        private string CompareTag;
+        [SerializeField]
+        private Matthew.GameEvent Restart;
+        [SerializeField]
+        CinemachineVirtualCamera CurrentCam;
+        [SerializeField]
+        CinemachineVirtualCamera StartCam;
+        private void OnTriggerEnter(Collider other)
         {
-            CurrentCam.enabled = false;
-            StartCam.enabled = true;
-            Restart.Raise();
+            if (other.CompareTag(CompareTag) && other.gameObject.GetComponent<AgentBehaviour>().HasKey)
+            {
+                other.gameObject.GetComponent<AgentBehaviour>().Restart();
+                CurrentCam.enabled = false;
+                StartCam.enabled = true;
+                Restart.Raise();
+            }
+        }
+        // Update is called once per frame
+        void Update()
+        {
+
         }
     }
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }

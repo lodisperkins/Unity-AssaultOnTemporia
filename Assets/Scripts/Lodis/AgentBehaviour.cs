@@ -28,12 +28,8 @@ namespace Lodis
         private int health;
         private Vector3 velocity;
         private CharacterController controller;
-        public bool hasKey;
+        public bool HasKey;
         public bool Transitioning;
-        public bool HasKey
-        {
-            get { return hasKey; }
-        }
         public bool isAlive;
         public GameObject Ball;
         public int DropDisplacement;
@@ -47,7 +43,7 @@ namespace Lodis
         {
             isAlive = true;
             health = 6;
-            hasKey = false;
+            HasKey = false;
             controller = GetComponent<CharacterController>();
         }
       
@@ -55,7 +51,7 @@ namespace Lodis
         {
             if (other.CompareTag("Key"))
             {
-                hasKey = true;
+                HasKey = true;
                 KeyDropped.AddListener(other.GetComponent<KeyBehaviour>().CloseGates);
                 Carry(other.gameObject);
             }
@@ -98,7 +94,7 @@ namespace Lodis
         {
             if (health <= 0)
             {
-                if (hasKey == true)
+                if (HasKey == true)
                 {
                     Drop();
                 }
@@ -119,7 +115,7 @@ namespace Lodis
             obj.GetComponent<SphereCollider>().enabled = true;
             obj.GetComponent<Transform>().SetParent(null);
             obj.GetComponent<Transform>().position += new Vector3(DropDisplacement, 0, 0);
-            hasKey = false;
+            HasKey = false;
             
         }
         public void PullTrigger()
@@ -145,6 +141,13 @@ namespace Lodis
                 gameObject.GetComponent<MeshRenderer>().enabled = true;
                 gameObject.GetComponent<BoxCollider>().enabled = true;
                 gameObject.GetComponent<CharacterController>().enabled = true;
+            }
+        }
+        public void Restart()
+        {
+            if(this.HasKey ==  true)
+            {
+                Drop();
             }
         }
         // Update is called once per frame
