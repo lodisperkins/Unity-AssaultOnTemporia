@@ -239,7 +239,7 @@ MonoBehaviour:
   hasKey: 0
   isAlive: 1
   Ball: {fileID: 0}
-  DropDisplacement: 3
+  DropDisplacement: 0
   OnTriggerEnterResponse:
     m_PersistentCalls:
       m_Calls: []

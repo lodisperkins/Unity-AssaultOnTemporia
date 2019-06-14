@@ -228,9 +228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 500166144}
-  SpawnPoint2: {fileID: 1119538287}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 500166144}
+  TransitionSpawn2: {fileID: 1119538287}
+  AreaSpawn1: {fileID: 0}
+  AreaSpawn2: {fileID: 1200247809}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1201867045}
   TransitionCam: {fileID: 1648515}
@@ -240,6 +242,22 @@ MonoBehaviour:
       - m_Target: {fileID: 28597584}
         m_MethodName: ToggleCameras
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 28597585}
+        m_MethodName: set_isTrigger
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -504,9 +522,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 1705170630}
-  SpawnPoint2: {fileID: 432854740}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 1705170630}
+  TransitionSpawn2: {fileID: 432854740}
+  AreaSpawn1: {fileID: 1911536939}
+  AreaSpawn2: {fileID: 0}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1826724283}
   TransitionCam: {fileID: 1624412852}
@@ -524,6 +544,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!65 &301541197
@@ -1252,13 +1277,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 0}
-  SpawnPoint2: {fileID: 0}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 0}
+  TransitionSpawn2: {fileID: 0}
+  AreaSpawn1: {fileID: 0}
+  AreaSpawn2: {fileID: 0}
   Global: {fileID: 0}
   CurrentCam: {fileID: 0}
   TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -1366,9 +1398,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 1911536939}
-  SpawnPoint2: {fileID: 1334314883}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 1911536939}
+  TransitionSpawn2: {fileID: 1334314883}
+  AreaSpawn1: {fileID: 1298222402}
+  AreaSpawn2: {fileID: 432854740}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1709781222}
   TransitionCam: {fileID: 1826724283}
@@ -1386,6 +1420,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!65 &708788370
@@ -1602,13 +1641,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 0}
-  SpawnPoint2: {fileID: 0}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 0}
+  TransitionSpawn2: {fileID: 0}
+  AreaSpawn1: {fileID: 0}
+  AreaSpawn2: {fileID: 0}
   Global: {fileID: 0}
   CurrentCam: {fileID: 0}
   TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -2358,13 +2404,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 0}
-  SpawnPoint2: {fileID: 0}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 0}
+  TransitionSpawn2: {fileID: 0}
+  AreaSpawn1: {fileID: 0}
+  AreaSpawn2: {fileID: 0}
   Global: {fileID: 0}
   CurrentCam: {fileID: 0}
   TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -3455,13 +3508,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 0}
-  SpawnPoint2: {fileID: 0}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 0}
+  TransitionSpawn2: {fileID: 0}
+  AreaSpawn1: {fileID: 0}
+  AreaSpawn2: {fileID: 0}
   Global: {fileID: 0}
   CurrentCam: {fileID: 0}
   TransitionCam: {fileID: 0}
   OnTriggerEnterResponse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -3897,7 +3957,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1709781220}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
@@ -4511,7 +4571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e84b5fe0e5920648ae62bf1ea2b363a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CompareTag: 
+  CompareTag: Player1
   Restart: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
   CurrentCam: {fileID: 1648515}
   StartCam: {fileID: 1709781222}
@@ -4589,9 +4649,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a373af542d8e5f4683b0c487059e3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
-  SpawnPoint1: {fileID: 1298222402}
-  SpawnPoint2: {fileID: 1200247809}
+  KeyHolder: 
+  TransitionSpawn1: {fileID: 1298222402}
+  TransitionSpawn2: {fileID: 1200247809}
+  AreaSpawn1: {fileID: 500166144}
+  AreaSpawn2: {fileID: 1334314883}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1709781222}
   TransitionCam: {fileID: 1201867045}
@@ -4609,6 +4671,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnTriggerExitResponse:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!65 &2143639574
