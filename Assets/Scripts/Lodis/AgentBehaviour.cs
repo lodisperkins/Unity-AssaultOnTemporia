@@ -17,12 +17,22 @@ namespace Lodis
         private int speed;
         [SerializeField]
         private GameObject BulletEmitter;
+        [SerializeField]
+        private float RespawnDelay;
+        private float RespawnTime;
+        [SerializeField]
         private int health;
         private Vector3 velocity;
         private CharacterController controller;
         public bool hasKey;
+        public bool HasKey
+        {
+            get { return hasKey; }
+        }
+        public bool isAlive;
         public GameObject Ball;
         public int DropDisplacement;
+       
         [SerializeField]
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
         [SerializeField]
@@ -30,6 +40,7 @@ namespace Lodis
         
         private void Start()
         {
+            isAlive = true;
             health = 3;
             hasKey = false;
             controller = GetComponent<CharacterController>();
@@ -61,6 +72,14 @@ namespace Lodis
         private void TakeDamage()
         {
             health -= 1;
+            if (health <= 0)
+            {
+                if (hasKey == true)
+                {
+                    Drop();
+                }
+                Die();
+            }
         }
         public void PickUp(GameObject obj)
         {
@@ -84,22 +103,39 @@ namespace Lodis
             BulletBehaviour Gun = BulletEmitter.GetComponent<BulletBehaviour>();
             Gun.Fire();
         }
+        public void Die()
+        {
+            isAlive = false;
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+            gameObject.GetComponent<CharacterController>().enabled = false;
+            RespawnTime = RespawnDelay + Time.time;
+        }
+        private void Respawn()
+        {
+            if(Time.time >= RespawnTime)
+            {
+                isAlive = true;
+                health = 3;
+                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                gameObject.GetComponent<BoxCollider>().enabled = true;
+                gameObject.GetComponent<CharacterController>().enabled = true;
+            }
+        }
         // Update is called once per frame
         void Update()
         {
+            if (isAlive == false)
+            {
+                Respawn();
+                return;
+            }
             velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
             controller.SimpleMove(velocity*speed);
             if(Input.GetButtonDown(Fire))
             {
                 PullTrigger();
-            }
-            if(health <= 0)
-            {
-                if(hasKey==true)
-                {
-                    Drop();
-                }
-                Destroy(gameObject);
+                Debug.Log(Fire + "has fired");
             }
         }
     }

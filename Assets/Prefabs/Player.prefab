@@ -234,7 +234,10 @@ MonoBehaviour:
   Fire: Fire1
   speed: 5
   BulletEmitter: {fileID: 1309313882021214}
+  RespawnDelay: 3
+  health: 0
   hasKey: 0
+  isAlive: 1
   Ball: {fileID: 0}
   DropDisplacement: 3
   OnTriggerEnterResponse:

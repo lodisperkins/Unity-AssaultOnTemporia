@@ -33,6 +33,10 @@ namespace Matthew
         public void TeleportPlayerTo(Transform transform)
         {
             var player = GameObject.FindGameObjectWithTag(Tag);
+            if(player == null)
+            {
+                return;
+            }
             player.transform.position = transform.position;
         }
         private static Global s_instance;

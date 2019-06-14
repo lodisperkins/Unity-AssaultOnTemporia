@@ -36,7 +36,7 @@ namespace Lodis
                     if (GateLocations[i].position.x > transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Open);
-                        GateBehaviours[i].compareTag = player;
+                        GateBehaviours[i].KeyHolder= player;
                     }
                 }
                 else if (player == "Player2")
@@ -44,7 +44,7 @@ namespace Lodis
                     if (GateLocations[i].position.x < transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Open);
-                        GateBehaviours[i].compareTag = player;
+                        GateBehaviours[i].KeyHolder = player;
                     }
                 }
             }
@@ -60,7 +60,7 @@ namespace Lodis
                     if (GateLocations[i].position.x > transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Close);
-                        GateBehaviours[i].compareTag = carrier;
+                        GateBehaviours[i].KeyHolder = carrier;
                     }
                 }
                 else if (carrier == "Player2")
@@ -68,7 +68,7 @@ namespace Lodis
                     if (GateLocations[i].position.x < transform.position.x)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Close);
-                        GateBehaviours[i].compareTag = carrier;
+                        GateBehaviours[i].KeyHolder = carrier;
                     }
                 }
             }

@@ -12,11 +12,15 @@ namespace Lodis
         //each camera would have a specific cinemachine camera
         //the gate would know about the current camera and the one it should transition to
         [Cinemachine.TagField, SerializeField]
-        public string compareTag;
+        public string KeyHolder;
         [SerializeField]
-        Transform SpawnPoint1;
+        Transform TransitionSpawn1;
         [SerializeField]
-        Transform SpawnPoint2;
+        Transform TransitionSpawn2;
+        [SerializeField]
+        Transform AreaSpawn1;
+        [SerializeField]
+        Transform AreaSpawn2;
         [SerializeField]
         private Matthew.Global Global;
         [SerializeField]
@@ -26,31 +30,66 @@ namespace Lodis
 
         [SerializeField]
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
+        
+        [SerializeField]
+        UnityEngine.Events.UnityEvent OnTriggerExitResponse;
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Player1"))
+            //needs to be made better
+            if (other.CompareTag(KeyHolder))
+            {
+                MoveToNextArea(KeyHolder);
+            }
+            else
+            {
+                RemainInArea(other.tag);
+            }
+        }
+        private void MoveToNextArea(string player)
+        {
+            if (player == "Player1")
             {
                 Global.Tag = "Player2";
-                Global.TeleportPlayerTo(SpawnPoint2);
+                Global.TeleportPlayerTo(TransitionSpawn2);
                 OnTriggerEnterResponse.Invoke();
             }
-            else if (other.CompareTag("Player2"))
+            else if (player =="Player2")
             {
                 Global.Tag = "Player1";
-                Global.TeleportPlayerTo(SpawnPoint1);
+                Global.TeleportPlayerTo(TransitionSpawn1);
                 OnTriggerEnterResponse.Invoke();
             }
-            else if (other.CompareTag("Bullet"))
+        }
+        private void RemainInArea(string obj)
+        {
+            if (obj == "Player1")
             {
+                Global.Tag = "Player1";
+                Global.TeleportPlayerTo(AreaSpawn1);
+            }
+            else if (obj == "Player2")
+            {
+                Global.Tag = "Player2";
+                Global.TeleportPlayerTo(AreaSpawn2);
+            }
+            else
+            {
+                Open();
                 return;
             }
+            Open();
         }
         private void OnTriggerExit(Collider other)
         {
-            GetComponent<Collider>().isTrigger = false;
+            if (other.tag!= KeyHolder)
+            {
+                return;
+            }
+            OnTriggerExitResponse.Invoke();
+             
         }
         public void Open()
-        {
+        { 
             GetComponent<Collider>().isTrigger = true;
         }
         public void Close()
@@ -61,6 +100,16 @@ namespace Lodis
         {
             CurrentCam.enabled = !CurrentCam.enabled;
             TransitionCam.enabled = !TransitionCam.enabled;
+        }
+        private void Start()
+        {
+            OnTriggerExitResponse.AddListener(SetColliderToTrigger);
+        }
+
+        public void SetColliderToTrigger()
+
+        {
+            GetComponent<Collider>().isTrigger = false;
         }
 
     }
