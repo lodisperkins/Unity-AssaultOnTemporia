@@ -78,6 +78,10 @@ namespace Lodis
         {
             Transitioning = true;
         }
+        public void AreaTransitonDone()
+        {
+            Transitioning = false;
+        }
         private void TakeDamage(GameObject bullet)
         {
             if (CompareTag(bullet.GetComponent<BulletBehaviour>().shooter))

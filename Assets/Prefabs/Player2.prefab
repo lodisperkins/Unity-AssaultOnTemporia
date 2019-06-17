@@ -253,7 +253,7 @@ MonoBehaviour:
   BulletEmitter: {fileID: 1512394841432278}
   RespawnDelay: 3
   health: 6
-  hasKey: 0
+  HasKey: 0
   Transitioning: 0
   isAlive: 0
   Ball: {fileID: 0}
