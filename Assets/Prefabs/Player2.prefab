@@ -255,7 +255,7 @@ MonoBehaviour:
   health: 6
   HasKey: 0
   Transitioning: 0
-  isAlive: 0
+  isAlive: 1
   Ball: {fileID: 0}
   DropDisplacement: 0
   OnTriggerEnterResponse:

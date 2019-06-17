@@ -137,14 +137,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1648513}
-  m_LocalRotation: {x: 0.70090926, y: -0.00000004755548, z: 0.00000004673263, w: 0.71325046}
-  m_LocalPosition: {x: 41.36, y: 18.5, z: -0.04}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 41.36, y: 14, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 597334741}
   m_Father: {fileID: 0}
   m_RootOrder: 38
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!114 &1648515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,9 +255,22 @@ MonoBehaviour:
   OnTriggerExitResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 28597585}
-        m_MethodName: set_isTrigger
-        m_Mode: 6
+      - m_Target: {fileID: 114357513370347318, guid: 693dccd07ba351845857c5f532a8d3bf,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114971262495581036, guid: fb49f1a0d536c8948a06b79bb1072399,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -554,7 +567,31 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   OnTriggerExitResponse:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114357513370347318, guid: 693dccd07ba351845857c5f532a8d3bf,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114971262495581036, guid: fb49f1a0d536c8948a06b79bb1072399,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!65 &301541197
@@ -911,8 +948,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.70090926, y: 0.00000004755606, z: -0.00000004673322, w: 0.71325046}
-  m_LocalPosition: {x: 0, y: 19, z: -0.04}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 0, y: 14, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1430,7 +1467,31 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   OnTriggerExitResponse:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114357513370347318, guid: 693dccd07ba351845857c5f532a8d3bf,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114971262495581036, guid: fb49f1a0d536c8948a06b79bb1072399,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!65 &708788370
@@ -2848,14 +2909,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201867044}
-  m_LocalRotation: {x: 0.70090926, y: 0.00000004755606, z: -0.00000004673322, w: 0.71325046}
-  m_LocalPosition: {x: 21.3, y: 18.5, z: -0.04}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 21.3, y: 14, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1164059476}
   m_Father: {fileID: 0}
   m_RootOrder: 34
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!1 &1222135544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,7 +3505,7 @@ Transform:
   m_GameObject: {fileID: 1471163399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1.5}
+  m_LocalScale: {x: 2.12, y: 1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
@@ -3755,14 +3816,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1624412850}
-  m_LocalRotation: {x: 0.70090926, y: 0.00000004755606, z: -0.00000004673322, w: 0.71325046}
-  m_LocalPosition: {x: -41.21, y: 18.5, z: -0.04}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: -41.21, y: 14, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1246402688}
   m_Father: {fileID: 0}
   m_RootOrder: 31
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!114 &1624412852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4005,14 +4066,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1709781220}
-  m_LocalRotation: {x: 0.70090926, y: 0.00000004755606, z: -0.00000004673322, w: 0.71325046}
-  m_LocalPosition: {x: 0, y: 19, z: -0.04}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 0, y: 14, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 585813460}
   m_Father: {fileID: 0}
   m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!114 &1709781222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4258,14 +4319,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1826724281}
-  m_LocalRotation: {x: 0.70090926, y: -0.00000004755548, z: 0.00000004673263, w: 0.71325046}
-  m_LocalPosition: {x: -21.05, y: 18.5, z: -0.04}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: -21.05, y: 14, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1645833083}
   m_Father: {fileID: 0}
   m_RootOrder: 27
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!114 &1826724283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4738,7 +4799,31 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   OnTriggerExitResponse:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114357513370347318, guid: 693dccd07ba351845857c5f532a8d3bf,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114971262495581036, guid: fb49f1a0d536c8948a06b79bb1072399,
+          type: 2}
+        m_MethodName: AreaTransitonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!65 &2143639574
