@@ -33,6 +33,7 @@ namespace Lodis
         public bool isAlive;
         public GameObject Ball;
         public int DropDisplacement;
+        private Vector3 Forward;
        
         [SerializeField]
         UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
@@ -45,6 +46,7 @@ namespace Lodis
             health = 6;
             HasKey = false;
             controller = GetComponent<CharacterController>();
+            Forward = new Vector3(1, 0, 0);
         }
       
         private void OnTriggerEnter(Collider other)
@@ -169,9 +171,9 @@ namespace Lodis
             }
             else if(Transitioning == false)
             {
-                velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
+                velocity =new Vector3(Input.GetAxis(verticalAxis), 0, Input.GetAxis(horizontalAxis));
                 controller.SimpleMove(velocity*speed);
-                transform.forward = new Vector3(Input.GetAxis(horizontalAxis2), 0, Input.GetAxis(verticalAxis2));
+                transform.forward = new Vector3(Input.GetAxis(verticalAxis2), 0, Input.GetAxis(horizontalAxis2));
                 Debug.Log("Rotation is" + Input.GetAxis(horizontalAxis2) + ",0," + Input.GetAxis(verticalAxis2));
                 if (Input.GetButtonDown(Fire))
                 {
