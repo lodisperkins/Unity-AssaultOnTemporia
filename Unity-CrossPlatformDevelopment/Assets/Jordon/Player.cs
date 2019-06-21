@@ -1,11 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int level = 3;
-    public int health = 40;
+    [SerializeField]
+    private Intvariable value;
+
+    public Intvariable level;
+    public Intvariable health;
+
+    public Text healthtext;
+    public Text leveltext;
+
+    public void GetHealth()
+    {
+
+    }
+
+    public void LoseHealth()
+    {
+
+    }
+
+    public void GetLevel()
+    {
+
+    }
+
+    public void LoseLevel()
+    {
+
+    }
+
+
+    public void Start()
+    {
+        health.Val = 40;
+        level.Val = 3; 
+    }
 
     public void SavePlayer()
     {
@@ -15,8 +49,8 @@ public class Player : MonoBehaviour
     public void LoadPlayer()
     {
         PlayerData data = Savebehaviour.LoadPlayer();
-        level = data.level;
-        health = data.health;
+        level.Val = data.level;
+        health.Val = data.health;
 
         Vector3 position;
         position.x = data.position[0];
@@ -29,12 +63,18 @@ public class Player : MonoBehaviour
 
     public void ChangeLevel(int amount)
     {
-        level += amount;
+        level.Val += amount;
     }
 
     public void ChangeHealth(int amount)
     {
-        health += amount;
+        health.Val += amount;
     }
     #endregion
+
+    private void Update()
+    {
+        healthtext.text = healthtext.name + " is:" + health.Val.ToString();
+        leveltext.text = leveltext.name + " is:" + level.Val.ToString();
+    }
 }
