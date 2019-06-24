@@ -236,9 +236,9 @@ MonoBehaviour:
   Fire: Fire1
   speed: 5
   BulletEmitter: {fileID: 1309313882021214}
-  RespawnDelay: 3
+  RespawnDelay: 1
   health: 6
-  hasKey: 0
+  HasKey: 0
   Transitioning: 0
   isAlive: 1
   Ball: {fileID: 0}

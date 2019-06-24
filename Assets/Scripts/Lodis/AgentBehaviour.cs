@@ -169,9 +169,9 @@ namespace Lodis
             }
             else if(Transitioning == false)
             {
-                velocity = new Vector3(Input.GetAxis(horizontalAxis), 0, Input.GetAxis(verticalAxis));
+                velocity = new Vector3(Input.GetAxis(verticalAxis), 0, Input.GetAxis(horizontalAxis));
                 controller.SimpleMove(velocity*speed);
-                transform.forward = new Vector3(Input.GetAxis(horizontalAxis2), 0, Input.GetAxis(verticalAxis2));
+                transform.forward = new Vector3(Input.GetAxis(verticalAxis2), 0, Input.GetAxis(horizontalAxis2));
                 Debug.Log("Rotation is" + Input.GetAxis(horizontalAxis2) + ",0," + Input.GetAxis(verticalAxis2));
                 if (Input.GetButtonDown(Fire))
                 {

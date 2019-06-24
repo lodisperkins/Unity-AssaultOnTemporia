@@ -251,7 +251,7 @@ MonoBehaviour:
   Fire: Fire2
   speed: 5
   BulletEmitter: {fileID: 1512394841432278}
-  RespawnDelay: 3
+  RespawnDelay: 1
   health: 6
   HasKey: 0
   Transitioning: 0
