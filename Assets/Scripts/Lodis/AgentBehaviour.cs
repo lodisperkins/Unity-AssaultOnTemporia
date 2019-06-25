@@ -120,7 +120,6 @@ namespace Lodis
             obj.GetComponent<Transform>().SetParent(null);
             obj.GetComponent<Transform>().position += new Vector3(DropDisplacement, 0, 0);
             HasKey = false;
-            
         }
         public void PullTrigger()
         {

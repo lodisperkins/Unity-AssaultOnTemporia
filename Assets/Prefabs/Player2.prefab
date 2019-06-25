@@ -57,8 +57,12 @@ GameObject:
   - component: {fileID: 33293945837970058}
   - component: {fileID: 23743708402467926}
   - component: {fileID: 65200647943600002}
-  - component: {fileID: 114971262495581036}
   - component: {fileID: 143253398302960956}
+  - component: {fileID: 114731415346646862}
+  - component: {fileID: 114106542401896688}
+  - component: {fileID: 114983093877137882}
+  - component: {fileID: 114695683103800726}
+  - component: {fileID: 114677054266918046}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player2
@@ -218,6 +222,122 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114106542401896688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764669942966494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8974a20211a04d1499be67cd9235f6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedRef: {fileID: 11400000, guid: 06c557d0dfad3074faefe2f745483864, type: 2}
+  Velocity: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
+  Rotation: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
+--- !u!114 &114677054266918046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764669942966494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809105badee9244ba06798968e1085c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
+  HealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
+  OnPlayerDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114106542401896688}
+        m_MethodName: DisableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114731415346646862}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPlayerRespawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114106542401896688}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114695683103800726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764669942966494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076daaebced4c2c40b9eb7db4d3769c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletEmitter: {fileID: 1512394841432278}
+--- !u!114 &114731415346646862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764669942966494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308c30bc556b3674ea2a260f34dcf96e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalAxis: Horizontal2
+  verticalAxis: Vertical2
+  horizontalAxis2: RotateHorizontal2
+  verticalAxis2: RotateVertical2
+  Fire: Fire2
+  Movement: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
+  Rotation: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
+  OnFirePressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114695683103800726}
+        m_MethodName: PullTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114907252013071962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,7 +353,7 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   Player: 
---- !u!114 &114971262495581036
+--- !u!114 &114983093877137882
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,28 +361,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764669942966494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f184680fb548149945bdce9a4d0688, type: 3}
+  m_Script: {fileID: 11500000, guid: 3954071de78bcf748a8370a7a32b67d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalAxis: Horizontal2
-  verticalAxis: Vertical2
-  horizontalAxis2: RotateHorizontal2
-  verticalAxis2: RotateVertical2
-  Fire: Fire2
-  speed: 5
-  BulletEmitter: {fileID: 1512394841432278}
-  RespawnDelay: 1
-  health: 6
-  HasKey: 0
-  Transitioning: 0
-  isAlive: 0
   Ball: {fileID: 0}
   DropDisplacement: 0
-  OnTriggerEnterResponse:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  HasKey: 0
   KeyDropped:
     m_PersistentCalls:
       m_Calls: []

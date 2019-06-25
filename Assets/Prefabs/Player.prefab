@@ -22,8 +22,12 @@ GameObject:
   - component: {fileID: 33496075884004374}
   - component: {fileID: 23497432532747336}
   - component: {fileID: 65886029406802544}
-  - component: {fileID: 114357513370347318}
   - component: {fileID: 143816371081991976}
+  - component: {fileID: 114139591594021826}
+  - component: {fileID: 114087810372682056}
+  - component: {fileID: 114438294662456254}
+  - component: {fileID: 114801533398482944}
+  - component: {fileID: 114478117742039176}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player1
@@ -218,7 +222,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114357513370347318
+--- !u!114 &114087810372682056
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,7 +230,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1298476621861226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f184680fb548149945bdce9a4d0688, type: 3}
+  m_Script: {fileID: 11500000, guid: 8974a20211a04d1499be67cd9235f6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedRef: {fileID: 11400000, guid: 06c557d0dfad3074faefe2f745483864, type: 2}
+  Velocity: {fileID: 11400000, guid: eb08f20374f06974d9777382b7fb53f0, type: 2}
+  Rotation: {fileID: 11400000, guid: 58ff382aa3ef8da4bbd5f620910fd81f, type: 2}
+--- !u!114 &114139591594021826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308c30bc556b3674ea2a260f34dcf96e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalAxis: Horizontal1
@@ -234,23 +252,108 @@ MonoBehaviour:
   horizontalAxis2: RotateHorizontal1
   verticalAxis2: RotateVertical1
   Fire: Fire1
-  speed: 5
-  BulletEmitter: {fileID: 1309313882021214}
-  RespawnDelay: 1
-  health: 6
-  HasKey: 0
-  Transitioning: 0
-  isAlive: 1
+  Movement: {fileID: 11400000, guid: eb08f20374f06974d9777382b7fb53f0, type: 2}
+  Rotation: {fileID: 11400000, guid: 58ff382aa3ef8da4bbd5f620910fd81f, type: 2}
+  OnFirePressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114801533398482944}
+        m_MethodName: PullTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114438294662456254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3954071de78bcf748a8370a7a32b67d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Ball: {fileID: 0}
   DropDisplacement: 0
-  OnTriggerEnterResponse:
+  HasKey: 0
+  KeyDropped:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  KeyDropped:
+--- !u!114 &114478117742039176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809105badee9244ba06798968e1085c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
+  HealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
+  OnPlayerDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114087810372682056}
+        m_MethodName: DisableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114139591594021826}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPlayerRespawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114087810372682056}
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114139591594021826}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114744969577943742
@@ -268,6 +371,18 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   Player: 
+--- !u!114 &114801533398482944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076daaebced4c2c40b9eb7db4d3769c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletEmitter: {fileID: 1309313882021214}
 --- !u!136 &136882911501313528
 CapsuleCollider:
   m_ObjectHideFlags: 1

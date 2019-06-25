@@ -51,14 +51,14 @@ namespace Lodis
             {
                 Global.Tag = "Player2";
                 Global.TeleportPlayerTo(TransitionSpawn2);
-                KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
+                //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
                 OnTriggerEnterResponse.Invoke();
             }
             else if (KeyHolder.tag =="Player2")
             {
                 Global.Tag = "Player1";
                 Global.TeleportPlayerTo(TransitionSpawn1);
-                KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
+                //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
                 OnTriggerEnterResponse.Invoke();
             }
         }
