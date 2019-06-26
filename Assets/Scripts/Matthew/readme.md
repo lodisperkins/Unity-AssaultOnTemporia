@@ -1,11 +1,18 @@
 ﻿## Listening for events
-1. add a GameEventListener to an object
-2. decide if you care who sent it. 
+ 
+ 1. add a GameEventListener to an object
+ 
+ 2. decide if you care who sent it. 
+ 
 this should be for all cases that have a 1 : n relationship with the event
+
 Example: eventraised : listenersWhoRespond
+
 2.a if you don't care go to 3
+
 2.b if you care about who sent it, assign the reference to the sender
 in the Sender field
+
 3. Assign the response to invoke when that event happens
 
 
@@ -13,8 +20,10 @@ in the Sender field
 
 
 ## Raising events
-1. add a PhysicsTriggerListener to an object
-2. specify the tag this "listener object" will filter
+
+ -1. add a PhysicsTriggerListener to an object
+
+ -2. specify the tag this "listener object" will filter
 
 
 Summary
