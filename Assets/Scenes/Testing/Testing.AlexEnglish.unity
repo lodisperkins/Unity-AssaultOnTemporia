@@ -1523,7 +1523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &173568026
 Camera:
   m_ObjectHideFlags: 0
@@ -2291,7 +2291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &213824630
 Camera:
   m_ObjectHideFlags: 0
@@ -3412,7 +3412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &371381728
 Camera:
   m_ObjectHideFlags: 0
@@ -6131,7 +6131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &646711563
 Camera:
   m_ObjectHideFlags: 0
@@ -11391,7 +11391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1324611352
 Camera:
   m_ObjectHideFlags: 0
@@ -13263,7 +13263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1532962494
 Camera:
   m_ObjectHideFlags: 0
@@ -13488,6 +13488,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400178, guid: 779f7fe9db616db4e8049bbbd19c001c,
     type: 3}
   m_PrefabInternal: {fileID: 1801960709}
+--- !u!1 &1557101901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: c4d278fc4a9c97e4f9abd1eee4b377d7,
+    type: 3}
+  m_PrefabInternal: {fileID: 1785096243}
+--- !u!64 &1557101905
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557101901}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c4d278fc4a9c97e4f9abd1eee4b377d7, type: 3}
 --- !u!1001 &1565848695
 Prefab:
   m_ObjectHideFlags: 0
@@ -14132,7 +14151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1600431806
 Camera:
   m_ObjectHideFlags: 0
@@ -14270,7 +14289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1609043123
 Camera:
   m_ObjectHideFlags: 0
@@ -19163,7 +19182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1872589913
 Camera:
   m_ObjectHideFlags: 0
@@ -19537,6 +19556,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: b914a121295d48945ba974d796c27f8f,
     type: 3}
   m_PrefabInternal: {fileID: 1525332596}
+--- !u!1 &1927244432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: ed8173891cdfd1b4c87c75185a8e22d5,
+    type: 3}
+  m_PrefabInternal: {fileID: 1565848695}
+--- !u!64 &1927244436
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927244432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ed8173891cdfd1b4c87c75185a8e22d5, type: 3}
 --- !u!1001 &1929357486
 Prefab:
   m_ObjectHideFlags: 0

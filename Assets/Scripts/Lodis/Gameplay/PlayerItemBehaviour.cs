@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Lodis
 {
-    public class PlayerItemBehaviour : MonoBehaviour
+    public class PlayerItemBehaviour :MonoBehaviour
     {
         public GameObject Ball;
         public int DropDisplacement;
@@ -14,6 +14,8 @@ namespace Lodis
         void Start()
         {
             HasKey = false;
+            
+            
         }
         private void OnTriggerEnter(Collider other)
         {
@@ -37,13 +39,20 @@ namespace Lodis
         }
         public void Drop()
         {
-            var obj = Ball;
-            KeyDropped.Invoke();
-            obj.GetComponent<MeshRenderer>().enabled = true;
-            obj.GetComponent<SphereCollider>().enabled = true;
-            obj.GetComponent<Transform>().SetParent(null);
-            obj.GetComponent<Transform>().position += new Vector3(DropDisplacement, 0, 0);
-            HasKey = false;
+            if (HasKey)
+            {
+                var obj = Ball;
+                KeyDropped.Invoke();
+                obj.GetComponent<MeshRenderer>().enabled = true;
+                obj.GetComponent<SphereCollider>().enabled = true;
+                obj.GetComponent<Transform>().SetParent(null);
+                obj.GetComponent<Transform>().position += new Vector3(DropDisplacement, 0, 0);
+                HasKey = false;
+            }
+            else
+            {
+                return;
+            }
         }
         // Update is called once per frame
         void Update()

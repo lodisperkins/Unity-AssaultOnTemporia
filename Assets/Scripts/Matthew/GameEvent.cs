@@ -1,31 +1,68 @@
-﻿
+﻿using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif  
 using UnityEngine;
 
 namespace Matthew
 {
-    [CreateAssetMenu(menuName = "GameEvents/GameEvent")]
+
+
+    [CreateAssetMenu]
     public class GameEvent : ScriptableObject, ISubscribeable
     {
-        public List<IListener> Listeners = new List<IListener>();
+        private List<IListener> listeners = new List<IListener>();
 
-        public void Raise(Object obj)
+        public void RegisterListener(IListener listener)
         {
-            for (var i = Listeners.Count - 1; i >= 0; i--)
-                Listeners[i].OnEventRaised(obj);
+            listeners.Add(listener);
         }
+
+        public void UnregisterListener(IListener listener)
+        {
+            listeners.Remove(listener);
+        }
+
         public void Raise()
         {
             Raise(null);
         }
+
         public void AddListener(IListener listener)
         {
-            Listeners.Add(listener);
+            RegisterListener(listener);
         }
 
         public void RemoveListener(IListener listener)
         {
-            Listeners.Remove(listener);
+            UnregisterListener(listener);
+        }
+
+        public void Raise(Object obj)
+        {
+            for (int i = listeners.Count - 1; i >= 0; i--)
+            {
+                listeners[i].OnEventRaised(obj);
+
+            }
         }
     }
+
+#if UNITY_EDITOR
+
+    [CustomEditor(typeof(GameEvent))]
+    public class GameEventEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            if (GUILayout.Button("RaiseEvent"))
+            {
+                var mt = target as GameEvent;
+                mt.Raise();
+            }
+        }
+    }
+#endif
 }

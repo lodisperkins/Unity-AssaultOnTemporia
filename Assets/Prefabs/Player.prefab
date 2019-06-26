@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114438294662456254}
   - component: {fileID: 114801533398482944}
   - component: {fileID: 114478117742039176}
+  - component: {fileID: 114886302359854604}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player1
@@ -383,6 +384,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletEmitter: {fileID: 1309313882021214}
+--- !u!114 &114886302359854604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114438294662456254}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!136 &136882911501313528
 CapsuleCollider:
   m_ObjectHideFlags: 1
