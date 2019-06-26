@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-namespace Lodis
+namespace Lodis.Gameplay
 {
 
     public class AgentBehaviour : MonoBehaviour

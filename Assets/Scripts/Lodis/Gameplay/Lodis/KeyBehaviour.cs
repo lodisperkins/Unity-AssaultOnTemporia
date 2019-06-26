@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-namespace Lodis
+namespace Lodis.Gameplay
 {
     public class KeyBehaviour : MonoBehaviour {
         [SerializeField]

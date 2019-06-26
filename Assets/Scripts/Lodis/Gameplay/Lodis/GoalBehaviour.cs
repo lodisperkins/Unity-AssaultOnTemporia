@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-namespace Lodis
+namespace Lodis.Gameplay
 {
     public class GoalBehaviour : MonoBehaviour
     {
