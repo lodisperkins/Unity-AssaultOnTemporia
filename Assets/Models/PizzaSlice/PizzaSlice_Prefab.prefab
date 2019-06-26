@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33717390206814768}
   - component: {fileID: 23383524827753094}
   m_Layer: 0
-  m_Name: PizzaSlice_Mesh (1)
+  m_Name: PizzaSlice_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
