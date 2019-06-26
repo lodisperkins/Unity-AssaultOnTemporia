@@ -5,8 +5,8 @@ namespace Matthew
     [RequireComponent(typeof(BoxCollider))]
     public class PhysicsTriggerListener : MonoBehaviour
     {
-        [Cinemachine.TagField]
-        public string CompareTagField;
+        [Cinemachine.TagField,SerializeField]
+        private string CompareTagField;
 
         public GameEvent TriggerEnterEvent;
         public GameEvent TriggerExitEvent;

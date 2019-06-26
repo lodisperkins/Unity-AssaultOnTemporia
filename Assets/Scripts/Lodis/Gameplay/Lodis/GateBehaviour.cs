@@ -48,14 +48,14 @@ namespace Lodis.Gameplay
                 Global.Tag = "Player2";
                 Global.TeleportPlayerTo(TransitionSpawn2);
                 //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
-                OnGateEnter.Raise();
+                OnGateEnter.Raise(gameObject);
             }
             else if (KeyHolder.tag =="Player2")
             {
                 Global.Tag = "Player1";
                 Global.TeleportPlayerTo(TransitionSpawn1);
                 //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
-                OnGateEnter.Raise();
+                OnGateEnter.Raise(gameObject);
             }
         }
         private void RemainInArea(string obj)
@@ -72,10 +72,8 @@ namespace Lodis.Gameplay
             }
             else
             {
-                Close();
                 return;
             }
-            Close();
         }
         private void OnTriggerExit(Collider other)
         {
@@ -83,7 +81,7 @@ namespace Lodis.Gameplay
             {
                 return;
             }
-            OnGateExit.Raise();
+            OnGateExit.Raise(gameObject);
              
         }
         public void Open()
@@ -101,7 +99,7 @@ namespace Lodis.Gameplay
         }
         private void Start()
         {
-            OnGateExit.Raise();
+            Close();
         }
 
         public void SetColliderToTrigger()

@@ -16,9 +16,9 @@ namespace Lodis.Gameplay
         CinemachineVirtualCamera StartCam;
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag(CompareTag) && other.gameObject.GetComponent<AgentBehaviour>().HasKey)
+            if (other.CompareTag(CompareTag))
             {
-                other.gameObject.GetComponent<AgentBehaviour>().Restart();
+                other.GetComponent<PlayerItemBehaviour>().Drop();
                 CurrentCam.enabled = false;
                 StartCam.enabled = true;
                 Restart.Raise();

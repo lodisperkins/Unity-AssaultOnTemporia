@@ -23,9 +23,17 @@ namespace Matthew
 
         public void OnEventRaised(Object obj)
         {
-            if(SenderObject != null && SenderObject == obj)
+            //if it's null we will call it
+            if (SenderObject == null)
+            {
+                Response.Invoke(obj);
 
-            Response.Invoke(obj);
+            }
+            else
+            {
+                if (SenderObject == obj)
+                    Response.Invoke(obj);
+            }
         }
 
         public void OnEventRaised()
@@ -39,4 +47,3 @@ namespace Matthew
         }
     }
 }
- 
