@@ -123,6 +123,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1648514}
   - component: {fileID: 1648515}
+  - component: {fileID: 1648517}
+  - component: {fileID: 1648516}
+  - component: {fileID: 1648518}
   m_Layer: 0
   m_Name: AreaCam(2)
   m_TagString: Untagged
@@ -182,6 +185,75 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 597334741}
+--- !u!114 &1648516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1648517}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1763884926}
+--- !u!114 &1648517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1648518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1648517}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 28597581}
 --- !u!1 &27519627
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +295,6 @@ GameObject:
   - component: {fileID: 28597586}
   - component: {fileID: 28597585}
   - component: {fileID: 28597584}
-  - component: {fileID: 28597588}
   - component: {fileID: 28597583}
   m_Layer: 0
   m_Name: Gate(2,3)
@@ -274,6 +345,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 28597581}
 --- !u!114 &28597584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,8 +361,8 @@ MonoBehaviour:
   KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 1088538577}
   TransitionSpawn2: {fileID: 1823272345}
-  AreaSpawn1: {fileID: 0}
-  AreaSpawn2: {fileID: 1088538577}
+  AreaSpawn1: {fileID: 1713826954}
+  AreaSpawn2: {fileID: 1119538287}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1648515}
   TransitionCam: {fileID: 1722301984}
@@ -304,7 +376,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28597581}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -353,34 +425,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28597581}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &28597588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 28597581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 28597584}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!1 &142812801
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +659,8 @@ Transform:
   - {fileID: 250998405}
   - {fileID: 1652401310}
   - {fileID: 1034911597}
+  - {fileID: 1713826954}
+  - {fileID: 1762658852}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 86.76, z: 0}
@@ -627,7 +673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250998405}
   m_Layer: 0
-  m_Name: PLAYER1SPAWN (3)
+  m_Name: PLAYER1SPAWN (-3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -665,7 +711,6 @@ GameObject:
   - component: {fileID: 301541198}
   - component: {fileID: 301541197}
   - component: {fileID: 301541196}
-  - component: {fileID: 301541200}
   - component: {fileID: 301541195}
   m_Layer: 0
   m_Name: Gate(-1,-2)
@@ -716,6 +761,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 301541193}
 --- !u!114 &301541196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,12 +778,12 @@ MonoBehaviour:
   TransitionSpawn1: {fileID: 1705170630}
   TransitionSpawn2: {fileID: 432854740}
   AreaSpawn1: {fileID: 1911536939}
-  AreaSpawn2: {fileID: 0}
+  AreaSpawn2: {fileID: 27519628}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1826724283}
   TransitionCam: {fileID: 1624412852}
   OnGateEnter: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  OnGateExit: {fileID: 0}
+  OnGateExit: {fileID: 11400000, guid: ee8dcfa069d381d47984c1373dcfc641, type: 2}
 --- !u!65 &301541197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -795,34 +841,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 301541193}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &301541200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 301541193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 301541196}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!1 &302578948
 GameObject:
   m_ObjectHideFlags: 3
@@ -961,7 +979,6 @@ GameObject:
   - component: {fileID: 360266197}
   - component: {fileID: 360266196}
   - component: {fileID: 360266195}
-  - component: {fileID: 360266200}
   - component: {fileID: 360266199}
   m_Layer: 0
   m_Name: Gate(-2,-3)
@@ -999,8 +1016,8 @@ MonoBehaviour:
   KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 250998405}
   TransitionSpawn2: {fileID: 27519628}
-  AreaSpawn1: {fileID: 0}
-  AreaSpawn2: {fileID: 1705170630}
+  AreaSpawn1: {fileID: 1705170630}
+  AreaSpawn2: {fileID: 1762658852}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1624412852}
   TransitionCam: {fileID: 1214754044}
@@ -1091,34 +1108,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!114 &360266200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 360266193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 360266195}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  SenderObject: {fileID: 360266193}
 --- !u!1 &417437155
 GameObject:
   m_ObjectHideFlags: 3
@@ -1513,7 +1503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompareTag: Player2
   Restart: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
-  CurrentCam: {fileID: 1624412852}
+  CurrentCam: {fileID: 1034911598}
   StartCam: {fileID: 1709781222}
 --- !u!1 &579004243
 GameObject:
@@ -1528,7 +1518,6 @@ GameObject:
   - component: {fileID: 579004247}
   - component: {fileID: 579004246}
   - component: {fileID: 579004245}
-  - component: {fileID: 579004250}
   - component: {fileID: 579004249}
   m_Layer: 0
   m_Name: Gate(3,4)
@@ -1565,9 +1554,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyHolder: {fileID: 0}
   TransitionSpawn1: {fileID: 0}
-  TransitionSpawn2: {fileID: 0}
+  TransitionSpawn2: {fileID: 1823272345}
   AreaSpawn1: {fileID: 0}
-  AreaSpawn2: {fileID: 0}
+  AreaSpawn2: {fileID: 1823272345}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1722301984}
   TransitionCam: {fileID: 1186114143}
@@ -1581,7 +1570,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 579004243}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1658,34 +1647,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!114 &579004250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 579004243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 579004245}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  SenderObject: {fileID: 579004243}
 --- !u!1 &585813459
 GameObject:
   m_ObjectHideFlags: 3
@@ -1994,7 +1956,6 @@ GameObject:
   - component: {fileID: 708788371}
   - component: {fileID: 708788370}
   - component: {fileID: 708788369}
-  - component: {fileID: 708788373}
   - component: {fileID: 708788368}
   m_Layer: 0
   m_Name: Gate(0,-1)
@@ -2045,6 +2006,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 708788366}
 --- !u!114 &708788369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,34 +2086,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708788366}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &708788373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 708788366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 708788369}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!1 &767000940
 GameObject:
   m_ObjectHideFlags: 3
@@ -2898,6 +2832,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1034911597}
   - component: {fileID: 1034911598}
+  - component: {fileID: 1034911600}
+  - component: {fileID: 1034911599}
   m_Layer: 0
   m_Name: AreaCam(-4)
   m_TagString: Untagged
@@ -2957,6 +2893,46 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2109062265}
+--- !u!114 &1034911599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034911596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1034911600}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1652401309}
+--- !u!114 &1034911600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034911596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1071433580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,6 +2977,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 0}
 --- !u!4 &1071433582
 Transform:
   m_ObjectHideFlags: 0
@@ -3512,6 +3489,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1186114144}
   - component: {fileID: 1186114143}
+  - component: {fileID: 1186114146}
+  - component: {fileID: 1186114145}
   m_Layer: 0
   m_Name: AreaCam (4)
   m_TagString: Untagged
@@ -3571,6 +3550,46 @@ Transform:
   m_Father: {fileID: 225317481}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &1186114145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1186114142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1186114146}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 579004243}
+--- !u!114 &1186114146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1186114142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1200247808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,6 +3628,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1201867046}
   - component: {fileID: 1201867045}
+  - component: {fileID: 1201867048}
+  - component: {fileID: 1201867047}
+  - component: {fileID: 1201867049}
   m_Layer: 0
   m_Name: AreaCam(1)
   m_TagString: Untagged
@@ -3668,6 +3690,75 @@ Transform:
   m_Father: {fileID: 225317481}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &1201867047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201867044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1201867048}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 2143639570}
+--- !u!114 &1201867048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201867044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1201867049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201867044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1201867048}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1763884926}
 --- !u!1 &1214754043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3769,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1214754045}
   - component: {fileID: 1214754044}
+  - component: {fileID: 1214754048}
+  - component: {fileID: 1214754047}
+  - component: {fileID: 1214754046}
   m_Layer: 0
   m_Name: AreaCam(-3)
   m_TagString: Untagged
@@ -3737,6 +3831,75 @@ Transform:
   m_Father: {fileID: 225317481}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &1214754046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214754043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1214754047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214754043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1214754046}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1652401309}
+--- !u!114 &1214754048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214754043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1214754046}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 360266193}
 --- !u!1 &1222135544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3971,6 +4134,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 0}
 --- !u!114 &1298222404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4011,6 +4175,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 0}
 --- !u!1 &1334314882
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,6 +4246,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 0}
 --- !u!114 &1334314885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4109,6 +4275,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 0}
 --- !u!1 &1410220799
 GameObject:
   m_ObjectHideFlags: 3
@@ -4620,7 +4787,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1506111117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.127262, y: 0, z: -12.405859}
+  m_LocalPosition: {x: 30.95, y: 0, z: -14.36}
   m_LocalScale: {x: 1, y: 1, z: 6}
   m_Children: []
   m_Father: {fileID: 225317481}
@@ -4636,6 +4803,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1624412851}
   - component: {fileID: 1624412852}
+  - component: {fileID: 1624412855}
+  - component: {fileID: 1624412854}
+  - component: {fileID: 1624412853}
   m_Layer: 0
   m_Name: AreaCam(-2)
   m_TagString: Untagged
@@ -4695,6 +4865,75 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1246402688}
+--- !u!114 &1624412853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624412850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1624412855}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 360266193}
+--- !u!114 &1624412854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624412850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1624412855}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 301541193}
+--- !u!114 &1624412855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624412850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645833082
 GameObject:
   m_ObjectHideFlags: 3
@@ -4748,7 +4987,6 @@ GameObject:
   - component: {fileID: 1652401313}
   - component: {fileID: 1652401312}
   - component: {fileID: 1652401311}
-  - component: {fileID: 1652401316}
   - component: {fileID: 1652401315}
   m_Layer: 0
   m_Name: Gate(-3,-4)
@@ -4784,10 +5022,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyHolder: {fileID: 0}
-  TransitionSpawn1: {fileID: 250998405}
-  TransitionSpawn2: {fileID: 27519628}
-  AreaSpawn1: {fileID: 0}
-  AreaSpawn2: {fileID: 1705170630}
+  TransitionSpawn1: {fileID: 1762658852}
+  TransitionSpawn2: {fileID: 0}
+  AreaSpawn1: {fileID: 250998405}
+  AreaSpawn2: {fileID: 0}
   Global: {fileID: 11400000, guid: 96c65daba75f7904e8c101bf70a672e5, type: 2}
   CurrentCam: {fileID: 1214754044}
   TransitionCam: {fileID: 1034911598}
@@ -4878,34 +5116,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!114 &1652401316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1652401309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1652401311}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  SenderObject: {fileID: 1652401309}
 --- !u!1 &1668424922
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,6 +5268,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1709781221}
   - component: {fileID: 1709781222}
+  - component: {fileID: 1709781224}
+  - component: {fileID: 1709781223}
   m_Layer: 0
   m_Name: AreaCam(0)
   m_TagString: Untagged
@@ -5116,6 +5329,74 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 585813460}
+--- !u!114 &1709781223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709781220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1709781224}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 2143639570}
+--- !u!114 &1709781224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709781220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1713826953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713826954}
+  m_Layer: 0
+  m_Name: PLAYER1SPAWN (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1713826954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713826953}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 54.31, y: 0, z: -20.93}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
+  m_Children: []
+  m_Father: {fileID: 225317481}
+  m_RootOrder: 58
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722301982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,6 +5407,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1722301983}
   - component: {fileID: 1722301984}
+  - component: {fileID: 1722301987}
+  - component: {fileID: 1722301986}
+  - component: {fileID: 1722301985}
   m_Layer: 0
   m_Name: AreaCam (3)
   m_TagString: Untagged
@@ -5185,6 +5469,75 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1941654073}
+--- !u!114 &1722301985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1722301982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1722301987}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 579004243}
+--- !u!114 &1722301986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1722301982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1722301987}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 28597581}
+--- !u!114 &1722301987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1722301982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1747658723
 GameObject:
   m_ObjectHideFlags: 3
@@ -5307,6 +5660,34 @@ Transform:
   m_Father: {fileID: 225317481}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1762658851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1762658852}
+  m_Layer: 0
+  m_Name: 'PLAYER2SPAWN (-3) '
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1762658852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1762658851}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -55.19, y: 0, z: -14.18}
+  m_LocalScale: {x: 1.0000015, y: 1, z: 1.0000015}
+  m_Children: []
+  m_Father: {fileID: 225317481}
+  m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763884926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,7 +5701,6 @@ GameObject:
   - component: {fileID: 1763884930}
   - component: {fileID: 1763884929}
   - component: {fileID: 1763884928}
-  - component: {fileID: 1763884933}
   - component: {fileID: 1763884932}
   m_Layer: 0
   m_Name: 'Gate(1,2) '
@@ -5373,7 +5753,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1763884926}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5450,34 +5830,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!114 &1763884933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1763884926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1763884928}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  SenderObject: {fileID: 1763884926}
 --- !u!1001 &1787093391
 Prefab:
   m_ObjectHideFlags: 0
@@ -5603,6 +5956,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1826724282}
   - component: {fileID: 1826724283}
+  - component: {fileID: 1826724286}
+  - component: {fileID: 1826724285}
+  - component: {fileID: 1826724284}
   m_Layer: 0
   m_Name: AreaCam(-1)
   m_TagString: Untagged
@@ -5661,6 +6017,75 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1645833083}
+--- !u!114 &1826724284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826724281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1826724285}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 301541193}
+--- !u!114 &1826724285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826724281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1826724286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826724281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1826724285}
+        m_MethodName: ToggleCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 708788366}
 --- !u!1 &1847146383
 GameObject:
   m_ObjectHideFlags: 0
@@ -6035,7 +6460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CompareTag: Player1
   Restart: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
-  CurrentCam: {fileID: 1648515}
+  CurrentCam: {fileID: 1186114143}
   StartCam: {fileID: 1709781222}
 --- !u!1 &2070517244
 GameObject:
@@ -6123,7 +6548,6 @@ GameObject:
   - component: {fileID: 2143639575}
   - component: {fileID: 2143639574}
   - component: {fileID: 2143639573}
-  - component: {fileID: 2143639572}
   - component: {fileID: 2143639577}
   m_Layer: 0
   m_Name: Gate(0,1)
@@ -6146,34 +6570,6 @@ Transform:
   m_Father: {fileID: 225317481}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2143639572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2143639570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: da02d8e3b654d9943a70e5176e209ffa, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2143639573}
-        m_MethodName: ToggleCameras
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &2143639573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6281,3 +6677,4 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  SenderObject: {fileID: 2143639570}

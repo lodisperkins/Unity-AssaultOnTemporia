@@ -9,6 +9,8 @@ namespace Lodis.Gameplay
         private IntVariable RespawnDelayRef;
         private float RespawnDelay;
         private float RespawnTime;
+        private float VulnerabilityDelay;
+        private float VulnerabilityTime;
         [SerializeField]
         private IntVariable HealthRef;
         int health;
@@ -17,6 +19,8 @@ namespace Lodis.Gameplay
         [SerializeField]
         UnityEngine.Events.UnityEvent OnPlayerRespawn;
         bool IsAlive;
+        [SerializeField]
+        bool IsInvincible;
     // Use this for initialization
         void Start() {
             RespawnDelay = RespawnDelayRef.Val;
@@ -32,6 +36,10 @@ namespace Lodis.Gameplay
         private void TakeDamage(GameObject bullet)
         {
             if (CompareTag(bullet.GetComponent<BulletBehaviour>().shooter))
+            {
+                return;
+            }
+            else if(IsInvincible)
             {
                 return;
             }
@@ -69,12 +77,28 @@ namespace Lodis.Gameplay
                 OnPlayerRespawn.Invoke();
             }
         }
+        public void MakeInvincible(int time)
+        {
+            VulnerabilityTime = VulnerabilityDelay + Time.time;
+            IsInvincible = true;
+        }
+        public void MakeVulnerable()
+        {
+            if (Time.time >= VulnerabilityTime)
+            {
+                IsInvincible = false;
+            }
+        }
         // Update is called once per frame
         void Update() {
             if (IsAlive == false)
             {
                 Respawn();
                 return;
+            }
+            if(IsInvincible)
+            {
+                MakeVulnerable();
             }
         }
     }
