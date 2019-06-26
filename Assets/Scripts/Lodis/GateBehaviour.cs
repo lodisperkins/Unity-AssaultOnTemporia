@@ -27,12 +27,10 @@ namespace Lodis
         private CinemachineVirtualCamera CurrentCam;
         [SerializeField]
         private CinemachineVirtualCamera TransitionCam;
-
         [SerializeField]
-        UnityEngine.Events.UnityEvent OnTriggerEnterResponse;
-        
+        Matthew.GameEvent OnGateEnter;
         [SerializeField]
-        UnityEngine.Events.UnityEvent OnTriggerExitResponse;
+        Matthew.GameEvent OnGateExit;
         private void OnTriggerEnter(Collider other)
         {
             //needs to be made better
@@ -52,14 +50,14 @@ namespace Lodis
                 Global.Tag = "Player2";
                 Global.TeleportPlayerTo(TransitionSpawn2);
                 //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
-                OnTriggerEnterResponse.Invoke();
+                OnGateEnter.Raise();
             }
             else if (KeyHolder.tag =="Player2")
             {
                 Global.Tag = "Player1";
                 Global.TeleportPlayerTo(TransitionSpawn1);
                 //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
-                OnTriggerEnterResponse.Invoke();
+                OnGateEnter.Raise();
             }
         }
         private void RemainInArea(string obj)
@@ -76,10 +74,10 @@ namespace Lodis
             }
             else
             {
-                Open();
+                Close();
                 return;
             }
-            Open();
+            Close();
         }
         private void OnTriggerExit(Collider other)
         {
@@ -87,7 +85,7 @@ namespace Lodis
             {
                 return;
             }
-            OnTriggerExitResponse.Invoke();
+            OnGateExit.Raise();
              
         }
         public void Open()
@@ -105,7 +103,7 @@ namespace Lodis
         }
         private void Start()
         {
-            OnTriggerExitResponse.AddListener(SetColliderToTrigger);
+            OnGateExit.Raise();
         }
 
         public void SetColliderToTrigger()
