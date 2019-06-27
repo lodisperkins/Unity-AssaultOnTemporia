@@ -79,6 +79,7 @@ namespace Lodis.Gameplay
         }
         public void MakeInvincible(int time)
         {
+            VulnerabilityDelay = time;
             VulnerabilityTime = VulnerabilityDelay + Time.time;
             IsInvincible = true;
         }
