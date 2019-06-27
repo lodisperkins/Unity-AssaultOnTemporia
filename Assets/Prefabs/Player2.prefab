@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpeedRef: {fileID: 11400000, guid: 06c557d0dfad3074faefe2f745483864, type: 2}
   Velocity: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
-  Rotation: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
+  RotationRef: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
 --- !u!114 &114113280847792246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -386,6 +386,7 @@ MonoBehaviour:
   horizontalAxis2: RotateHorizontal2
   verticalAxis2: RotateVertical2
   Fire: Fire2
+  Dash: 
   Movement: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
   Rotation: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
   OnFirePressed:
@@ -404,6 +405,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  OnDashPressed: {fileID: 0}
 --- !u!114 &114897341464334316
 MonoBehaviour:
   m_ObjectHideFlags: 1

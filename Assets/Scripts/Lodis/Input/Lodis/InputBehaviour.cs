@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Lodis.PlayerInput
 {
-    
         public class InputBehaviour : MonoBehaviour
         {
             [SerializeField]
@@ -17,11 +16,15 @@ namespace Lodis.PlayerInput
             [SerializeField]
             private string Fire;
             [SerializeField]
+            private string Dash;
+            [SerializeField]
             VectorVariable Movement;
             [SerializeField]
             VectorVariable Rotation;
             [SerializeField]
             UnityEngine.Events.UnityEvent OnFirePressed;
+            [SerializeField]
+            Matthew.GameEvent OnDashPressed;
             // Update is called once per frame
             void Update()
             {
@@ -31,6 +34,10 @@ namespace Lodis.PlayerInput
                 {
                     OnFirePressed.Invoke();
                     Debug.Log(Fire + "has fired");
+                }
+                if(Input.GetButtonDown(Dash))
+                {
+
                 }
             }
         }
