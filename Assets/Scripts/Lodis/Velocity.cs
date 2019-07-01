@@ -27,12 +27,4 @@ namespace Lodis
             return value;
         }
     }
-
-
-    public static class Extensions
-    {
-
-
-
-    }
 }
