@@ -243,7 +243,7 @@ MonoBehaviour:
   DashSpeed: {fileID: 11400000, guid: 32ebd72f22e39b94e8eee5317c52870e, type: 2}
   Velocity: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
   RotationRef: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
-  DashCooldown: 3
+  DashCooldown: 1
   OnDashBegin: {fileID: 11400000, guid: 0a0a680873ed9cb4b9174d3e95e7e626, type: 2}
   OnDashEnd: {fileID: 11400000, guid: 109d0c27d1baf5442958a83794e93cbd, type: 2}
 --- !u!114 &114113280847792246
@@ -319,17 +319,6 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114731415346646862}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 114677054266918046}
         m_MethodName: MakeVulnerable
         m_Mode: 1
@@ -481,7 +470,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnDashPressed: {fileID: 0}
+  OnDashPressed: {fileID: 11400000, guid: 798ec7fdf3d96a847b046fd637597002, type: 2}
 --- !u!114 &114897341464334316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -552,24 +541,13 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114731415346646862}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 114677054266918046}
         m_MethodName: MakeInvincible
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
