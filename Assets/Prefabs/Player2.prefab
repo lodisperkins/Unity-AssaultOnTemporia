@@ -66,6 +66,9 @@ GameObject:
   - component: {fileID: 114897341464334316}
   - component: {fileID: 114113280847792246}
   - component: {fileID: 114968104603067862}
+  - component: {fileID: 114389397874873114}
+  - component: {fileID: 114925781191164194}
+  - component: {fileID: 114614307862667364}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player2
@@ -237,8 +240,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedRef: {fileID: 11400000, guid: 06c557d0dfad3074faefe2f745483864, type: 2}
+  DashSpeed: {fileID: 11400000, guid: 32ebd72f22e39b94e8eee5317c52870e, type: 2}
   Velocity: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
   RotationRef: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
+  DashCooldown: 3
+  OnDashBegin: {fileID: 11400000, guid: 0a0a680873ed9cb4b9174d3e95e7e626, type: 2}
+  OnDashEnd: {fileID: 11400000, guid: 109d0c27d1baf5442958a83794e93cbd, type: 2}
 --- !u!114 &114113280847792246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,6 +275,75 @@ MonoBehaviour:
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   SenderObject: {fileID: 0}
+--- !u!114 &114389397874873114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764669942966494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 798ec7fdf3d96a847b046fd637597002, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114106542401896688}
+        m_MethodName: Dash
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1764669942966494}
+--- !u!114 &114614307862667364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764669942966494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 109d0c27d1baf5442958a83794e93cbd, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114731415346646862}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 114677054266918046}
+        m_MethodName: MakeVulnerable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1764669942966494}
 --- !u!114 &114677054266918046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -386,7 +462,7 @@ MonoBehaviour:
   horizontalAxis2: RotateHorizontal2
   verticalAxis2: RotateVertical2
   Fire: Fire2
-  Dash: 
+  Dash: Dash2
   Movement: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
   Rotation: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
   OnFirePressed:
@@ -461,6 +537,46 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   Player: 
+--- !u!114 &114925781191164194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764669942966494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 0a0a680873ed9cb4b9174d3e95e7e626, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114731415346646862}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114677054266918046}
+        m_MethodName: MakeInvincible
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 0}
 --- !u!114 &114968104603067862
 MonoBehaviour:
   m_ObjectHideFlags: 1

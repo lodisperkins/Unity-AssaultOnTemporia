@@ -31,6 +31,9 @@ GameObject:
   - component: {fileID: 114886302359854604}
   - component: {fileID: 114039732811398442}
   - component: {fileID: 114716584154131004}
+  - component: {fileID: 114536393650761542}
+  - component: {fileID: 114171797796221150}
+  - component: {fileID: 114223818338533316}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player1
@@ -266,8 +269,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedRef: {fileID: 11400000, guid: 06c557d0dfad3074faefe2f745483864, type: 2}
+  DashSpeed: {fileID: 11400000, guid: 32ebd72f22e39b94e8eee5317c52870e, type: 2}
   Velocity: {fileID: 11400000, guid: eb08f20374f06974d9777382b7fb53f0, type: 2}
   RotationRef: {fileID: 11400000, guid: 58ff382aa3ef8da4bbd5f620910fd81f, type: 2}
+  DashCooldown: 0.5
+  OnDashBegin: {fileID: 11400000, guid: 0a0a680873ed9cb4b9174d3e95e7e626, type: 2}
+  OnDashEnd: {fileID: 11400000, guid: 109d0c27d1baf5442958a83794e93cbd, type: 2}
 --- !u!114 &114139591594021826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -284,7 +291,7 @@ MonoBehaviour:
   horizontalAxis2: RotateHorizontal1
   verticalAxis2: RotateVertical1
   Fire: Fire1
-  Dash: 
+  Dash: Dash1
   Movement: {fileID: 11400000, guid: eb08f20374f06974d9777382b7fb53f0, type: 2}
   Rotation: {fileID: 11400000, guid: 58ff382aa3ef8da4bbd5f620910fd81f, type: 2}
   OnFirePressed:
@@ -303,7 +310,87 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnDashPressed: {fileID: 0}
+  OnDashPressed: {fileID: 11400000, guid: 798ec7fdf3d96a847b046fd637597002, type: 2}
+--- !u!114 &114171797796221150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 0a0a680873ed9cb4b9174d3e95e7e626, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114139591594021826}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114478117742039176}
+        m_MethodName: MakeInvincible
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1298476621861226}
+--- !u!114 &114223818338533316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 109d0c27d1baf5442958a83794e93cbd, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114139591594021826}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 114478117742039176}
+        m_MethodName: MakeVulnerable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1298476621861226}
 --- !u!114 &114438294662456254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -413,6 +500,35 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   IsInvincible: 0
+--- !u!114 &114536393650761542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298476621861226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 798ec7fdf3d96a847b046fd637597002, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114087810372682056}
+        m_MethodName: Dash
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1298476621861226}
 --- !u!114 &114716584154131004
 MonoBehaviour:
   m_ObjectHideFlags: 1

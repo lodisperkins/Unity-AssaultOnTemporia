@@ -9,19 +9,26 @@ namespace Lodis
 
         public Vector3 value;
         public Vector3 initial_value;
+        [Range(1,0)]
+        float percent;
         public float timer;
         public float initial_time;
-        public Vector3 updateVelocity(float dt, Vector3 direction)
+        public VelocityDecay(float time, Vector3 direction)
         {
-            var newtime = timer - dt;
-            if (newtime <= 0) //if the newtime is less than 0 reset
-                timer = initial_time;
+            initial_time = time;
+            value = direction;
+        }
+        public Vector3 updateVelocity(float dt)
+        {
+            var newtime = timer + dt;
+            if (newtime >= 1) //if the newtime is less than 0 reset
+                timer = 0;
             else
             {
                 //otherwise take the new value
                 timer = newtime;
                 //calculate the new Vector
-                float percent = timer / initial_time;
+                percent = timer / initial_time;
                 value = Vector3.Lerp(value, Vector3.zero, percent);
             }
             return value;

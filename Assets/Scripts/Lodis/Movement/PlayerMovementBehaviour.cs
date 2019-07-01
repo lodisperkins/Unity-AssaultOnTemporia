@@ -7,19 +7,33 @@ namespace Lodis.Movement
     {
         [SerializeField]
         private IntVariable SpeedRef;
-        int speed;
+        [SerializeField]
+        private IntVariable DashSpeed;
+        private int speed;
         [SerializeField]
         private VectorVariable Velocity;
         [SerializeField]
         private VectorVariable RotationRef;
+        [SerializeField]
+        private float DashCooldown;
+        private float DashTime;
+        private bool Dashing;
         private Vector3 Rotation;
         private CharacterController Controller;
+        [SerializeField]
+        private Matthew.GameEvent OnDashBegin;
+        [SerializeField]
+        private Matthew.GameEvent OnDashEnd;
+        private VelocityDecay DashDecay;
+        private Vector3 DashVelocity;
         // Use this for initialization
         void Start()
         {
+            Dashing = false;
             speed = SpeedRef.Val;
             Rotation = new Vector3();
             Controller = GetComponent<CharacterController>();
+            
         }
         public void DisableMovement()
         {
@@ -36,12 +50,36 @@ namespace Lodis.Movement
         {
             speed = SpeedRef.Val;
         }
+        public void Dash()
+        {
+            if (Time.time >= DashTime)
+            {
+                DashTime = DashCooldown + Time.time;
+                Dashing = true;
+                DashVelocity = Velocity.Val * DashSpeed.Val;
+                DashDecay = new VelocityDecay(2,DashVelocity);
+                OnDashBegin.Raise(gameObject);
+            }
+        }
         // Update is called once per frame
         void Update()
         {
-            Controller.SimpleMove(Velocity.Val * speed);
-            UpdateForward();
-            transform.forward = Rotation;
+            if (Dashing)
+            {
+                Vector3 velocity =DashDecay.updateVelocity(Time.deltaTime);
+                Controller.SimpleMove(velocity);
+                if(velocity.magnitude <= 0.1)
+                {
+                    Dashing = false;
+                    OnDashEnd.Raise(gameObject);
+                }
+            }
+            else
+            {
+                Controller.SimpleMove(Velocity.Val * speed);
+                UpdateForward();
+                transform.forward = Rotation;
+            }
         }
     }
 }

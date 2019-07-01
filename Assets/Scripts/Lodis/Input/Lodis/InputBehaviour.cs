@@ -37,7 +37,8 @@ namespace Lodis.PlayerInput
                 }
                 if(Input.GetButtonDown(Dash))
                 {
-
+                    OnDashPressed.Raise(this.gameObject);
+                    Debug.Log(Fire + "has dashed");
                 }
             }
         }
