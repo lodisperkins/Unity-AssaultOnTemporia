@@ -26,6 +26,11 @@ namespace Lodis.Gameplay
             RespawnDelay = RespawnDelayRef.Val;
             health = HealthRef.Val;
         }
+        public void Restart()
+        {
+            RespawnDelay = RespawnDelayRef.Val;
+            health = HealthRef.Val;
+        }
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Bullet"))
