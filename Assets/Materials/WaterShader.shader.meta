@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: 2a21955b41be6c146bf4bc7795dfee11
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _FoamTexture: {fileID: 2800000, guid: f1d5f351035876445987cf4224c812ca, type: 3}
+  - _WaveDistortion: {fileID: 2800000, guid: f1d5f351035876445987cf4224c812ca, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
