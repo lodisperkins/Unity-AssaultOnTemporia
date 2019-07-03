@@ -26,6 +26,8 @@ namespace Lodis.Movement
         private Matthew.GameEvent OnDashEnd;
         private VelocityDecay DashDecay;
         private Vector3 DashVelocity;
+        [SerializeField]
+        private float DashEnd;
         // Use this for initialization
         void Start()
         {
@@ -68,7 +70,7 @@ namespace Lodis.Movement
             {
                 Vector3 velocity =DashDecay.updateVelocity(Time.deltaTime);
                 Controller.SimpleMove(velocity);
-                if(velocity.magnitude <= 0.1)
+                if(velocity.magnitude <= DashEnd)
                 {
                     Dashing = false;
                     OnDashEnd.Raise(gameObject);
