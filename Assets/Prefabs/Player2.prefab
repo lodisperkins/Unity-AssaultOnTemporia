@@ -241,11 +241,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpeedRef: {fileID: 11400000, guid: 06c557d0dfad3074faefe2f745483864, type: 2}
   DashSpeed: {fileID: 11400000, guid: 32ebd72f22e39b94e8eee5317c52870e, type: 2}
+  speed: 0
   Velocity: {fileID: 11400000, guid: 8dca3a11775049243825a0fad96c6c90, type: 2}
   RotationRef: {fileID: 11400000, guid: 4a1748c79bbaa784c9173cf047c3fc79, type: 2}
-  DashCooldown: 1
+  DashCooldown: 2
+  DashTime: 0
+  Dashing: 0
+  Rotation: {x: 0, y: 0, z: 0}
+  Controller: {fileID: 0}
   OnDashBegin: {fileID: 11400000, guid: 0a0a680873ed9cb4b9174d3e95e7e626, type: 2}
   OnDashEnd: {fileID: 11400000, guid: 109d0c27d1baf5442958a83794e93cbd, type: 2}
+  DashDecay:
+    value: {x: 0, y: 0, z: 0}
+    initial_value: {x: 0, y: 0, z: 0}
+    percent: 0
+    timer: 0
+    initial_time: 0
+  DashVelocity: {x: 0, y: 0, z: 0}
+  DashEnd: 5
 --- !u!114 &114113280847792246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -547,7 +560,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
