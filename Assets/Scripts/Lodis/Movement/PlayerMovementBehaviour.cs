@@ -63,6 +63,12 @@ namespace Lodis.Movement
                 OnDashBegin.Raise(gameObject);
             }
         }
+        public void CancelDash()
+        {
+            Dashing = false;
+            OnDashEnd.Raise(gameObject);
+        }
+
         // Update is called once per frame
         void Update()
         {
@@ -72,8 +78,7 @@ namespace Lodis.Movement
                 Controller.SimpleMove(velocity);
                 if(velocity.magnitude <= DashEnd)
                 {
-                    Dashing = false;
-                    OnDashEnd.Raise(gameObject);
+                    CancelDash();
                 }
             }
             else
