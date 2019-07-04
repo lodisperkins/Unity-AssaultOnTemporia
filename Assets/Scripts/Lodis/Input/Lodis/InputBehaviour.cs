@@ -22,7 +22,7 @@ namespace Lodis.PlayerInput
             [SerializeField]
             VectorVariable Rotation;
             [SerializeField]
-            UnityEngine.Events.UnityEvent OnFirePressed;
+            Matthew.GameEvent OnFirePressed;
             [SerializeField]
             Matthew.GameEvent OnDashPressed;
             // Update is called once per frame
@@ -32,7 +32,7 @@ namespace Lodis.PlayerInput
                 Rotation.Val = new Vector3(Input.GetAxis(verticalAxis2), 0, Input.GetAxis(horizontalAxis2));
                 if (Input.GetButtonDown(Fire))
                 {
-                    OnFirePressed.Invoke();
+                    OnFirePressed.Raise(gameObject);
                     Debug.Log(Fire + "has fired");
                 }
                 if(Input.GetButtonDown(Dash))

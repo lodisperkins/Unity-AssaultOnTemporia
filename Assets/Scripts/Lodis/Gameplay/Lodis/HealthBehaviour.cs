@@ -15,7 +15,7 @@ namespace Lodis.Gameplay
         private IntVariable HealthRef;
         int health;
         [SerializeField]
-        UnityEngine.Events.UnityEvent OnPlayerDeath;
+        Matthew.GameEvent OnPlayerDeath;
         [SerializeField]
         UnityEngine.Events.UnityEvent OnPlayerRespawn;
         bool IsAlive;
@@ -58,7 +58,7 @@ namespace Lodis.Gameplay
         {
             if (health <= 0)
             {
-                OnPlayerDeath.Invoke();
+                OnPlayerDeath.Raise(gameObject);
                 Die();
             }
         }
