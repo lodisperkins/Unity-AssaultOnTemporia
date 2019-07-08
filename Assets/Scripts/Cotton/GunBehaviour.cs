@@ -8,6 +8,7 @@ public class GunBehaviour : MonoBehaviour
     public GameObject Bullet;
     GameObject Temporary_Bullet_handler;
     public float Bullet_Forward_Force;
+    public float DespawnTime;
     public string Player;
     private void Start()
     { 
@@ -21,7 +22,7 @@ public class GunBehaviour : MonoBehaviour
         Temporary_rigidbody = Temporary_Bullet_handler.GetComponent<Rigidbody>();
         
         Temporary_rigidbody.AddForce(transform.forward * Bullet_Forward_Force);
-        Destroy(Temporary_Bullet_handler, .5f);
+        Destroy(Temporary_Bullet_handler, DespawnTime);
     }
     // Update is called once per frame
     void Update ()

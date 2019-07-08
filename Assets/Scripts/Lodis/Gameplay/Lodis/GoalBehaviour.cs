@@ -9,7 +9,7 @@ namespace Lodis.Gameplay
         [SerializeField]
         private string CompareTag;
         [SerializeField]
-        private Matthew.GameEvent Restart;
+        private Matthew.GameEvent GameWon;
         [SerializeField]
         CinemachineVirtualCamera CurrentCam;
         [SerializeField]
@@ -18,16 +18,13 @@ namespace Lodis.Gameplay
         {
             if (other.CompareTag(CompareTag))
             {
-                other.GetComponent<PlayerItemBehaviour>().Drop();
-                CurrentCam.enabled = false;
-                StartCam.enabled = true;
-                Restart.Raise();
+                GameWon.Raise(gameObject);
             }
         }
-        // Update is called once per frame
-        void Update()
+        public void ToggleCameras()
         {
-
+            CurrentCam.enabled = false;
+            StartCam.enabled = true;
         }
     }
 }

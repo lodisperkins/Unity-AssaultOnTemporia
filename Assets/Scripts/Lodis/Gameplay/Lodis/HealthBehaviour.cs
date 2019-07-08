@@ -15,7 +15,7 @@ namespace Lodis.Gameplay
         private IntVariable HealthRef;
         int health;
         [SerializeField]
-        UnityEngine.Events.UnityEvent OnPlayerDeath;
+        Matthew.GameEvent OnPlayerDeath;
         [SerializeField]
         UnityEngine.Events.UnityEvent OnPlayerRespawn;
         bool IsAlive;
@@ -23,6 +23,11 @@ namespace Lodis.Gameplay
         bool IsInvincible;
     // Use this for initialization
         void Start() {
+            RespawnDelay = RespawnDelayRef.Val;
+            health = HealthRef.Val;
+        }
+        public void Restart()
+        {
             RespawnDelay = RespawnDelayRef.Val;
             health = HealthRef.Val;
         }
@@ -53,7 +58,7 @@ namespace Lodis.Gameplay
         {
             if (health <= 0)
             {
-                OnPlayerDeath.Invoke();
+                OnPlayerDeath.Raise(gameObject);
                 Die();
             }
         }
@@ -77,7 +82,7 @@ namespace Lodis.Gameplay
                 OnPlayerRespawn.Invoke();
             }
         }
-        public void MakeInvincible(int time)
+        public void MakeInvincible(float time)
         {
             VulnerabilityDelay = time;
             VulnerabilityTime = VulnerabilityDelay + Time.time;
