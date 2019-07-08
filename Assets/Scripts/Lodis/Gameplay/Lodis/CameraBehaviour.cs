@@ -15,6 +15,10 @@ namespace Lodis.Gameplay
         }
         private void OnEnable()
         {
+            if(CameraOn == null)
+            {
+                return;
+            }
             CameraOn.Raise(gameObject);
         }
         public void ToggleCamera()
