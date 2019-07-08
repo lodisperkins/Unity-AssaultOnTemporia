@@ -87,6 +87,7 @@ namespace Lodis.Gameplay
             VulnerabilityDelay = time;
             VulnerabilityTime = VulnerabilityDelay + Time.time;
             IsInvincible = true;
+            GetComponent<Material>().color = Color.yellow;
         }
         public void MakeVulnerable()
         {
