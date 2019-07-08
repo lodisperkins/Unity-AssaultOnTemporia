@@ -75,6 +75,7 @@ namespace Lodis.Gameplay
         public void Restart()
         {
             CurrentMode = 0;
+            counter = 0;
         }
         public void SpreadShot()
         {

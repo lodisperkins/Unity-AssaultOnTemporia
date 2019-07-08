@@ -17,7 +17,7 @@ namespace Lodis
             if(Input.GetButtonDown(Select))
             {
                 Debug.Log("Select pressed");
-                Restart.Raise();
+                Restart.Raise(gameObject);
             }
             if(Input.GetButtonDown(Cancel))
             {
