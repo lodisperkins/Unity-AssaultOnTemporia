@@ -2,14 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-public class CameraBehaviour : MonoBehaviour {
-    CinemachineVirtualCamera camera;
-    private void Start()
+namespace Lodis.Gameplay
+{
+    public class CameraBehaviour : MonoBehaviour
     {
-        camera = GetComponent<CinemachineVirtualCamera>();
-    }
-    public void ToggleCamera()
-    {
-        camera.enabled = !camera.enabled;
+        CinemachineVirtualCamera camera;
+        [SerializeField]
+        Matthew.GameEvent CameraOn;
+        private void Start()
+        {
+            camera = GetComponent<CinemachineVirtualCamera>();
+        }
+        private void OnEnable()
+        {
+            CameraOn.Raise(gameObject);
+        }
+        public void ToggleCamera()
+        {
+            camera.enabled = !camera.enabled;
+        }
     }
 }
