@@ -18,15 +18,13 @@ namespace Lodis.Gameplay
         {
             if (other.CompareTag(CompareTag))
             {
-                CurrentCam.enabled = false;
-                StartCam.enabled = true;
                 GameWon.Raise(gameObject);
             }
         }
-        // Update is called once per frame
-        void Update()
+        public void ToggleCameras()
         {
-
+            CurrentCam.enabled = false;
+            StartCam.enabled = true;
         }
     }
 }

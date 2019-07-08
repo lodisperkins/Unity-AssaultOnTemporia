@@ -82,7 +82,7 @@ namespace Lodis.Gameplay
                 OnPlayerRespawn.Invoke();
             }
         }
-        public void MakeInvincible(int time)
+        public void MakeInvincible(float time)
         {
             VulnerabilityDelay = time;
             VulnerabilityTime = VulnerabilityDelay + Time.time;
