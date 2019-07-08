@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!114 &1648518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,7 +1688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CompareTag: Player2
-  Restart: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
+  GameWon: {fileID: 0}
   CurrentCam: {fileID: 1034911598}
   StartCam: {fileID: 1709781222}
 --- !u!1 &579004243
@@ -1767,7 +1768,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 579004243}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3618,6 +3619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!1 &1042233038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,6 +4447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!1 &1200247808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,6 +4588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 11400000, guid: b6f03411addcca34ab2a1b5a294da434, type: 2}
 --- !u!114 &1201867049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4697,6 +4701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!114 &1214754047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5304,7 +5309,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1412240754}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.46, y: 0, z: -12.26}
+  m_LocalPosition: {x: 0.46, y: 0, z: -13.36}
   m_LocalScale: {x: 1, y: 1, z: 22}
   m_Children: []
   m_Father: {fileID: 225317481}
@@ -5998,6 +6003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!1 &1645833082
 GameObject:
   m_ObjectHideFlags: 3
@@ -6433,6 +6439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!1 &1713826953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6602,6 +6609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!1 &1747658723
 GameObject:
   m_ObjectHideFlags: 3
@@ -7121,6 +7129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902d4eabc80740c4e8c90ea07754c681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraOn: {fileID: 0}
 --- !u!114 &1826724286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7693,7 +7702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CompareTag: Player1
-  Restart: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
+  GameWon: {fileID: 0}
   CurrentCam: {fileID: 1186114143}
   StartCam: {fileID: 1709781222}
 --- !u!1 &2070517244
