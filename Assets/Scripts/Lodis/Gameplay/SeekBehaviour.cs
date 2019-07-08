@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Lodis.Gameplay
 {
-    public class ObjectBehaviour : MonoBehaviour {
+    public class SeekBehaviour : MonoBehaviour {
 
     [SerializeField]
     private GameObject target;
