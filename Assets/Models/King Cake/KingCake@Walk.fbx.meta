@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aec533c3d6c9da840b58cbefb4678a70
+guid: 8786306ad4b4e71449dea3417298ed33
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -181,7 +181,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween bone
       rotation in copied configuration does not match rotation in animation file:\n\t'MasterRig_L_Leg_BallSHJnt'
-      : rotation error = 35.241619 deg\n"
+      : rotation error = 33.787415 deg\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar to
@@ -203,7 +203,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
