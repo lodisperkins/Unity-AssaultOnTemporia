@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: 2a4134fdddcd22e41a2a9c12aa3a87b0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group2_group1_Cake_Statue
+    100004: group2_group1_Strawberry
+    100006: group2_group1_Strawberry1
+    100008: group2_group1_Strawberry10
+    100010: group2_group1_Strawberry11
+    100012: group2_group1_Strawberry12
+    100014: group2_group1_Strawberry13
+    100016: group2_group1_Strawberry14
+    100018: group2_group1_Strawberry15
+    100020: group2_group1_Strawberry16
+    100022: group2_group1_Strawberry18
+    100024: group2_group1_Strawberry19
+    100026: group2_group1_Strawberry2
+    100028: group2_group1_Strawberry3
+    100030: group2_group1_Strawberry4
+    100032: group2_group1_Strawberry5
+    100034: group2_group1_Strawberry6
+    100036: group2_group1_Strawberry7
+    100038: group2_group1_Strawberry8
+    100040: group2_group1_Strawberry9
+    100042: Strawberry17_group2_group1
+    400000: //RootNode
+    400002: group2_group1_Cake_Statue
+    400004: group2_group1_Strawberry
+    400006: group2_group1_Strawberry1
+    400008: group2_group1_Strawberry10
+    400010: group2_group1_Strawberry11
+    400012: group2_group1_Strawberry12
+    400014: group2_group1_Strawberry13
+    400016: group2_group1_Strawberry14
+    400018: group2_group1_Strawberry15
+    400020: group2_group1_Strawberry16
+    400022: group2_group1_Strawberry18
+    400024: group2_group1_Strawberry19
+    400026: group2_group1_Strawberry2
+    400028: group2_group1_Strawberry3
+    400030: group2_group1_Strawberry4
+    400032: group2_group1_Strawberry5
+    400034: group2_group1_Strawberry6
+    400036: group2_group1_Strawberry7
+    400038: group2_group1_Strawberry8
+    400040: group2_group1_Strawberry9
+    400042: Strawberry17_group2_group1
+    2100000: group2_group1_Cake_StatueMat
+    2100002: group2_group1_StrawberryMat
+    2100004: group2_group1_Strawberry1Mat
+    2100006: group2_group1_Strawberry10Mat
+    2100008: group2_group1_Strawberry11Mat
+    2100010: group2_group1_Strawberry12Mat
+    2100012: group2_group1_Strawberry13Mat
+    2100014: group2_group1_Strawberry14Mat
+    2100016: group2_group1_Strawberry15Mat
+    2100018: group2_group1_Strawberry16Mat
+    2100020: group2_group1_Strawberry18Mat
+    2100022: group2_group1_Strawberry19Mat
+    2100024: group2_group1_Strawberry2Mat
+    2100026: group2_group1_Strawberry3Mat
+    2100028: group2_group1_Strawberry4Mat
+    2100030: group2_group1_Strawberry5Mat
+    2100032: group2_group1_Strawberry6Mat
+    2100034: group2_group1_Strawberry7Mat
+    2100036: group2_group1_Strawberry8Mat
+    2100038: group2_group1_Strawberry9Mat
+    2100040: Strawberry17_group2_group1Mat
+    2300000: group2_group1_Cake_Statue
+    2300002: group2_group1_Strawberry
+    2300004: group2_group1_Strawberry1
+    2300006: group2_group1_Strawberry10
+    2300008: group2_group1_Strawberry11
+    2300010: group2_group1_Strawberry12
+    2300012: group2_group1_Strawberry13
+    2300014: group2_group1_Strawberry14
+    2300016: group2_group1_Strawberry15
+    2300018: group2_group1_Strawberry16
+    2300020: group2_group1_Strawberry18
+    2300022: group2_group1_Strawberry19
+    2300024: group2_group1_Strawberry2
+    2300026: group2_group1_Strawberry3
+    2300028: group2_group1_Strawberry4
+    2300030: group2_group1_Strawberry5
+    2300032: group2_group1_Strawberry6
+    2300034: group2_group1_Strawberry7
+    2300036: group2_group1_Strawberry8
+    2300038: group2_group1_Strawberry9
+    2300040: Strawberry17_group2_group1
+    3300000: group2_group1_Cake_Statue
+    3300002: group2_group1_Strawberry
+    3300004: group2_group1_Strawberry1
+    3300006: group2_group1_Strawberry10
+    3300008: group2_group1_Strawberry11
+    3300010: group2_group1_Strawberry12
+    3300012: group2_group1_Strawberry13
+    3300014: group2_group1_Strawberry14
+    3300016: group2_group1_Strawberry15
+    3300018: group2_group1_Strawberry16
+    3300020: group2_group1_Strawberry18
+    3300022: group2_group1_Strawberry19
+    3300024: group2_group1_Strawberry2
+    3300026: group2_group1_Strawberry3
+    3300028: group2_group1_Strawberry4
+    3300030: group2_group1_Strawberry5
+    3300032: group2_group1_Strawberry6
+    3300034: group2_group1_Strawberry7
+    3300036: group2_group1_Strawberry8
+    3300038: group2_group1_Strawberry9
+    3300040: Strawberry17_group2_group1
+    4300000: group2_group1_Cake_Statue
+    4300002: group2_group1_Strawberry
+    4300004: group2_group1_Strawberry1
+    4300006: group2_group1_Strawberry10
+    4300008: group2_group1_Strawberry11
+    4300010: group2_group1_Strawberry12
+    4300012: group2_group1_Strawberry13
+    4300014: group2_group1_Strawberry14
+    4300016: group2_group1_Strawberry15
+    4300018: group2_group1_Strawberry16
+    4300020: group2_group1_Strawberry18
+    4300022: group2_group1_Strawberry19
+    4300024: group2_group1_Strawberry2
+    4300026: group2_group1_Strawberry3
+    4300028: group2_group1_Strawberry4
+    4300030: group2_group1_Strawberry5
+    4300032: group2_group1_Strawberry6
+    4300034: group2_group1_Strawberry7
+    4300036: group2_group1_Strawberry8
+    4300038: group2_group1_Strawberry9
+    4300040: Strawberry17_group2_group1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
