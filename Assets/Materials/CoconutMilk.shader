@@ -262,8 +262,8 @@ Shader "Shader Forge/WaterShader" {
                 float specularMonochrome;
                 float node_4646 = saturate((saturate((sceneZ-partZ)/_Depth)/0.5*dot(viewDirection,i.normalDir)+0.5));
                 float3 node_2670 = lerp(_ColorA.rgb,_ColorB.rgb,node_4646);
-                float4 node_5933 = _Time;
-                float2 node_2599 = (i.uv0+node_5933.g*float2(0.07,0.07));
+                float4 node_9320 = _Time;
+                float2 node_2599 = (i.uv0+node_9320.g*float2(0.07,0.07));
                 float4 _FoamTexture_var = tex2D(_FoamTexture,TRANSFORM_TEX(node_2599, _FoamTexture));
                 float node_8422 = 0.0;
                 float node_2360 = (1.0 - saturate((node_8422 + ( (node_4646 - _FoamMin) * (1.0 - node_8422) ) / (_FoamMax - _FoamMin))));
@@ -497,8 +497,8 @@ Shader "Shader Forge/WaterShader" {
                 float specularMonochrome;
                 float node_4646 = saturate((saturate((sceneZ-partZ)/_Depth)/0.5*dot(viewDirection,i.normalDir)+0.5));
                 float3 node_2670 = lerp(_ColorA.rgb,_ColorB.rgb,node_4646);
-                float4 node_8698 = _Time;
-                float2 node_2599 = (i.uv0+node_8698.g*float2(0.07,0.07));
+                float4 node_1203 = _Time;
+                float2 node_2599 = (i.uv0+node_1203.g*float2(0.07,0.07));
                 float4 _FoamTexture_var = tex2D(_FoamTexture,TRANSFORM_TEX(node_2599, _FoamTexture));
                 float node_8422 = 0.0;
                 float node_2360 = (1.0 - saturate((node_8422 + ( (node_4646 - _FoamMin) * (1.0 - node_8422) ) / (_FoamMax - _FoamMin))));
@@ -833,8 +833,8 @@ Shader "Shader Forge/WaterShader" {
                 
                 float node_4646 = saturate((saturate((sceneZ-partZ)/_Depth)/0.5*dot(viewDirection,i.normalDir)+0.5));
                 float3 node_2670 = lerp(_ColorA.rgb,_ColorB.rgb,node_4646);
-                float4 node_1326 = _Time;
-                float2 node_2599 = (i.uv0+node_1326.g*float2(0.07,0.07));
+                float4 node_2872 = _Time;
+                float2 node_2599 = (i.uv0+node_2872.g*float2(0.07,0.07));
                 float4 _FoamTexture_var = tex2D(_FoamTexture,TRANSFORM_TEX(node_2599, _FoamTexture));
                 float node_8422 = 0.0;
                 float node_2360 = (1.0 - saturate((node_8422 + ( (node_4646 - _FoamMin) * (1.0 - node_8422) ) / (_FoamMax - _FoamMin))));
