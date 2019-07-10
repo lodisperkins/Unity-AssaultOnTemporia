@@ -6,30 +6,30 @@ namespace Lodis.PlayerInput
         public class InputBehaviour : MonoBehaviour
         {
             [SerializeField]
-            private string horizontalAxis;
+            private string HorizontalAxis;
             [SerializeField]
-            private string verticalAxis;
+            private string VerticalAxis;
             [SerializeField]
-            private string horizontalAxis2;
+            private string HorizontalAxis2;
             [SerializeField]
-            private string verticalAxis2;
+            private string VerticalAxis2;
             [SerializeField]
             private string Fire;
             [SerializeField]
             private string Dash;
             [SerializeField]
-            VectorVariable Movement;
+            private VectorVariable Movement;
             [SerializeField]
-            VectorVariable Rotation;
+            private VectorVariable Rotation;
             [SerializeField]
-            Matthew.GameEvent OnFirePressed;
+            private Matthew.GameEvent OnFirePressed;
             [SerializeField]
-            Matthew.GameEvent OnDashPressed;
+            private Matthew.GameEvent OnDashPressed;
             // Update is called once per frame
             void Update()
             {
-                Movement.Val = new Vector3(Input.GetAxis(verticalAxis), 0, Input.GetAxis(horizontalAxis));
-                Rotation.Val = new Vector3(Input.GetAxis(verticalAxis2), 0, Input.GetAxis(horizontalAxis2));
+                Movement.Val = new Vector3(Input.GetAxis(VerticalAxis), 0, Input.GetAxis(horizontalAxis));
+                Rotation.Val = new Vector3(Input.GetAxis(VerticalAxis2), 0, Input.GetAxis(HorizontalAxis2));
                 if (Input.GetButtonDown(Fire))
                 {
                     OnFirePressed.Raise(gameObject);

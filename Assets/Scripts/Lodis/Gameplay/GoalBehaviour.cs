@@ -7,16 +7,16 @@ namespace Lodis.Gameplay
     public class GoalBehaviour : MonoBehaviour
     {
         [SerializeField]
-        private string CompareTag;
+        private string Tag;
         [SerializeField]
         private Matthew.GameEvent GameWon;
         [SerializeField]
-        CinemachineVirtualCamera CurrentCam;
+        private CinemachineVirtualCamera CurrentCam;
         [SerializeField]
-        CinemachineVirtualCamera StartCam;
+        private CinemachineVirtualCamera StartCam;
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag(CompareTag))
+            if (other.CompareTag(Tag))
             {
                 GameWon.Raise(gameObject);
             }

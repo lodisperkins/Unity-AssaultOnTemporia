@@ -12,13 +12,13 @@ namespace Lodis.Gameplay
         [Cinemachine.TagField, SerializeField]
         public GameObject KeyHolder;
         [SerializeField]
-        Transform TransitionSpawn1;
+        private Transform TransitionSpawn1;
         [SerializeField]
-        Transform TransitionSpawn2;
+        private Transform TransitionSpawn2;
         [SerializeField]
-        Transform AreaSpawn1;
+        private Transform AreaSpawn1;
         [SerializeField]
-        Transform AreaSpawn2;
+        private Transform AreaSpawn2;
         [SerializeField]
         private Matthew.Global Global;
         [SerializeField]
@@ -26,9 +26,9 @@ namespace Lodis.Gameplay
         [SerializeField]
         private CinemachineVirtualCamera TransitionCam;
         [SerializeField]
-        Matthew.GameEvent OnGateEnter;
+        private Matthew.GameEvent OnGateEnter;
         [SerializeField]
-        Matthew.GameEvent OnGateExit;
+        private Matthew.GameEvent OnGateExit;
         private void OnTriggerEnter(Collider other)
         {
             //needs to be made better
@@ -47,14 +47,12 @@ namespace Lodis.Gameplay
             {
                 Global.Tag = "Player2";
                 Global.TeleportPlayerTo(TransitionSpawn2);
-                //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
                 OnGateEnter.Raise(gameObject);
             }
             else if (KeyHolder.tag =="Player2")
             {
                 Global.Tag = "Player1";
                 Global.TeleportPlayerTo(TransitionSpawn1);
-                //KeyHolder.GetComponent<AgentBehaviour>().AreaTransition();
                 OnGateEnter.Raise(gameObject);
             }
         }

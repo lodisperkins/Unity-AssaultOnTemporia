@@ -7,33 +7,27 @@ namespace Lodis.Gameplay
     public class SeekBehaviour : MonoBehaviour {
 
     [SerializeField]
-    private GameObject target;
+    private GameObject Target;
     [SerializeField]
-    private Vector3 velocity;
+    private Vector3 Velocity;
     [SerializeField]
-    private int max_speed;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-    void seek()
+    private int Max_Speed;
+    void Seek()
     {
         
-        Vector3 seekforce = target.transform.position - transform.position;
-        seekforce = (seekforce.normalized*max_speed) - velocity;
-        if (velocity.magnitude > max_speed)
+        Vector3 seekforce = Target.transform.position - transform.position;
+        seekforce = (seekforce.normalized*Max_Speed) - Velocity;
+        if (Velocity.magnitude > Max_Speed)
         {
-            velocity=velocity.normalized*max_speed;
+            Velocity=Velocity.normalized*Max_Speed;
         }
         transform.position += seekforce*Time.deltaTime;
     }
     // Update is called once per frame
     void Update()
     {
-        seek();
+        Seek();
     }
 }
-
 }
 

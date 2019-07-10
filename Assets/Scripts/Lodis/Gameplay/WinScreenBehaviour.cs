@@ -6,7 +6,7 @@ namespace Lodis
     public class WinScreenBehaviour : MonoBehaviour
     {
         [SerializeField]
-        Matthew.GameEvent Restart;
+        private Matthew.GameEvent Restart;
         [SerializeField]
         private string Select;
         [SerializeField]
