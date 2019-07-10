@@ -599,6 +599,7 @@ MonoBehaviour:
   OnDashBegin: {fileID: 11400000, guid: 0a0a680873ed9cb4b9174d3e95e7e626, type: 2}
   OnDashEnd: {fileID: 11400000, guid: 109d0c27d1baf5442958a83794e93cbd, type: 2}
   DashEnd: 0.05
+  Position: {fileID: 11400000, guid: 4ecff61c8bfe864429b824e961c56228, type: 2}
 --- !u!114 &114139591594021826
 MonoBehaviour:
   m_ObjectHideFlags: 1

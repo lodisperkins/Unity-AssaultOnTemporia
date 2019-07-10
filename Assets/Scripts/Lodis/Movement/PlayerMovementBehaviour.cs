@@ -28,6 +28,8 @@ namespace Lodis.Movement
         private Vector3 DashVelocity;
         [SerializeField]
         private float DashEnd;
+        [SerializeField]
+        private VectorVariable Position;
         // Use this for initialization
         void Start()
         {
@@ -76,6 +78,7 @@ namespace Lodis.Movement
             {
                 Vector3 velocity =DashDecay.updateVelocity(Time.deltaTime);
                 Controller.SimpleMove(velocity);
+                Position.Val = transform.position;
                 if(velocity.magnitude <= DashEnd)
                 {
                     CancelDash();
@@ -83,6 +86,7 @@ namespace Lodis.Movement
             }
             else
             {
+                Position.Val = transform.position;
                 Controller.SimpleMove(Velocity.Val * speed);
                 UpdateForward();
                 transform.forward = Rotation;

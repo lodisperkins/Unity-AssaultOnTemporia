@@ -57,8 +57,8 @@ GameObject:
   - component: {fileID: 33324368419333820}
   - component: {fileID: 23284235004668802}
   - component: {fileID: 65693080143200928}
-  - component: {fileID: 114491811478211050}
   - component: {fileID: 54294221304831830}
+  - component: {fileID: 114115966479766102}
   m_Layer: 0
   m_Name: Minion P2
   m_TagString: Player1
@@ -247,8 +247,9 @@ MonoBehaviour:
   Bullet_Emitter: {fileID: 1548076114021440}
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
+  DespawnTime: 0
   Player: 
---- !u!114 &114491811478211050
+--- !u!114 &114115966479766102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,11 +257,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1988416125560928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8e84ca89bf815842a6fa162d6a5da1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 797cacec993605a4eb37ff5052f0312d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  rotSpeed: 100
+  target: {fileID: 11400000, guid: 4ecff61c8bfe864429b824e961c56228, type: 2}
+  velocity: {x: 0, y: 0, z: 0}
+  max_speed: 2
 --- !u!136 &136511648497747798
 CapsuleCollider:
   m_ObjectHideFlags: 1
