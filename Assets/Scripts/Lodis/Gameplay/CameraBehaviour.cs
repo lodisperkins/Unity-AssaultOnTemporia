@@ -6,12 +6,12 @@ namespace Lodis.Gameplay
 {
     public class CameraBehaviour : MonoBehaviour
     {
-        CinemachineVirtualCamera camera;
+        private CinemachineVirtualCamera Camera;
         [SerializeField]
-        Matthew.GameEvent CameraOn;
+        private Matthew.GameEvent CameraOn;
         private void Start()
         {
-            camera = GetComponent<CinemachineVirtualCamera>();
+            Camera = GetComponent<CinemachineVirtualCamera>();
         }
         private void OnEnable()
         {
@@ -23,7 +23,7 @@ namespace Lodis.Gameplay
         }
         public void ToggleCamera()
         {
-            camera.enabled = !camera.enabled;
+            Camera.enabled = !Camera.enabled;
         }
     }
 }

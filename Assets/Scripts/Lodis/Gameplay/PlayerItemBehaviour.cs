@@ -9,13 +9,11 @@ namespace Lodis.Gameplay
         public int DropDisplacement;
         public bool HasKey;
         [SerializeField]
-        UnityEngine.Events.UnityEvent KeyDropped;
+        private UnityEngine.Events.UnityEvent KeyDropped;
         // Use this for initialization
         void Start()
         {
             HasKey = false;
-            
-            
         }
         private void OnTriggerEnter(Collider other)
         {

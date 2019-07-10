@@ -610,10 +610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308c30bc556b3674ea2a260f34dcf96e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalAxis: Horizontal1
-  verticalAxis: Vertical1
-  horizontalAxis2: RotateHorizontal1
-  verticalAxis2: RotateVertical1
+  HorizontalAxis: Horizontal1
+  VerticalAxis: Vertical1
+  HorizontalAxis2: RotateHorizontal1
+  VerticalAxis2: RotateVertical1
   Fire: Fire1
   Dash: Dash1
   Movement: {fileID: 11400000, guid: eb08f20374f06974d9777382b7fb53f0, type: 2}

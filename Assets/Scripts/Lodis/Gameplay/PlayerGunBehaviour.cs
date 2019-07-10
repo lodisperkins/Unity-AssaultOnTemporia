@@ -21,13 +21,13 @@ namespace Lodis.Gameplay
         private bool HasNormalShot;
         [SerializeField]
         private float BulletLimit;
-        private float timer;
+        private float Timer;
         private GunBehaviour Gun1;
         private GunBehaviour Gun2;
         private GunBehaviour Gun3;
         [SerializeField]
         private GunMode CurrentMode;
-        int counter;
+        private int Counter;
         private enum GunMode
         {
             Normal,
@@ -75,11 +75,11 @@ namespace Lodis.Gameplay
         public void Restart()
         {
             CurrentMode = 0;
-            counter = 0;
+            Counter = 0;
         }
         public void SpreadShot()
         {
-            var newtime = timer + Time.deltaTime;
+            var newtime = Timer + Time.deltaTime;
             if (newtime >= BulletLimit)
             {
                 Gun1.Player = tag;
@@ -89,27 +89,27 @@ namespace Lodis.Gameplay
                 Gun1.Fire();
                 Gun2.Fire();
                 Gun3.Fire();
-                timer = 0;
+                Timer = 0;
             }
                 
             else
             {
-                timer = newtime;
+                Timer = newtime;
             }
         }
         public void LongShot()
         {
-            var newtime = timer + Time.deltaTime;
+            var newtime = Timer + Time.deltaTime;
             if (newtime >= BulletLimit)
             {
                 Gun1.Player = tag;
                 Gun1.DespawnTime = 20;
                 Gun1.Fire();
-                timer = 0;
+                Timer = 0;
             }
             else
             {
-                timer = newtime;
+                Timer = newtime;
             }
         }
         public void QuickShot()
@@ -120,27 +120,27 @@ namespace Lodis.Gameplay
         }
         public void NormalShot()
         {
-            var newtime = timer + Time.deltaTime;
+            var newtime = Timer + Time.deltaTime;
             if (newtime >= BulletLimit)
             {
                 Gun1.Player = tag;
                 Gun1.DespawnTime = .5f;
                 Gun1.Fire();
-                timer = 0;
+                Timer = 0;
             }
             else
             {
-                timer = newtime;
+                Timer = newtime;
             }
         }
         public void Upgrade()
         {
-            if (counter >= 3)
+            if (Counter >= 3)
             {
                 return;
             }
             CurrentMode++;
-            counter++;
+            Counter++;
         }
         public void Downgrade()
         {
@@ -149,7 +149,7 @@ namespace Lodis.Gameplay
                 return;
             }
             CurrentMode--;
-            counter--;
+            Counter--;
         }
     }
 }

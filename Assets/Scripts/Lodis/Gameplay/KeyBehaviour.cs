@@ -9,10 +9,10 @@ namespace Lodis.Gameplay
         private List<GameObject> Gates;
         private List<Transform> GateLocations;
         private List<GateBehaviour> GateBehaviours;
-        private string carrier;
-        UnityEvent GateFuncs;
+        private string Carrier;
+        private UnityEvent GateFuncs;
         [SerializeField]
-        UnityEvent OnTriggerEnterResponse;
+        private UnityEvent OnTriggerEnterResponse;
         // Use this for initialization
         void Start() {
             InitializeKey();
@@ -59,14 +59,14 @@ namespace Lodis.Gameplay
             GateFuncs.RemoveAllListeners();
             for (int i = 0; i < GateLocations.Count; i++)
             {
-                if (carrier == "Player1")
+                if (Carrier == "Player1")
                 {
                     if (GateLocations[i].position.z < transform.position.z)
                     {
                         GateFuncs.AddListener(GateBehaviours[i].Close);
                     }
                 }
-                else if (carrier == "Player2")
+                else if (Carrier == "Player2")
                 {
                     if (GateLocations[i].position.z > transform.position.z)
                     {
@@ -84,11 +84,7 @@ namespace Lodis.Gameplay
         }
         private void OnTriggerEnter(Collider other){
             OpenGates(other.gameObject);
-            carrier = other.tag;
-        }
-        // Update is called once per frame
-        void Update() {
-
+            Carrier = other.tag;
         }
     }
 }

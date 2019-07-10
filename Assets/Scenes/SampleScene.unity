@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e84b5fe0e5920648ae62bf1ea2b363a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CompareTag: Player2
+  Tag: Player2
   GameWon: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
   CurrentCam: {fileID: 1034911598}
   StartCam: {fileID: 1709781222}
@@ -8374,7 +8374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e84b5fe0e5920648ae62bf1ea2b363a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CompareTag: Player1
+  Tag: Player1
   GameWon: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
   CurrentCam: {fileID: 1186114143}
   StartCam: {fileID: 1709781222}
