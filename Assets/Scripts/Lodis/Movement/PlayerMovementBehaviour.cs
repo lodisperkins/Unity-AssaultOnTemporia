@@ -74,7 +74,7 @@ namespace Lodis.Movement
         {
             if (Dashing)
             {
-                Vector3 velocity =DashDecay.updateVelocity(Time.deltaTime);
+                Vector3 velocity =DashDecay.UpdateVelocity(Time.deltaTime);
                 Controller.SimpleMove(velocity);
                 if(velocity.magnitude <= DashEnd)
                 {

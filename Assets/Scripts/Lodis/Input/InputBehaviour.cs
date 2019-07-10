@@ -28,7 +28,7 @@ namespace Lodis.PlayerInput
             // Update is called once per frame
             void Update()
             {
-                Movement.Val = new Vector3(Input.GetAxis(VerticalAxis), 0, Input.GetAxis(horizontalAxis));
+                Movement.Val = new Vector3(Input.GetAxis(VerticalAxis), 0, Input.GetAxis(HorizontalAxis));
                 Rotation.Val = new Vector3(Input.GetAxis(VerticalAxis2), 0, Input.GetAxis(HorizontalAxis2));
                 if (Input.GetButtonDown(Fire))
                 {
