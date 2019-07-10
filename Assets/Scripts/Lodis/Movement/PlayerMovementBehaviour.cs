@@ -9,7 +9,7 @@ namespace Lodis.Movement
         private IntVariable SpeedRef;
         [SerializeField]
         private IntVariable DashSpeed;
-        private int Speed;
+        private int speed;
         [SerializeField]
         private VectorVariable Velocity;
         [SerializeField]
@@ -28,18 +28,20 @@ namespace Lodis.Movement
         private Vector3 DashVelocity;
         [SerializeField]
         private float DashEnd;
+        [SerializeField]
+        private VectorVariable Position;
         // Use this for initialization
         void Start()
         {
             Dashing = false;
-            Speed = SpeedRef.Val;
+            speed = SpeedRef.Val;
             Rotation = new Vector3();
             Controller = GetComponent<CharacterController>();
             
         }
         public void DisableMovement()
         {
-            Speed = 0;
+            speed = 0;
         }
         private void UpdateForward()
         {
@@ -50,7 +52,7 @@ namespace Lodis.Movement
         }
         public void EnableMovement()
         {
-            Speed = SpeedRef.Val;
+            speed = SpeedRef.Val;
         }
         public void Dash()
         {
@@ -74,8 +76,9 @@ namespace Lodis.Movement
         {
             if (Dashing)
             {
-                Vector3 velocity =DashDecay.UpdateVelocity(Time.deltaTime);
+                Vector3 velocity =DashDecay.updateVelocity(Time.deltaTime);
                 Controller.SimpleMove(velocity);
+                Position.Val = transform.position;
                 if(velocity.magnitude <= DashEnd)
                 {
                     CancelDash();
@@ -83,7 +86,8 @@ namespace Lodis.Movement
             }
             else
             {
-                Controller.SimpleMove(Velocity.Val * Speed);
+                Position.Val = transform.position;
+                Controller.SimpleMove(Velocity.Val * speed);
                 UpdateForward();
                 transform.forward = Rotation;
             }
