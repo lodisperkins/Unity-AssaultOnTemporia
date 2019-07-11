@@ -13,14 +13,14 @@ namespace Lodis.Gameplay
         private float VulnerabilityTime;
         [SerializeField]
         private IntVariable HealthRef;
-        int health;
+        private int health;
         [SerializeField]
-        Matthew.GameEvent OnPlayerDeath;
+        private Matthew.GameEvent OnPlayerDeath;
         [SerializeField]
-        UnityEngine.Events.UnityEvent OnPlayerRespawn;
-        bool IsAlive;
+        private UnityEngine.Events.UnityEvent OnPlayerRespawn;
+        private bool IsAlive;
         [SerializeField]
-        bool IsInvincible;
+        private bool IsInvincible;
     // Use this for initialization
         void Start() {
             RespawnDelay = RespawnDelayRef.Val;
@@ -87,7 +87,6 @@ namespace Lodis.Gameplay
             VulnerabilityDelay = time;
             VulnerabilityTime = VulnerabilityDelay + Time.time;
             IsInvincible = true;
-            GetComponent<Material>().color = Color.yellow;
         }
         public void MakeVulnerable()
         {
