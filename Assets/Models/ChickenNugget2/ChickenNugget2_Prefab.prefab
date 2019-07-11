@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33541437138081148}
   - component: {fileID: 23188738149432222}
   m_Layer: 0
-  m_Name: ChickenNugget2_Mesh (1)
+  m_Name: ChickenNugget2_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

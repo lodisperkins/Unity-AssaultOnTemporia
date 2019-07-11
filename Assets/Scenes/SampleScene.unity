@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 1
+  - EnemiesPerWave: 3
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 311856272}
@@ -2258,7 +2258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e84b5fe0e5920648ae62bf1ea2b363a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CompareTag: Player2
+  Tag: 
   GameWon: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
   CurrentCam: {fileID: 1034911598}
   StartCam: {fileID: 1709781222}
@@ -8866,7 +8866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 1
+  - EnemiesPerWave: 3
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 1806934471}
@@ -9864,7 +9864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e84b5fe0e5920648ae62bf1ea2b363a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CompareTag: Player1
+  Tag: 
   GameWon: {fileID: 11400000, guid: c05a6cb02c65b5743bcf7095c656829d, type: 2}
   CurrentCam: {fileID: 1186114143}
   StartCam: {fileID: 1709781222}
