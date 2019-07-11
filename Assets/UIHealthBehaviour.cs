@@ -16,7 +16,7 @@ public class UIHealthBehaviour : MonoBehaviour
     {
         CreateSegments();
         if (TextComponent == null)
-            TextComponent = GetComponent<Text>();
+            TextComponent = GetComponentInChildren<Text>();
     }
 
     [ContextMenu("Create Segments")]
@@ -45,11 +45,6 @@ public class UIHealthBehaviour : MonoBehaviour
 
     public void OnHealthChanged(Object obj)
     {
-        var sender = obj as Lodis.IntVariable;
-        if (sender == null)
-            return;
-        if (sender != intVariableRef)
-            return;
         this.CreateSegments();
     }
 
