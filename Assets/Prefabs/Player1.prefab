@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 114040015963174118}
   - component: {fileID: 114087208209072818}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player1
   m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,8 +710,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
-  HealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
+  HealthRef: {fileID: 11400000, guid: a7f7d7e1b12c3234b85c5ad16d6b03b7, type: 2}
+  BaseHealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
   OnPlayerDeath: {fileID: 11400000, guid: 1381aa131123c344fb9b6d672ceb4a3c, type: 2}
+  OnHealthChanged: {fileID: 11400000, guid: 74b1cbd4546e56f4da00942485465a82, type: 2}
   OnPlayerRespawn:
     m_PersistentCalls:
       m_Calls:
