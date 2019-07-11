@@ -19,6 +19,8 @@ namespace Lodis.Gameplay
         [SerializeField]
         private Matthew.GameEvent OnPlayerDeath;
         [SerializeField]
+        private Matthew.GameEvent OnHealthChanged;
+        [SerializeField]
         private UnityEngine.Events.UnityEvent OnPlayerRespawn;
         private bool IsAlive;
         [SerializeField]
@@ -54,6 +56,7 @@ namespace Lodis.Gameplay
             {
                 health -= 1;
                 HealthRef.Val = health;
+                OnHealthChanged.Raise(HealthRef);
                 CheckHealth();
             }
         }
