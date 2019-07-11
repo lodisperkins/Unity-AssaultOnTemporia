@@ -719,8 +719,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
-  HealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
+  HealthRef: {fileID: 11400000, guid: 3d1d18ed0b64d1c4b8dbcbb22d56fce9, type: 2}
+  BaseHealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
   OnPlayerDeath: {fileID: 11400000, guid: faa071a8845f1354a97634e7e196fdbb, type: 2}
+  OnHealthChanged: {fileID: 11400000, guid: 74b1cbd4546e56f4da00942485465a82, type: 2}
   OnPlayerRespawn:
     m_PersistentCalls:
       m_Calls:
