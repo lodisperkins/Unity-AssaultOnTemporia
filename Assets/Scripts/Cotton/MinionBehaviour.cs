@@ -48,7 +48,7 @@ using UnityEngine;
 
             StartCoroutine(SpawnEnemies());
         }
-
+    
         // Coroutine to spawn all of our enemies
         IEnumerator SpawnEnemies()
         {
