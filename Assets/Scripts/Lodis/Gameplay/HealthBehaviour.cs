@@ -13,9 +13,13 @@ namespace Lodis.Gameplay
         private float VulnerabilityTime;
         [SerializeField]
         private IntVariable HealthRef;
+        [SerializeField]
+        private IntVariable BaseHealthRef;
         private int health;
         [SerializeField]
         private Matthew.GameEvent OnPlayerDeath;
+        [SerializeField]
+        private Matthew.GameEvent OnHealthChanged;
         [SerializeField]
         private UnityEngine.Events.UnityEvent OnPlayerRespawn;
         private bool IsAlive;
@@ -24,12 +28,12 @@ namespace Lodis.Gameplay
     // Use this for initialization
         void Start() {
             RespawnDelay = RespawnDelayRef.Val;
-            health = HealthRef.Val;
+            health = BaseHealthRef.Val;
         }
         public void Restart()
         {
             RespawnDelay = RespawnDelayRef.Val;
-            health = HealthRef.Val;
+            health = BaseHealthRef.Val;
         }
         private void OnTriggerEnter(Collider other)
         {
@@ -51,6 +55,8 @@ namespace Lodis.Gameplay
             else
             {
                 health -= 1;
+                HealthRef.Val = health;
+                OnHealthChanged.Raise(HealthRef);
                 CheckHealth();
             }
         }
@@ -75,7 +81,7 @@ namespace Lodis.Gameplay
             if (Time.time >= RespawnTime)
             {
                 IsAlive = true;
-                health = HealthRef.Val;
+                health = BaseHealthRef.Val;
                 gameObject.GetComponent<MeshRenderer>().enabled = true;
                 gameObject.GetComponent<BoxCollider>().enabled = true;
                 gameObject.GetComponent<CharacterController>().enabled = true;
