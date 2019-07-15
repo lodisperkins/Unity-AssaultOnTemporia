@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 114156599634260272}
   - component: {fileID: 114477657578682278}
   m_Layer: 5
-  m_Name: HealthContainer
+  m_Name: (P2)HealthContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Health
+  m_Text: Player1Health
 --- !u!114 &114156599634260272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +124,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextComponent: {fileID: 114014058238258274}
   intVariableRef: {fileID: 11400000, guid: a7f7d7e1b12c3234b85c5ad16d6b03b7, type: 2}
-  containerChildren: []
+  containerChildren:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   container: {fileID: 1465816282238570}
   ImagePrefab: {fileID: 1019092416543782, guid: 167a1f162d21ae447893f4c7b0b3adc2,
     type: 2}
@@ -145,7 +151,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114156599634260272}
         m_MethodName: OnHealthChanged
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -156,7 +162,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  SenderObject: {fileID: 0}
+  SenderObject: {fileID: 1764669942966494, guid: fb49f1a0d536c8948a06b79bb1072399,
+    type: 2}
 --- !u!114 &114647790149631372
 MonoBehaviour:
   m_ObjectHideFlags: 1

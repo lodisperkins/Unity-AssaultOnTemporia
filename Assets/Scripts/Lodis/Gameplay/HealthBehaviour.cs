@@ -56,7 +56,7 @@ namespace Lodis.Gameplay
             {
                 health -= 1;
                 HealthRef.Val = health;
-                OnHealthChanged.Raise(HealthRef);
+                OnHealthChanged.Raise();
                 CheckHealth();
             }
         }
@@ -82,6 +82,8 @@ namespace Lodis.Gameplay
             {
                 IsAlive = true;
                 health = BaseHealthRef.Val;
+                HealthRef.Val = health;
+                OnHealthChanged.Raise();
                 gameObject.GetComponent<MeshRenderer>().enabled = true;
                 gameObject.GetComponent<BoxCollider>().enabled = true;
                 gameObject.GetComponent<CharacterController>().enabled = true;

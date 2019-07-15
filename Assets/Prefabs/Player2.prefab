@@ -486,7 +486,7 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
-  Player: 
+  Player: Player2
 --- !u!114 &114106542401896688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -847,7 +847,7 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
-  Player: 
+  Player: Player2
 --- !u!114 &114897341464334316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -914,7 +914,7 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
-  Player: 
+  Player: Player2
 --- !u!114 &114925781191164194
 MonoBehaviour:
   m_ObjectHideFlags: 1

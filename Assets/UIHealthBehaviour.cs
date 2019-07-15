@@ -38,12 +38,12 @@ public class UIHealthBehaviour : MonoBehaviour
         TextComponent.text = "no name";
         for (int i = 0; i < containerChildren.Count; i++)
         {
-            DestroyImmediate(containerChildren[i]);
+            Destroy(containerChildren[i]);
         }
         containerChildren = new List<GameObject>();
     }
 
-    public void OnHealthChanged(Object obj)
+    public void OnHealthChanged()
     {
         this.CreateSegments();
     }
