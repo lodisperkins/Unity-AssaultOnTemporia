@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33171459627661066}
   - component: {fileID: 23206173359227196}
   m_Layer: 0
-  m_Name: CrinkleFry_001 (1)
+  m_Name: CrinkleFry_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,7 +6,7 @@ namespace Matthew
     {
         public GameEvent GameEvent;
         public GameEventResponse Response;
-
+        public GameObject SenderObject;
         void OnEnable()
         {
             Subscribe();
@@ -23,7 +23,17 @@ namespace Matthew
 
         public void OnEventRaised(Object obj)
         {
-            Response.Invoke(obj);
+            //if it's null we will call it
+            if (SenderObject == null)
+            {
+                Response.Invoke(obj);
+
+            }
+            else
+            {
+                if (SenderObject == obj)
+                    Response.Invoke(obj);
+            }
         }
 
         public void OnEventRaised()
@@ -37,4 +47,3 @@ namespace Matthew
         }
     }
 }
- 
