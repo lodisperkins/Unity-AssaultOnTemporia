@@ -80,10 +80,5 @@ public class MinionBehaviour : MonoBehaviour
             StartNextWave();
         }
     }
-
-    public void Update()
-    {
-        transform.Rotate
-    }
 }
 
