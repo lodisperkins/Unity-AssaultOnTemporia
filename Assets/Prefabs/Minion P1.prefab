@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65814108029113784}
   - component: {fileID: 54525528265462274}
   - component: {fileID: 114292344443018072}
+  - component: {fileID: 114754824415949442}
   m_Layer: 0
   m_Name: Minion P1
   m_TagString: Player1
@@ -263,6 +264,26 @@ MonoBehaviour:
   Bullet_Forward_Force: 1000
   DespawnTime: 0
   Player: 
+--- !u!114 &114754824415949442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077610173958754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78060fd8b9f43d4eab2a6d005e33717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
+  HealthRef: {fileID: 11400000, guid: 484e67dc54242c449b4f8d68acfe6448, type: 2}
+  BaseHealthRef: {fileID: 11400000, guid: d4e26201af9700c4497ae3180585c34f, type: 2}
+  OnMinionDeath: {fileID: 11400000, guid: b8568689e00f32f4585ab88b4d86369d, type: 2}
+  OnMinionRespawn:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!136 &136023160440744304
 CapsuleCollider:
   m_ObjectHideFlags: 1
