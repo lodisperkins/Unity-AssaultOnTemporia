@@ -486,7 +486,7 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
-  Player: 
+  Player: Player2
 --- !u!114 &114106542401896688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -719,8 +719,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
-  HealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
+  HealthRef: {fileID: 11400000, guid: 3d1d18ed0b64d1c4b8dbcbb22d56fce9, type: 2}
+  BaseHealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
   OnPlayerDeath: {fileID: 11400000, guid: faa071a8845f1354a97634e7e196fdbb, type: 2}
+  OnHealthChanged: {fileID: 11400000, guid: 74b1cbd4546e56f4da00942485465a82, type: 2}
   OnPlayerRespawn:
     m_PersistentCalls:
       m_Calls:
@@ -845,7 +847,7 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
-  Player: 
+  Player: Player2
 --- !u!114 &114897341464334316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -912,7 +914,7 @@ MonoBehaviour:
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
-  Player: 
+  Player: Player2
 --- !u!114 &114925781191164194
 MonoBehaviour:
   m_ObjectHideFlags: 1
