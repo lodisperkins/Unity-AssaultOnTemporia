@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 4c4258304a2f3e546aa12c8cd49cdcd3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: minion_blockoutProxy_meshRig8:bodyJNT
+    100004: minion_blockoutProxy_meshRig8:L_handJNT
+    100006: minion_blockoutProxy_meshRig8:L_indexJNT1
+    100008: minion_blockoutProxy_meshRig8:L_indexJNT2
+    100010: minion_blockoutProxy_meshRig8:L_indexJNT3
+    100012: minion_blockoutProxy_meshRig8:L_middleJNT1
+    100014: minion_blockoutProxy_meshRig8:L_middleJNT2
+    100016: minion_blockoutProxy_meshRig8:L_middleJNT3
+    100018: minion_blockoutProxy_meshRig8:L_pinkyJNT1
+    100020: minion_blockoutProxy_meshRig8:L_pinkyJNT2
+    100022: minion_blockoutProxy_meshRig8:L_pinkyJNT3
+    100024: minion_blockoutProxy_meshRig8:L_thumbJNT1
+    100026: minion_blockoutProxy_meshRig8:L_thumbJNT2
+    100028: minion_blockoutProxy_meshRig8:L_thumbJNT3
+    100030: minion_blockoutProxy_meshRig8:L_wristJNT
+    100032: minion_blockoutProxy_meshRig8:LO_Body
+    100034: minion_blockoutProxy_meshRig8:LO_HandL
+    100036: minion_blockoutProxy_meshRig8:LO_HandR
+    100038: minion_blockoutProxy_meshRig8:LO_Hands
+    100040: minion_blockoutProxy_meshRig8:minionRig
+    100042: minion_blockoutProxy_meshRig8:R_handJNT
+    100044: minion_blockoutProxy_meshRig8:R_indexCTRL1
+    100046: minion_blockoutProxy_meshRig8:R_indexCTRL2
+    100048: minion_blockoutProxy_meshRig8:R_indexCTRL3
+    100050: minion_blockoutProxy_meshRig8:R_indexJNT1
+    100052: minion_blockoutProxy_meshRig8:R_indexJNT2
+    100054: minion_blockoutProxy_meshRig8:R_indexJNT3
+    100056: minion_blockoutProxy_meshRig8:R_indexRT1
+    100058: minion_blockoutProxy_meshRig8:R_indexRT2
+    100060: minion_blockoutProxy_meshRig8:R_indexRT3
+    100062: minion_blockoutProxy_meshRig8:R_middleJNT1
+    100064: minion_blockoutProxy_meshRig8:R_middleJNT2
+    100066: minion_blockoutProxy_meshRig8:R_middleJNT3
+    100068: minion_blockoutProxy_meshRig8:R_pinkyJNT1
+    100070: minion_blockoutProxy_meshRig8:R_pinkyJNT2
+    100072: minion_blockoutProxy_meshRig8:R_pinkyJNT3
+    100074: minion_blockoutProxy_meshRig8:R_thumbJNT1
+    100076: minion_blockoutProxy_meshRig8:R_thumbJNT2
+    100078: minion_blockoutProxy_meshRig8:R_thumbJNT3
+    100080: minion_blockoutProxy_meshRig8:R_wristCTRL1
+    100082: minion_blockoutProxy_meshRig8:R_wristJNT1
+    100084: minion_blockoutProxy_meshRig8:rootJNT
+    100086: minion_blockoutProxy_meshRig8:worldCTRL
+    400000: //RootNode
+    400002: minion_blockoutProxy_meshRig8:bodyJNT
+    400004: minion_blockoutProxy_meshRig8:L_handJNT
+    400006: minion_blockoutProxy_meshRig8:L_indexJNT1
+    400008: minion_blockoutProxy_meshRig8:L_indexJNT2
+    400010: minion_blockoutProxy_meshRig8:L_indexJNT3
+    400012: minion_blockoutProxy_meshRig8:L_middleJNT1
+    400014: minion_blockoutProxy_meshRig8:L_middleJNT2
+    400016: minion_blockoutProxy_meshRig8:L_middleJNT3
+    400018: minion_blockoutProxy_meshRig8:L_pinkyJNT1
+    400020: minion_blockoutProxy_meshRig8:L_pinkyJNT2
+    400022: minion_blockoutProxy_meshRig8:L_pinkyJNT3
+    400024: minion_blockoutProxy_meshRig8:L_thumbJNT1
+    400026: minion_blockoutProxy_meshRig8:L_thumbJNT2
+    400028: minion_blockoutProxy_meshRig8:L_thumbJNT3
+    400030: minion_blockoutProxy_meshRig8:L_wristJNT
+    400032: minion_blockoutProxy_meshRig8:LO_Body
+    400034: minion_blockoutProxy_meshRig8:LO_HandL
+    400036: minion_blockoutProxy_meshRig8:LO_HandR
+    400038: minion_blockoutProxy_meshRig8:LO_Hands
+    400040: minion_blockoutProxy_meshRig8:minionRig
+    400042: minion_blockoutProxy_meshRig8:R_handJNT
+    400044: minion_blockoutProxy_meshRig8:R_indexCTRL1
+    400046: minion_blockoutProxy_meshRig8:R_indexCTRL2
+    400048: minion_blockoutProxy_meshRig8:R_indexCTRL3
+    400050: minion_blockoutProxy_meshRig8:R_indexJNT1
+    400052: minion_blockoutProxy_meshRig8:R_indexJNT2
+    400054: minion_blockoutProxy_meshRig8:R_indexJNT3
+    400056: minion_blockoutProxy_meshRig8:R_indexRT1
+    400058: minion_blockoutProxy_meshRig8:R_indexRT2
+    400060: minion_blockoutProxy_meshRig8:R_indexRT3
+    400062: minion_blockoutProxy_meshRig8:R_middleJNT1
+    400064: minion_blockoutProxy_meshRig8:R_middleJNT2
+    400066: minion_blockoutProxy_meshRig8:R_middleJNT3
+    400068: minion_blockoutProxy_meshRig8:R_pinkyJNT1
+    400070: minion_blockoutProxy_meshRig8:R_pinkyJNT2
+    400072: minion_blockoutProxy_meshRig8:R_pinkyJNT3
+    400074: minion_blockoutProxy_meshRig8:R_thumbJNT1
+    400076: minion_blockoutProxy_meshRig8:R_thumbJNT2
+    400078: minion_blockoutProxy_meshRig8:R_thumbJNT3
+    400080: minion_blockoutProxy_meshRig8:R_wristCTRL1
+    400082: minion_blockoutProxy_meshRig8:R_wristJNT1
+    400084: minion_blockoutProxy_meshRig8:rootJNT
+    400086: minion_blockoutProxy_meshRig8:worldCTRL
+    2100000: minion_blockoutProxy_meshRig8_whiteLMBT
+    2100002: minion_blockoutProxy_meshRig8_greyLMBT
+    4300000: minion_blockoutProxy_meshRig8:LO_HandL
+    4300002: minion_blockoutProxy_meshRig8:LO_HandR
+    4300004: minion_blockoutProxy_meshRig8:LO_Body
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: minion_blockoutProxy_meshRig8:LO_Body
+    13700002: minion_blockoutProxy_meshRig8:LO_HandL
+    13700004: minion_blockoutProxy_meshRig8:LO_HandR
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
