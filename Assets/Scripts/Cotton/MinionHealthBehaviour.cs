@@ -65,7 +65,6 @@ namespace Cotton.Gameplay
             IsAlive = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             gameObject.GetComponent<BoxCollider>().enabled = false;
-            gameObject.GetComponent<CharacterController>().enabled = false;
             RespawnTime = RespawnDelay + Time.time;
         }
         private void Respawn()
@@ -76,7 +75,6 @@ namespace Cotton.Gameplay
                 health = BaseHealthRef.Val;
                 gameObject.GetComponent<MeshRenderer>().enabled = true;
                 gameObject.GetComponent<BoxCollider>().enabled = true;
-                gameObject.GetComponent<CharacterController>().enabled = true;
                 OnMinionRespawn.Invoke();
             }
         }
