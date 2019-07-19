@@ -5,12 +5,12 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: test
+  m_Name: PlayerMovement
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
     m_Type: 1
-    m_DefaultFloat: 5
+    m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -215,7 +215,7 @@ AnimatorStateMachine:
     m_Position: {x: 134.83823, y: 261.2506, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102604101883223420}
-    m_Position: {x: 321.84528, y: 126.89772, z: 0}
+    m_Position: {x: 324, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102459753222206574}
     m_Position: {x: 324, y: 36, z: 0}
