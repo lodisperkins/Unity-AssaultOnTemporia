@@ -191,9 +191,9 @@ ModelImporter:
       and has rotation animation that will be discarded.\n\t'MasterRig_Spine_TopSHJnt'
       has translation animation that will be discarded.\n\t'MasterRig_Spine_TopSHJnt'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MasterRig_Neck_01SHJnt'
-      has translation animation that will be discarded.\n\t'MasterRig_Neck_02SHJnt'
-      has translation animation that will be discarded.\n\t'MasterRig_Neck_02SHJnt'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MasterRig_Neck_TopSHJnt'
+      has translation animation that will be discarded.\n\t'MasterRig_Neck_01SHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MasterRig_Neck_02SHJnt'
+      has translation animation that will be discarded.\n\t'MasterRig_Neck_TopSHJnt'
       has translation animation that will be discarded.\n\t'MasterRig_L_Leg_BallSHJnt'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MasterRig_R_Leg_BallSHJnt'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
@@ -344,7 +344,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MasterRig_Neck_01SHJnt
+    - boneName: MasterRig_Neck_02SHJnt
       humanName: Neck
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -713,477 +713,480 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: GRomaine_Dash_Mesh(Clone)
+    - name: GeneralRomaine_SkeletalMesh(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: ChestPlate:polySurface1
-      parentName: GRomaine_Dash_Mesh(Clone)
+    - name: General_Romaine
+      parentName: GeneralRomaine_SkeletalMesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Dress:polySurface1
-      parentName: GRomaine_Dash_Mesh(Clone)
+    - name: Body_Eyes
+      parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: ForkSpear:ForkSpear
-      parentName: GRomaine_Dash_Mesh(Clone)
-      position: {x: 0.009836998, y: -0.04323312, z: -0.06524009}
-      rotation: {x: 0.02252215, y: -0.13461842, z: -0.16346596, w: 0.9770617}
+    - name: BottomTeeth
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: -0.00018226012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: GeneralRomaine
-      parentName: GRomaine_Dash_Mesh(Clone)
+    - name: Braid
+      parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: group1
-      parentName: GeneralRomaine
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: group2
-      parentName: group1
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 35.543434, y: 35.543434, z: 35.543434}
-    - name: Body
-      parentName: group2
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Eye_Brows
-      parentName: group2
-      position: {x: -0, y: 0.02564557, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: group3
-      parentName: group2
-      position: {x: -0, y: 0.04258636, z: -0.002997244}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Eye_L
-      parentName: group3
-      position: {x: 0.0001673849, y: -0.018129492, z: -0.000089493165}
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 0.90193635, y: 0.89007574, z: 0.9665515}
-    - name: Eye_L1
-      parentName: group3
-      position: {x: -0.0018176396, y: -0.018129492, z: -0.00005816143}
-      rotation: {x: 0, y: 0.2032277, z: -0, w: 0.9791315}
-      scale: {x: 0.90193635, y: 0.89007574, z: 0.9665515}
-    - name: Hair
-      parentName: group2
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye_R
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrows_Lashes
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Fork_Spear
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Helmet_ChestArmor
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lettuce_Dress_Shoes
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shrimp_Head
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tomatoe_Shield
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tongue
+      parentName: General_Romaine
+      position: {x: -0, y: 0.012850895, z: 0.0022206965}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: TopTeeth
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: -0.00029924256}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wristband
+      parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_SHJntGrp
-      parentName: GRomaine_Dash_Mesh(Clone)
+      parentName: GeneralRomaine_SkeletalMesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_ROOTSHJnt
       parentName: MasterRig_SHJntGrp
-      position: {x: 0, y: 0.9848813, z: 0}
+      position: {x: -0, y: 0.9664512, z: 0}
       rotation: {x: 0.5, y: -0.5, z: 0.5, w: -0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Spine_01SHJnt
       parentName: MasterRig_ROOTSHJnt
-      position: {x: -0.091900095, y: -0.012276113, z: -3.571259e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+      position: {x: -0.093473166, y: -0.01731019, z: -2.4598846e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Spine_02SHJnt
       parentName: MasterRig_Spine_01SHJnt
-      position: {x: -0.0951732, y: 0.00073627953, z: -3.014296e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+      position: {x: -0.096348844, y: 0.006931392, z: -1.9854664e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Spine_03SHJnt
       parentName: MasterRig_Spine_02SHJnt
-      position: {x: -0.085741445, y: 0.023271425, z: -1.000437e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      position: {x: -0.08448846, y: 0.032594323, z: -1.1522813e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Spine_04SHJnt
       parentName: MasterRig_Spine_03SHJnt
-      position: {x: -0.08811329, y: 0.015419727, z: -2.7220425e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+      position: {x: -0.0880732, y: 0.02146018, z: -1.4791063e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Spine_TopSHJnt
       parentName: MasterRig_Spine_04SHJnt
-      position: {x: -0.08057453, y: 0.0062715267, z: -1.4358654e-17}
-      rotation: {x: -0, y: -0, z: -0, w: -1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
+      position: {x: -0.08016387, y: 0.0026726108, z: -1.7206516e-17}
+      rotation: {x: 2.220446e-16, y: 1.3877788e-16, z: -8.326673e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Arm_ClavicleSHJnt
       parentName: MasterRig_Spine_TopSHJnt
       position: {x: 0.03229854, y: -0.025678031, z: -0.08566781}
-      rotation: {x: 0.5240032, y: -0.39681506, z: 0.46549475, w: 0.5926829}
-      scale: {x: 1.0000008, y: 1.0000001, z: 1.0000005}
+      rotation: {x: 0.524003, y: -0.39681548, z: 0.4654951, w: 0.5926826}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Arm_ShoulderSHJnt
       parentName: MasterRig_L_Arm_ClavicleSHJnt
       position: {x: -0.07751475, y: -0.047553156, z: -0.025678031}
-      rotation: {x: 0.15261903, y: -0.041241355, z: 0.15885267, w: 0.9745627}
-      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000008}
+      rotation: {x: 0.15261911, y: -0.04124139, z: 0.1588518, w: 0.97456276}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Arm_ElbowSHJnt
       parentName: MasterRig_L_Arm_ShoulderSHJnt
-      position: {x: -0.21175228, y: 8.5265126e-16, z: 7.105427e-17}
-      rotation: {x: -0.0018397272, y: 0.023408687, z: -0.034866065, w: 0.9991162}
-      scale: {x: 1.0000004, y: 0.99999976, z: 1.0000004}
+      position: {x: -0.21175228, y: 2.842171e-16, z: 0}
+      rotation: {x: -0.0018397716, y: 0.023408858, z: -0.034865882, w: 0.9991162}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Arm_WristSHJnt
       parentName: MasterRig_L_Arm_ElbowSHJnt
-      position: {x: -0.2512633, y: -2.842171e-16, z: -3.5527136e-17}
-      rotation: {x: -0.14768487, y: 0.031240497, z: 0.07852088, w: 0.9854175}
-      scale: {x: 1.0000021, y: 1.0000011, z: 1.0000036}
+      position: {x: -0.2512633, y: -1.4210854e-16, z: -2.264855e-16}
+      rotation: {x: -0.14768493, y: 0.031240433, z: 0.078520834, w: 0.98541754}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_01_01SHJnt
       parentName: MasterRig_L_Arm_WristSHJnt
-      position: {x: -0.12887989, y: 0.004159345, z: 0.03633592}
-      rotation: {x: -0.00064986944, y: 0.052821517, z: -0.023988672, w: 0.99831563}
-      scale: {x: 0.9999997, y: 1.0000002, z: 0.9999999}
+      position: {x: -0.12887989, y: 0.0041593453, z: 0.03633592}
+      rotation: {x: -0.0006497353, y: 0.052821506, z: -0.023988947, w: 0.9983156}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_01_02SHJnt
       parentName: MasterRig_L_Finger_01_01SHJnt
       position: {x: -0.025772337, y: -0.0054947296, z: -0.00063591695}
-      rotation: {x: 0.000000068554996, y: 0.000000026077027, z: 0.19879898, w: 0.98004025}
-      scale: {x: 1, y: 1.0000002, z: 0.9999998}
+      rotation: {x: 0, y: 0, z: 0.19879912, w: 0.98004025}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_01_03SHJnt
       parentName: MasterRig_L_Finger_01_02SHJnt
       position: {x: -0.018505953, y: 0.0033832886, z: 0.0001826119}
-      rotation: {x: -0.0029380606, y: -0.011525766, z: -0.08416182, w: 0.99638116}
-      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+      rotation: {x: -0.0029380973, y: -0.011529219, z: -0.08415781, w: 0.99638146}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_01_04SHJnt
       parentName: MasterRig_L_Finger_01_03SHJnt
-      position: {x: -0.02142078, y: -0.0013322944, z: 0.00093031116}
-      rotation: {x: -0.000000022481586, y: 0.000000049041905, z: -0.079364255, w: 0.9968457}
-      scale: {x: 0.9999997, y: 1.0000005, z: 1.0000007}
+      position: {x: -0.02142078, y: -0.0013322943, z: 0.00093031116}
+      rotation: {x: 0, y: 0, z: -0.07936428, w: 0.9968457}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_02_01SHJnt
       parentName: MasterRig_L_Arm_WristSHJnt
-      position: {x: -0.12915143, y: 0.00025565023, z: 0.010363511}
-      rotation: {x: -0.0000000745058, y: -0.000000026077029, z: 0.12650143, w: 0.9919664}
-      scale: {x: 0.99999994, y: 1.0000008, z: 1.0000001}
+      position: {x: -0.12915143, y: 0.0002556508, z: 0.010363511}
+      rotation: {x: 0, y: 0, z: 0.12650132, w: 0.9919664}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_02_02SHJnt
       parentName: MasterRig_L_Finger_02_01SHJnt
       position: {x: -0.031879045, y: 0.0040874085, z: 0.0013435335}
-      rotation: {x: 0.0008368013, y: 0.014895539, z: -0.02546209, w: 0.99956447}
-      scale: {x: 0.9999995, y: 0.9999999, z: 0.9999999}
+      rotation: {x: 0.0008367284, y: 0.014896386, z: -0.025464635, w: 0.9995644}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_02_03SHJnt
       parentName: MasterRig_L_Finger_02_02SHJnt
-      position: {x: -0.024038756, y: 0.00017418712, z: -0.00068808824}
-      rotation: {x: 0.0032633606, y: -0.029609492, z: -0.12150655, w: 0.9921436}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      position: {x: -0.024038756, y: 0.00017418723, z: -0.00068808824}
+      rotation: {x: 0.003263332, y: -0.029609129, z: -0.12150708, w: 0.99214345}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_02_04SHJnt
       parentName: MasterRig_L_Finger_02_03SHJnt
       position: {x: -0.025647573, y: -0.008090868, z: 0.0012828234}
-      rotation: {x: -0.047918648, y: -0.02600895, z: 0.0010039458, w: 0.9985121}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000005}
+      rotation: {x: -0.047918532, y: -0.026008887, z: 0.0010038873, w: 0.9985121}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_03_01SHJnt
       parentName: MasterRig_L_Arm_WristSHJnt
-      position: {x: -0.12521069, y: -0.001857271, z: -0.01069605}
-      rotation: {x: -0.01714745, y: -0.026280973, z: 0.119261295, w: 0.99236697}
-      scale: {x: 0.9999999, y: 1.000001, z: 1.0000002}
+      position: {x: -0.12521069, y: -0.0018572704, z: -0.01069605}
+      rotation: {x: -0.017147494, y: -0.026280582, z: 0.11925991, w: 0.99236715}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_03_02SHJnt
       parentName: MasterRig_L_Finger_03_01SHJnt
       position: {x: -0.024844557, y: 0.0030155717, z: 0.00072366436}
-      rotation: {x: 0.00014870608, y: 0.0066918875, z: -0.022782303, w: 0.9997181}
-      scale: {x: 0.9999993, y: 0.9999997, z: 0.99999946}
+      rotation: {x: 0.00014859249, y: 0.0066917003, z: -0.022782287, w: 0.9997181}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_03_03SHJnt
       parentName: MasterRig_L_Finger_03_02SHJnt
-      position: {x: -0.023998523, y: -0.00005721465, z: -0.00017344856}
-      rotation: {x: 0.00040274372, y: -0.005649294, z: -0.05386643, w: 0.9985321}
-      scale: {x: 1.0000006, y: 1.0000012, z: 1.0000015}
+      position: {x: -0.023998523, y: -0.00005721454, z: -0.00017344856}
+      rotation: {x: 0.00040282178, y: -0.0056502437, z: -0.053871393, w: 0.9985318}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_03_04SHJnt
       parentName: MasterRig_L_Finger_03_03SHJnt
-      position: {x: -0.022779306, y: -0.004326582, z: 0.00028341427}
-      rotation: {x: -0.000000047469737, y: 0.000000029477096, z: -0.063599974, w: 0.99797547}
-      scale: {x: 0.9999995, y: 1.0000005, z: 1.0000002}
+      position: {x: -0.022779306, y: -0.004326582, z: 0.0002834143}
+      rotation: {x: 0, y: 0, z: -0.06359995, w: 0.99797547}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_04_01SHJnt
       parentName: MasterRig_L_Arm_WristSHJnt
-      position: {x: -0.11478118, y: -0.0074464264, z: -0.02843274}
-      rotation: {x: -0.034219574, y: 0.027325071, z: 0.049700078, w: 0.99780375}
-      scale: {x: 0.99999964, y: 1.0000007, z: 0.99999994}
+      position: {x: -0.11478118, y: -0.007446426, z: -0.02843274}
+      rotation: {x: -0.034218874, y: 0.027326327, z: 0.04970123, w: 0.9978036}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_04_02SHJnt
       parentName: MasterRig_L_Finger_04_01SHJnt
-      position: {x: -0.021479541, y: -0.00004343798, z: -0.0016409765}
-      rotation: {x: -0.000000048428763, y: -0.000000007450579, z: 0.00000017462294,
-        w: 1}
-      scale: {x: 0.9999999, y: 1.0000004, z: 1.0000005}
+      position: {x: -0.021479541, y: -0.00004343788, z: -0.0016409765}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_04_03SHJnt
       parentName: MasterRig_L_Finger_04_02SHJnt
-      position: {x: -0.022972697, y: -1.2434498e-16, z: -1.7763567e-16}
-      rotation: {x: -0.00000011537258, y: -0.017895414, z: -0.05480837, w: 0.99833655}
-      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+      position: {x: -0.022972697, y: 1.0630437e-10, z: 1.2499725e-11}
+      rotation: {x: 0.00000012293455, y: -0.017895091, z: -0.05480725, w: 0.9983366}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_04_04SHJnt
       parentName: MasterRig_L_Finger_04_03SHJnt
       position: {x: -0.023106778, y: -0.00429231, z: 0.00140149}
-      rotation: {x: -0, y: -0, z: -1.1102234e-16, w: 1}
-      scale: {x: 1, y: 1.000001, z: 1.000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Thumb_01_01SHJnt
       parentName: MasterRig_L_Arm_WristSHJnt
       position: {x: -0.044953864, y: -0.012378918, z: 0.052833527}
-      rotation: {x: -0.65266067, y: -0.4119165, z: 0.13595195, w: -0.6211891}
-      scale: {x: 0.9999996, y: 1.0000001, z: 1.0000002}
+      rotation: {x: 0.65266085, y: 0.41191623, z: -0.13595103, w: 0.62118936}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Thumb_01_02SHJnt
       parentName: MasterRig_L_Thumb_01_01SHJnt
       position: {x: -0.023379924, y: 0.0019299778, z: -0.005305103}
-      rotation: {x: 0.055993766, y: -0.028373566, z: -0.21759291, w: 0.97401893}
-      scale: {x: 1, y: 0.9999997, z: 0.99999976}
+      rotation: {x: 0.055992555, y: -0.028370699, z: -0.21759066, w: 0.97401965}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Thumb_01_03SHJnt
       parentName: MasterRig_L_Thumb_01_02SHJnt
       position: {x: -0.018856442, y: -0.008740695, z: -0.002858561}
-      rotation: {x: 0.010047014, y: 0.043858137, z: 0.33232465, w: 0.9420912}
-      scale: {x: 1.000001, y: 0.9999986, z: 1}
+      rotation: {x: 0.010047671, y: 0.04385511, z: 0.33232474, w: 0.94209135}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Thumb_01_04SHJnt
       parentName: MasterRig_L_Thumb_01_03SHJnt
       position: {x: -0.02114875, y: 0.0036440731, z: -0.005608953}
-      rotation: {x: -0.02729998, y: -0.16442916, z: -0.16149428, w: 0.9726959}
-      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000007}
+      rotation: {x: -0.027299736, y: -0.164429, z: -0.16149428, w: 0.97269595}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Arm_ClavicleSHJnt
       parentName: MasterRig_Spine_TopSHJnt
       position: {x: 0.03229854, y: -0.025678031, z: 0.08566781}
-      rotation: {x: -0.39681512, y: -0.52400327, z: -0.5926829, w: 0.46549475}
-      scale: {x: 1.000001, y: 1.0000007, z: 1.0000001}
+      rotation: {x: -0.39681548, y: -0.524003, z: -0.5926826, w: 0.4654951}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Arm_ShoulderSHJnt
       parentName: MasterRig_R_Arm_ClavicleSHJnt
       position: {x: 0.07751475, y: 0.047553156, z: 0.025678031}
-      rotation: {x: 0.15261905, y: -0.041241407, z: 0.15885247, w: 0.97456276}
-      scale: {x: 1.0000005, y: 1.0000008, z: 1}
+      rotation: {x: 0.1526191, y: -0.041241493, z: 0.15885182, w: 0.97456276}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Arm_ElbowSHJnt
       parentName: MasterRig_R_Arm_ShoulderSHJnt
-      position: {x: 0.21175228, y: 5.684342e-16, z: -1.4210854e-16}
-      rotation: {x: -0.0018398012, y: 0.023409033, z: -0.034865744, w: 0.9991162}
-      scale: {x: 1.0000008, y: 1.0000007, z: 1.0000005}
+      position: {x: 0.21175228, y: 0, z: -1.4210854e-16}
+      rotation: {x: -0.001839757, y: 0.023408841, z: -0.034865886, w: 0.9991161}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Arm_WristSHJnt
       parentName: MasterRig_R_Arm_ElbowSHJnt
-      position: {x: 0.2512633, y: -2.842171e-16, z: 2.842171e-16}
-      rotation: {x: 0.14768495, y: -0.031240407, z: -0.07852039, w: -0.98541754}
-      scale: {x: 1.0000032, y: 1.0000035, z: 1.0000005}
+      position: {x: 0.2512633, y: -1.4210854e-16, z: 3.5527135e-16}
+      rotation: {x: -0.14768498, y: 0.031240478, z: 0.07852082, w: 0.98541754}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_01_01SHJnt
       parentName: MasterRig_R_Arm_WristSHJnt
-      position: {x: 0.12887989, y: -0.0041593504, z: -0.03633592}
-      rotation: {x: -0.00064975006, y: 0.05282138, z: -0.023985585, w: 0.99831563}
-      scale: {x: 1.0000007, y: 0.99999917, z: 0.99999994}
+      position: {x: 0.12887989, y: -0.004159349, z: -0.036335923}
+      rotation: {x: -0.0006497353, y: 0.05282152, z: -0.0239891, w: 0.99831563}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_01_02SHJnt
       parentName: MasterRig_R_Finger_01_01SHJnt
-      position: {x: 0.025772337, y: 0.0054947296, z: 0.0006359168}
-      rotation: {x: -0.00000006521503, y: -0.000000007450579, z: 0.19879916, w: 0.98004025}
-      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000006}
+      position: {x: 0.025772337, y: 0.0054947296, z: 0.000635917}
+      rotation: {x: 0, y: 0, z: 0.19879912, w: 0.98004025}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_01_03SHJnt
       parentName: MasterRig_R_Finger_01_02SHJnt
-      position: {x: 0.018505953, y: -0.0033832886, z: -0.00018261206}
-      rotation: {x: -0.0029380682, y: -0.011529211, z: -0.08416246, w: 0.99638104}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+      position: {x: 0.018505953, y: -0.0033832886, z: -0.00018261182}
+      rotation: {x: -0.002938152, y: -0.011529263, z: -0.08416314, w: 0.9963809}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_01_04SHJnt
       parentName: MasterRig_R_Finger_01_03SHJnt
-      position: {x: 0.02142078, y: 0.0013322944, z: -0.00093031133}
-      rotation: {x: 0.000000012330138, y: -0.000000012086521, z: -0.07936431, w: 0.99684566}
-      scale: {x: 0.9999997, y: 0.9999995, z: 1.0000001}
+      position: {x: 0.02142078, y: 0.0013322947, z: -0.000930311}
+      rotation: {x: 0, y: 0, z: -0.07936428, w: 0.9968457}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_02_01SHJnt
       parentName: MasterRig_R_Arm_WristSHJnt
-      position: {x: 0.12915143, y: -0.00025565582, z: -0.010363515}
-      rotation: {x: -0.000000029802319, y: -0.0000000074505797, z: 0.12650137, w: 0.9919664}
-      scale: {x: 1.0000005, y: 0.9999996, z: 1}
+      position: {x: 0.12915143, y: -0.0002556549, z: -0.0103635155}
+      rotation: {x: 0, y: 0, z: 0.12650132, w: 0.9919664}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_02_02SHJnt
       parentName: MasterRig_R_Finger_02_01SHJnt
-      position: {x: 0.031879045, y: -0.0040874085, z: -0.0013435335}
-      rotation: {x: 0.0008367311, y: 0.014895579, z: -0.025462393, w: 0.99956447}
-      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+      position: {x: 0.031879045, y: -0.004087408, z: -0.0013435334}
+      rotation: {x: 0.0008368602, y: 0.01489648, z: -0.025462728, w: 0.99956447}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_02_03SHJnt
       parentName: MasterRig_R_Finger_02_02SHJnt
-      position: {x: 0.024038756, y: -0.00017418712, z: 0.0006880881}
-      rotation: {x: 0.0032634023, y: -0.029610433, z: -0.12150665, w: 0.9921435}
-      scale: {x: 0.9999996, y: 1.0000001, z: 1.0000002}
+      position: {x: 0.024038756, y: -0.00017418701, z: 0.0006880883}
+      rotation: {x: 0.00326361, y: -0.029610893, z: -0.12150838, w: 0.9921433}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_02_04SHJnt
       parentName: MasterRig_R_Finger_02_03SHJnt
-      position: {x: 0.025647573, y: 0.008090868, z: -0.0012828236}
-      rotation: {x: -0.047918547, y: -0.026008856, z: 0.0010038479, w: 0.998512}
-      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000001}
+      position: {x: 0.025647573, y: 0.008090868, z: -0.001282823}
+      rotation: {x: -0.047918532, y: -0.026008887, z: 0.0010038873, w: 0.9985121}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_03_01SHJnt
       parentName: MasterRig_R_Arm_WristSHJnt
-      position: {x: 0.12521069, y: 0.0018572654, z: 0.010696046}
-      rotation: {x: -0.017147373, y: -0.026282348, z: 0.1192628, w: 0.9923667}
-      scale: {x: 0.9999997, y: 0.99999917, z: 1.0000001}
+      position: {x: 0.12521069, y: 0.001857266, z: 0.010696045}
+      rotation: {x: -0.017147511, y: -0.026281351, z: 0.11926063, w: 0.992367}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_03_02SHJnt
       parentName: MasterRig_R_Finger_03_01SHJnt
-      position: {x: 0.024844557, y: -0.0030155717, z: -0.00072366453}
-      rotation: {x: 0.00014866883, y: 0.006692478, z: -0.022783253, w: 0.99971807}
-      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+      position: {x: 0.024844557, y: -0.0030155717, z: -0.00072366424}
+      rotation: {x: 0.0001487322, y: 0.0066927252, z: -0.022785021, w: 0.999718}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_03_03SHJnt
       parentName: MasterRig_R_Finger_03_02SHJnt
-      position: {x: 0.023998523, y: 0.00005721465, z: 0.00017344834}
-      rotation: {x: 0.00040289253, y: -0.00565007, z: -0.05386932, w: 0.998532}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+      position: {x: 0.023998523, y: 0.000057214693, z: 0.00017344873}
+      rotation: {x: 0.00040283726, y: -0.005649632, z: -0.053871322, w: 0.9985319}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_03_04SHJnt
       parentName: MasterRig_R_Finger_03_03SHJnt
-      position: {x: 0.022779306, y: 0.004326582, z: -0.00028341456}
-      rotation: {x: 0.0000000011075761, y: -0.000000010261352, z: -0.06360026, w: 0.99797547}
-      scale: {x: 1.0000002, y: 0.9999999, z: 1}
+      position: {x: 0.022779306, y: 0.004326582, z: -0.00028341403}
+      rotation: {x: 0, y: 0, z: -0.06359995, w: 0.99797547}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_04_01SHJnt
       parentName: MasterRig_R_Arm_WristSHJnt
-      position: {x: 0.11478118, y: 0.007446421, z: 0.028432738}
-      rotation: {x: -0.03421967, y: 0.027325846, z: 0.049698573, w: 0.9978038}
-      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+      position: {x: 0.11478118, y: 0.0074464213, z: 0.028432738}
+      rotation: {x: -0.0342193, y: 0.027326273, z: 0.049699936, w: 0.99780375}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_04_02SHJnt
       parentName: MasterRig_R_Finger_04_01SHJnt
-      position: {x: 0.021479541, y: 0.00004343798, z: 0.0016409765}
-      rotation: {x: -0, y: -0, z: 0.000000004656612, w: 1}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      position: {x: 0.021479541, y: 0.00004343795, z: 0.0016409766}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_04_03SHJnt
       parentName: MasterRig_R_Finger_04_02SHJnt
-      position: {x: 0.022972697, y: 1.4210854e-16, z: 7.105427e-17}
-      rotation: {x: 0.00000004462013, y: -0.017895823, z: -0.054805584, w: 0.99833673}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.022972697, y: -1.1971224e-12, z: 1.7790582e-10}
+      rotation: {x: -0.0000000037252903, y: -0.017894464, z: -0.054805823, w: 0.99833673}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Finger_04_04SHJnt
       parentName: MasterRig_R_Finger_04_03SHJnt
-      position: {x: 0.023106778, y: 0.00429231, z: -0.00140149}
-      rotation: {x: -0, y: -0, z: 1.1657336e-15, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 0.9999998}
+      position: {x: 0.023106778, y: 0.00429231, z: -0.0014014896}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Thumb_01_01SHJnt
       parentName: MasterRig_R_Arm_WristSHJnt
-      position: {x: 0.04495387, y: 0.0123789115, z: -0.05283353}
-      rotation: {x: 0.6526604, y: 0.41191506, z: -0.13595216, w: 0.6211903}
-      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000005}
+      position: {x: 0.044953864, y: 0.012378913, z: -0.05283353}
+      rotation: {x: 0.65266085, y: 0.41191646, z: -0.13595107, w: 0.62118924}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Thumb_01_02SHJnt
       parentName: MasterRig_R_Thumb_01_01SHJnt
-      position: {x: 0.023379924, y: -0.0019299774, z: 0.005305103}
-      rotation: {x: 0.05599209, y: -0.028368007, z: -0.21759185, w: 0.9740195}
-      scale: {x: 0.99999976, y: 1.0000005, z: 1.0000006}
+      position: {x: 0.023379924, y: -0.0019299777, z: 0.0053051026}
+      rotation: {x: 0.055992596, y: -0.028369557, z: -0.2175909, w: 0.97401965}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Thumb_01_03SHJnt
       parentName: MasterRig_R_Thumb_01_02SHJnt
-      position: {x: 0.018856442, y: 0.008740695, z: 0.002858561}
-      rotation: {x: 0.010047104, y: 0.043856878, z: 0.3323254, w: 0.94209105}
-      scale: {x: 0.9999988, y: 1.000002, z: 1.0000005}
+      position: {x: 0.018856442, y: 0.008740695, z: 0.0028585605}
+      rotation: {x: 0.010047582, y: 0.0438599, z: 0.3323228, w: 0.94209176}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Thumb_01_04SHJnt
       parentName: MasterRig_R_Thumb_01_03SHJnt
-      position: {x: 0.02114875, y: -0.003644073, z: 0.005608953}
-      rotation: {x: -0.027299898, y: -0.16442905, z: -0.16149428, w: 0.97269595}
-      scale: {x: 1.0000013, y: 1.0000007, z: 1.0000008}
+      position: {x: 0.02114875, y: -0.0036440731, z: 0.005608953}
+      rotation: {x: -0.027299736, y: -0.164429, z: -0.16149428, w: 0.97269595}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Neck_01SHJnt
       parentName: MasterRig_Spine_TopSHJnt
-      position: {x: -0.043979246, y: 0.026180128, z: 0.0024072942}
-      rotation: {x: -0, y: -0, z: -0, w: -1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+      position: {x: -0.04421464, y: 0.02658847, z: 0.002404504}
+      rotation: {x: 5.551115e-17, y: 0, z: -5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Neck_02SHJnt
       parentName: MasterRig_Neck_01SHJnt
-      position: {x: -0.06003757, y: 0.012021757, z: 0.0024710596}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+      position: {x: -0.060910735, y: 0.0048001045, z: 0.002404504}
+      rotation: {x: 5.551115e-17, y: 0, z: -5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Neck_TopSHJnt
       parentName: MasterRig_Neck_02SHJnt
-      position: {x: -0.06458994, y: -0.018077822, z: 0.0025301613}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000006, z: 1}
+      position: {x: -0.0638662, y: -0.014889183, z: 0.0024045042}
+      rotation: {x: 4.1633363e-16, y: 1.6653345e-16, z: -2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Head_JawSHJnt
       parentName: MasterRig_Neck_TopSHJnt
       position: {x: 0.037103128, y: -0.03775796, z: -0.009613077}
-      rotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-      scale: {x: 1.0000019, y: 1.0000005, z: 1.0000014}
+      rotation: {x: -6.6613387e-16, y: -3.3306693e-16, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Head_JawEndSHJnt
       parentName: MasterRig_Head_JawSHJnt
-      position: {x: -0.08800721, y: -0.027077807, z: 9.3536287e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000006}
+      position: {x: -0.08800721, y: -0.027077807, z: 1.6653345e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Head_TopSHJnt
       parentName: MasterRig_Neck_TopSHJnt
-      position: {x: -0.17518283, y: -1.4743761e-15, z: -0.0021695525}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000011, y: 1.0000013, z: 1.0000013}
+      position: {x: -0.17518283, y: -1.5276668e-15, z: -0.0021695525}
+      rotation: {x: 1.3877788e-16, y: -5.828671e-16, z: 2.4980018e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_01SHJnt
       parentName: MasterRig_Head_TopSHJnt
       position: {x: 0.074845105, y: 0.12834512, z: -0.0043287063}
-      rotation: {x: -0.5634681, y: 0.8261379, z: -0, w: 0}
-      scale: {x: 1.0000029, y: 1.0000013, z: 1.0000029}
+      rotation: {x: -0.5634681, y: 0.82613784, z: -4.1746524e-16, w: 2.8473256e-16}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_02SHJnt
       parentName: MasterRig_Braid_01_01SHJnt
-      position: {x: -0.09450233, y: 0.024000349, z: -5.89806e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 0.9999999, y: 1, z: 1.0000005}
+      position: {x: -0.09268411, y: 0.023538584, z: 4.9960034e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_03SHJnt
       parentName: MasterRig_Braid_01_02SHJnt
-      position: {x: -0.099865705, y: 0.006827106, z: -1.0713652e-16}
-      rotation: {x: -0.000000008964488, y: 0.00000006603432, z: -0.000000029802322,
-        w: 1}
-      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000002}
+      position: {x: -0.09605985, y: 0.0065669273, z: -1.110223e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_04SHJnt
       parentName: MasterRig_Braid_01_03SHJnt
-      position: {x: -0.08764357, y: -0.005362448, z: -8.9372954e-17}
-      rotation: {x: -0.0000000106761, y: -0.0000000417379, z: 0.043002486, w: 0.999075}
-      scale: {x: 1.000001, y: 1.0000006, z: 1.0000007}
+      position: {x: -0.08430351, y: -0.005158087, z: 8.3266725e-19}
+      rotation: {x: 0, y: 0, z: 0.04300252, w: 0.999075}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_05SHJnt
       parentName: MasterRig_Braid_01_04SHJnt
-      position: {x: -0.087564886, y: -0.009946746, z: -1.1268764e-16}
-      rotation: {x: 0.000000012667364, y: -0.000000026976224, z: 0.11628543, w: 0.9932159}
-      scale: {x: 1.0000014, y: 1.0000001, z: 1.0000006}
+      position: {x: -0.084227815, y: -0.009567679, z: -3.6082247e-18}
+      rotation: {x: 0, y: 0, z: 0.11628544, w: 0.99321586}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_06SHJnt
       parentName: MasterRig_Braid_01_05SHJnt
-      position: {x: -0.050611228, y: 0.0059632766, z: -5.287437e-17}
-      rotation: {x: -0, y: -0, z: 3.417176e-16, w: 1}
-      scale: {x: 1.0000005, y: 1, z: 1.0000002}
-    - name: MasterRig_R_Eye_01SHJnt
-      parentName: MasterRig_Head_TopSHJnt
-      position: {x: 0.12601547, y: -0.08738976, z: 0.03291193}
-      rotation: {x: -0.000000059604645, y: 0.000000059604645, z: 0.723114, w: 0.69072866}
-      scale: {x: 1.000004, y: 1.0000013, z: 1.000003}
+      position: {x: -0.04868245, y: 0.005736018, z: 4.9960034e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Eye_01SHJnt
       parentName: MasterRig_Head_TopSHJnt
       position: {x: 0.12601547, y: -0.08738976, z: -0.040047262}
-      rotation: {x: -0, y: -0, z: 0.7231141, w: 0.69072866}
-      scale: {x: 1.0000048, y: 1.0000014, z: 1.0000037}
+      rotation: {x: -3.6637364e-15, y: 3.552714e-15, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MasterRig_R_Eye_01SHJnt
+      parentName: MasterRig_Head_TopSHJnt
+      position: {x: 0.12601547, y: -0.08738976, z: 0.03291193}
+      rotation: {x: -0.014179374, y: 0.014179374, z: 0.7069646, w: 0.7069646}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_HipSHJnt
       parentName: MasterRig_ROOTSHJnt
       position: {x: 0.052549064, y: -0.013034413, z: -0.099448204}
-      rotation: {x: -0.007488044, y: 0.7082651, z: -0.7047495, w: 0.04040578}
-      scale: {x: 1.0000017, y: 1.000001, z: 1.0000027}
+      rotation: {x: -0.0074880277, y: 0.70826507, z: -0.7047495, w: 0.040405776}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_KneeSHJnt
       parentName: MasterRig_L_Leg_HipSHJnt
-      position: {x: -0.42799902, y: -4.973799e-16, z: -6.217249e-17}
-      rotation: {x: -0.0002447738, y: -0.024872646, z: -0.0010242834, w: 0.9996901}
-      scale: {x: 1.0000013, y: 1.000001, z: 1.0000014}
+      position: {x: -0.42799902, y: -5.32907e-16, z: 0.0000000066517227}
+      rotation: {x: -0.00024483853, y: -0.024872677, z: -0.0010242213, w: 0.99969006}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_AnkleSHJnt
       parentName: MasterRig_L_Leg_KneeSHJnt
-      position: {x: -0.43146187, y: -8.8817837e-17, z: -1.0658141e-16}
-      rotation: {x: 0.06917834, y: 0.039821714, z: 0.99660486, w: 0.020183105}
-      scale: {x: 0.9999997, y: 0.99999994, z: 0.99999875}
+      position: {x: -0.43146187, y: -2.7580044e-11, z: 0.0000000067045334}
+      rotation: {x: 0.0691784, y: 0.03982167, z: 0.99660486, w: 0.02018314}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_BallSHJnt
       parentName: MasterRig_L_Leg_AnkleSHJnt
-      position: {x: 0.03873934, y: -0.0042609856, z: 0.08555143}
-      rotation: {x: 0.70028234, y: -0.00000044517208, z: -0.71386594, w: -0.0000010617075}
-      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000001}
+      position: {x: 0.03873934, y: -0.0042609866, z: 0.08555144}
+      rotation: {x: -0.7002824, y: 0.00000047504116, z: 0.713866, w: 0.0000009984765}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_ToeSHJnt
       parentName: MasterRig_L_Leg_BallSHJnt
-      position: {x: -0.08665814, y: 0.0077327644, z: -0.013474786}
-      rotation: {x: 0.99995375, y: 0.00000007794, z: -0.009622812, w: 0.000000039207237}
-      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000007}
+      position: {x: -0.08665814, y: 0.007732765, z: -0.013474786}
+      rotation: {x: 0.9999537, y: 4.9733037e-17, z: -0.009622785, w: 5.168019e-15}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Leg_HipSHJnt
       parentName: MasterRig_ROOTSHJnt
       position: {x: 0.052549064, y: -0.013034413, z: 0.099448204}
-      rotation: {x: -0.7082658, y: -0.0074676573, z: 0.040432543, w: 0.7047475}
-      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000001}
+      rotation: {x: -0.7082657, y: -0.007467606, z: 0.040432487, w: 0.70474756}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Leg_KneeSHJnt
       parentName: MasterRig_R_Leg_HipSHJnt
-      position: {x: 0.42799902, y: 4.2632563e-16, z: -7.105427e-17}
-      rotation: {x: -0.00024494526, y: -0.024863588, z: -0.0010907835, w: 0.99969023}
-      scale: {x: 1.0000001, y: 1.0000012, z: 0.9999998}
+      position: {x: 0.42799902, y: 4.973799e-16, z: -5.3290704e-17}
+      rotation: {x: -0.00024502544, y: -0.024863672, z: -0.0010907215, w: 0.99969023}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Leg_AnkleSHJnt
       parentName: MasterRig_R_Leg_KneeSHJnt
-      position: {x: 0.43146187, y: -6.8389737e-16, z: -9.7699626e-17}
-      rotation: {x: 0.06917327, y: 0.03982292, z: 0.9966059, w: 0.02015033}
-      scale: {x: 1.0000001, y: 0.9999997, z: 1.0000005}
+      position: {x: 0.43146187, y: -5.950795e-16, z: 2.6645352e-17}
+      rotation: {x: 0.0691733, y: 0.03982287, z: 0.9966059, w: 0.020150328}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Leg_BallSHJnt
       parentName: MasterRig_R_Leg_AnkleSHJnt
       position: {x: -0.03873934, y: 0.0042609856, z: -0.08555143}
-      rotation: {x: -0.7002819, y: 0.0000005029142, z: 0.7138664, w: 0.0000008549541}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000006}
+      rotation: {x: -0.7002819, y: 0.00000045864118, z: 0.7138664, w: 0.000000964006}
+      scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Leg_ToeSHJnt
       parentName: MasterRig_R_Leg_BallSHJnt
       position: {x: 0.08665814, y: -0.0077327644, z: 0.013474786}
-      rotation: {x: 0.99995375, y: -0.000000045409593, z: -0.009622753, w: -0.000000010548888}
-      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000002}
-    - name: ShrimpHelmet:polySurface1
-      parentName: GRomaine_Dash_Mesh(Clone)
-      position: {x: -0.0014072551, y: -0.11408157, z: -0.10964923}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: TomatoShield:polySurface1
-      parentName: GRomaine_Dash_Mesh(Clone)
-      position: {x: 0.016014416, y: -0.04443777, z: -0.16270158}
-      rotation: {x: 0.18437184, y: 0.013671787, z: -0.07267551, w: 0.9800706}
+      rotation: {x: 0.9999537, y: 2.7259131e-18, z: -0.009622785, w: 2.8326383e-16}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
@@ -1197,7 +1200,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 2ea6666274918ab4ca9785bdd1311ed1,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a935bbd542000b34888d0d93d974b7ab,
     type: 3}
   animationType: 3
   humanoidOversampling: 1

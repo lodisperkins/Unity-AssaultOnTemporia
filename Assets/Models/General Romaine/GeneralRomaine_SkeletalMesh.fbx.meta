@@ -1,221 +1,302 @@
 fileFormatVersion: 2
-guid: 1a74bb2137c5d0540ab8d64ba8f210ff
+guid: a935bbd542000b34888d0d93d974b7ab
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Body_Eyes
-    100002: Braid
-    100004: Eye_L
-    100006: Eye_Lashes
-    100008: Eye_R
-    100010: EyeBrows
-    100012: Fork_Spear
+    100002: Bottom_Teeth1
+    100004: Braid
+    100006: Eye_L
+    100008: Eye_Lashes
+    100010: Eye_R
+    100012: EyeBrows
     100014: General_Romaine
     100016: //RootNode
-    100018: Helmet_ChestArmor
-    100020: Lettuce_Dress_Shoes
-    100022: MasterRig_Braid_01_01SHJnt
-    100024: MasterRig_Braid_01_02SHJnt
-    100026: MasterRig_Braid_01_03SHJnt
-    100028: MasterRig_Braid_01_04SHJnt
-    100030: MasterRig_Braid_01_05SHJnt
-    100032: MasterRig_Braid_01_06SHJnt
-    100034: MasterRig_Head_JawEndSHJnt
-    100036: MasterRig_Head_JawSHJnt
-    100038: MasterRig_Head_TopSHJnt
-    100040: MasterRig_L_Arm_ClavicleSHJnt
-    100042: MasterRig_L_Arm_ElbowSHJnt
-    100044: MasterRig_L_Arm_ShoulderSHJnt
-    100046: MasterRig_L_Arm_WristSHJnt
-    100048: MasterRig_L_Eye_01SHJnt
-    100050: MasterRig_L_Finger_01_01SHJnt
-    100052: MasterRig_L_Finger_01_02SHJnt
-    100054: MasterRig_L_Finger_01_03SHJnt
-    100056: MasterRig_L_Finger_01_04SHJnt
-    100058: MasterRig_L_Finger_02_01SHJnt
-    100060: MasterRig_L_Finger_02_02SHJnt
-    100062: MasterRig_L_Finger_02_03SHJnt
-    100064: MasterRig_L_Finger_02_04SHJnt
-    100066: MasterRig_L_Finger_03_01SHJnt
-    100068: MasterRig_L_Finger_03_02SHJnt
-    100070: MasterRig_L_Finger_03_03SHJnt
-    100072: MasterRig_L_Finger_03_04SHJnt
-    100074: MasterRig_L_Finger_04_01SHJnt
-    100076: MasterRig_L_Finger_04_02SHJnt
-    100078: MasterRig_L_Finger_04_03SHJnt
-    100080: MasterRig_L_Finger_04_04SHJnt
-    100082: MasterRig_L_Leg_AnkleSHJnt
-    100084: MasterRig_L_Leg_BallSHJnt
-    100086: MasterRig_L_Leg_HipSHJnt
-    100088: MasterRig_L_Leg_KneeSHJnt
-    100090: MasterRig_L_Leg_ToeSHJnt
-    100092: MasterRig_L_Thumb_01_01SHJnt
-    100094: MasterRig_L_Thumb_01_02SHJnt
-    100096: MasterRig_L_Thumb_01_03SHJnt
-    100098: MasterRig_L_Thumb_01_04SHJnt
-    100100: MasterRig_Neck_01SHJnt
-    100102: MasterRig_Neck_02SHJnt
-    100104: MasterRig_Neck_TopSHJnt
-    100106: MasterRig_R_Arm_ClavicleSHJnt
-    100108: MasterRig_R_Arm_ElbowSHJnt
-    100110: MasterRig_R_Arm_ShoulderSHJnt
-    100112: MasterRig_R_Arm_WristSHJnt
-    100114: MasterRig_R_Eye_01SHJnt
-    100116: MasterRig_R_Finger_01_01SHJnt
-    100118: MasterRig_R_Finger_01_02SHJnt
-    100120: MasterRig_R_Finger_01_03SHJnt
-    100122: MasterRig_R_Finger_01_04SHJnt
-    100124: MasterRig_R_Finger_02_01SHJnt
-    100126: MasterRig_R_Finger_02_02SHJnt
-    100128: MasterRig_R_Finger_02_03SHJnt
-    100130: MasterRig_R_Finger_02_04SHJnt
-    100132: MasterRig_R_Finger_03_01SHJnt
-    100134: MasterRig_R_Finger_03_02SHJnt
-    100136: MasterRig_R_Finger_03_03SHJnt
-    100138: MasterRig_R_Finger_03_04SHJnt
-    100140: MasterRig_R_Finger_04_01SHJnt
-    100142: MasterRig_R_Finger_04_02SHJnt
-    100144: MasterRig_R_Finger_04_03SHJnt
-    100146: MasterRig_R_Finger_04_04SHJnt
-    100148: MasterRig_R_Leg_AnkleSHJnt
-    100150: MasterRig_R_Leg_BallSHJnt
-    100152: MasterRig_R_Leg_HipSHJnt
-    100154: MasterRig_R_Leg_KneeSHJnt
-    100156: MasterRig_R_Leg_ToeSHJnt
-    100158: MasterRig_R_Thumb_01_01SHJnt
-    100160: MasterRig_R_Thumb_01_02SHJnt
-    100162: MasterRig_R_Thumb_01_03SHJnt
-    100164: MasterRig_R_Thumb_01_04SHJnt
-    100166: MasterRig_ROOTSHJnt
-    100168: MasterRig_SHJntGrp
-    100170: MasterRig_Spine_01SHJnt
-    100172: MasterRig_Spine_02SHJnt
-    100174: MasterRig_Spine_03SHJnt
-    100176: MasterRig_Spine_04SHJnt
-    100178: MasterRig_Spine_TopSHJnt
-    100180: Shield
-    100182: Shrimp1
-    100184: WristBand
+    100018: Hair_Eyes_Shrimp
+    100020: Helmet_ChestArmor
+    100022: Lettuce_Dress_Shoes
+    100024: MasterRig_Braid_01_01SHJnt
+    100026: MasterRig_Braid_01_02SHJnt
+    100028: MasterRig_Braid_01_03SHJnt
+    100030: MasterRig_Braid_01_04SHJnt
+    100032: MasterRig_Braid_01_05SHJnt
+    100034: MasterRig_Braid_01_06SHJnt
+    100036: MasterRig_Head_JawEndSHJnt
+    100038: MasterRig_Head_JawSHJnt
+    100040: MasterRig_Head_TopSHJnt
+    100042: MasterRig_L_Arm_ClavicleSHJnt
+    100044: MasterRig_L_Arm_ElbowSHJnt
+    100046: MasterRig_L_Arm_ShoulderSHJnt
+    100048: MasterRig_L_Arm_WristSHJnt
+    100050: MasterRig_L_Eye_01SHJnt
+    100052: MasterRig_L_Finger_01_01SHJnt
+    100054: MasterRig_L_Finger_01_02SHJnt
+    100056: MasterRig_L_Finger_01_03SHJnt
+    100058: MasterRig_L_Finger_01_04SHJnt
+    100060: MasterRig_L_Finger_02_01SHJnt
+    100062: MasterRig_L_Finger_02_02SHJnt
+    100064: MasterRig_L_Finger_02_03SHJnt
+    100066: MasterRig_L_Finger_02_04SHJnt
+    100068: MasterRig_L_Finger_03_01SHJnt
+    100070: MasterRig_L_Finger_03_02SHJnt
+    100072: MasterRig_L_Finger_03_03SHJnt
+    100074: MasterRig_L_Finger_03_04SHJnt
+    100076: MasterRig_L_Finger_04_01SHJnt
+    100078: MasterRig_L_Finger_04_02SHJnt
+    100080: MasterRig_L_Finger_04_03SHJnt
+    100082: MasterRig_L_Finger_04_04SHJnt
+    100084: MasterRig_L_Leg_AnkleSHJnt
+    100086: MasterRig_L_Leg_BallSHJnt
+    100088: MasterRig_L_Leg_HipSHJnt
+    100090: MasterRig_L_Leg_KneeSHJnt
+    100092: MasterRig_L_Leg_ToeSHJnt
+    100094: MasterRig_L_Thumb_01_01SHJnt
+    100096: MasterRig_L_Thumb_01_02SHJnt
+    100098: MasterRig_L_Thumb_01_03SHJnt
+    100100: MasterRig_L_Thumb_01_04SHJnt
+    100102: MasterRig_Neck_01SHJnt
+    100104: MasterRig_Neck_02SHJnt
+    100106: MasterRig_Neck_TopSHJnt
+    100108: MasterRig_R_Arm_ClavicleSHJnt
+    100110: MasterRig_R_Arm_ElbowSHJnt
+    100112: MasterRig_R_Arm_ShoulderSHJnt
+    100114: MasterRig_R_Arm_WristSHJnt
+    100116: MasterRig_R_Eye_01SHJnt
+    100118: MasterRig_R_Finger_01_01SHJnt
+    100120: MasterRig_R_Finger_01_02SHJnt
+    100122: MasterRig_R_Finger_01_03SHJnt
+    100124: MasterRig_R_Finger_01_04SHJnt
+    100126: MasterRig_R_Finger_02_01SHJnt
+    100128: MasterRig_R_Finger_02_02SHJnt
+    100130: MasterRig_R_Finger_02_03SHJnt
+    100132: MasterRig_R_Finger_02_04SHJnt
+    100134: MasterRig_R_Finger_03_01SHJnt
+    100136: MasterRig_R_Finger_03_02SHJnt
+    100138: MasterRig_R_Finger_03_03SHJnt
+    100140: MasterRig_R_Finger_03_04SHJnt
+    100142: MasterRig_R_Finger_04_01SHJnt
+    100144: MasterRig_R_Finger_04_02SHJnt
+    100146: MasterRig_R_Finger_04_03SHJnt
+    100148: MasterRig_R_Finger_04_04SHJnt
+    100150: MasterRig_R_Leg_AnkleSHJnt
+    100152: MasterRig_R_Leg_BallSHJnt
+    100154: MasterRig_R_Leg_HipSHJnt
+    100156: MasterRig_R_Leg_KneeSHJnt
+    100158: MasterRig_R_Leg_ToeSHJnt
+    100160: MasterRig_R_Thumb_01_01SHJnt
+    100162: MasterRig_R_Thumb_01_02SHJnt
+    100164: MasterRig_R_Thumb_01_03SHJnt
+    100166: MasterRig_R_Thumb_01_04SHJnt
+    100168: MasterRig_ROOTSHJnt
+    100170: MasterRig_SHJntGrp
+    100172: MasterRig_Spine_01SHJnt
+    100174: MasterRig_Spine_02SHJnt
+    100176: MasterRig_Spine_03SHJnt
+    100178: MasterRig_Spine_04SHJnt
+    100180: MasterRig_Spine_TopSHJnt
+    100182: Shield_Fork_Wristband
+    100184: Shrimp1
+    100186: Teeth1
+    100188: Teeth_Tongue
+    100190: Top_Teeth1
+    100192: transform1
+    100194: transform10
+    100196: transform11
+    100198: transform12
+    100200: transform13
+    100202: transform14
+    100204: transform15
+    100206: transform2
+    100208: transform26
+    100210: transform27
+    100212: transform3
+    100214: transform4
+    100216: transform5
+    100218: transform6
+    100220: transform7
+    100222: transform8
+    100224: transform9
+    100226: Wristband
+    100228: BottomTeeth
+    100230: Fork_Spear
+    100232: Shield
+    100234: Top_Teeth
+    100236: transform16
+    100238: transform17
+    100240: transform18
+    100242: transform19
+    100244: WristBand
+    100246: EyeBrows_Lashes
+    100248: Shrimp_Head
+    100250: Tomatoe_Shield
+    100252: Tongue
+    100254: TopTeeth
     400000: Body_Eyes
-    400002: Braid
-    400004: Eye_L
-    400006: Eye_Lashes
-    400008: Eye_R
-    400010: EyeBrows
-    400012: Fork_Spear
+    400002: Bottom_Teeth1
+    400004: Braid
+    400006: Eye_L
+    400008: Eye_Lashes
+    400010: Eye_R
+    400012: EyeBrows
     400014: General_Romaine
     400016: //RootNode
-    400018: Helmet_ChestArmor
-    400020: Lettuce_Dress_Shoes
-    400022: MasterRig_Braid_01_01SHJnt
-    400024: MasterRig_Braid_01_02SHJnt
-    400026: MasterRig_Braid_01_03SHJnt
-    400028: MasterRig_Braid_01_04SHJnt
-    400030: MasterRig_Braid_01_05SHJnt
-    400032: MasterRig_Braid_01_06SHJnt
-    400034: MasterRig_Head_JawEndSHJnt
-    400036: MasterRig_Head_JawSHJnt
-    400038: MasterRig_Head_TopSHJnt
-    400040: MasterRig_L_Arm_ClavicleSHJnt
-    400042: MasterRig_L_Arm_ElbowSHJnt
-    400044: MasterRig_L_Arm_ShoulderSHJnt
-    400046: MasterRig_L_Arm_WristSHJnt
-    400048: MasterRig_L_Eye_01SHJnt
-    400050: MasterRig_L_Finger_01_01SHJnt
-    400052: MasterRig_L_Finger_01_02SHJnt
-    400054: MasterRig_L_Finger_01_03SHJnt
-    400056: MasterRig_L_Finger_01_04SHJnt
-    400058: MasterRig_L_Finger_02_01SHJnt
-    400060: MasterRig_L_Finger_02_02SHJnt
-    400062: MasterRig_L_Finger_02_03SHJnt
-    400064: MasterRig_L_Finger_02_04SHJnt
-    400066: MasterRig_L_Finger_03_01SHJnt
-    400068: MasterRig_L_Finger_03_02SHJnt
-    400070: MasterRig_L_Finger_03_03SHJnt
-    400072: MasterRig_L_Finger_03_04SHJnt
-    400074: MasterRig_L_Finger_04_01SHJnt
-    400076: MasterRig_L_Finger_04_02SHJnt
-    400078: MasterRig_L_Finger_04_03SHJnt
-    400080: MasterRig_L_Finger_04_04SHJnt
-    400082: MasterRig_L_Leg_AnkleSHJnt
-    400084: MasterRig_L_Leg_BallSHJnt
-    400086: MasterRig_L_Leg_HipSHJnt
-    400088: MasterRig_L_Leg_KneeSHJnt
-    400090: MasterRig_L_Leg_ToeSHJnt
-    400092: MasterRig_L_Thumb_01_01SHJnt
-    400094: MasterRig_L_Thumb_01_02SHJnt
-    400096: MasterRig_L_Thumb_01_03SHJnt
-    400098: MasterRig_L_Thumb_01_04SHJnt
-    400100: MasterRig_Neck_01SHJnt
-    400102: MasterRig_Neck_02SHJnt
-    400104: MasterRig_Neck_TopSHJnt
-    400106: MasterRig_R_Arm_ClavicleSHJnt
-    400108: MasterRig_R_Arm_ElbowSHJnt
-    400110: MasterRig_R_Arm_ShoulderSHJnt
-    400112: MasterRig_R_Arm_WristSHJnt
-    400114: MasterRig_R_Eye_01SHJnt
-    400116: MasterRig_R_Finger_01_01SHJnt
-    400118: MasterRig_R_Finger_01_02SHJnt
-    400120: MasterRig_R_Finger_01_03SHJnt
-    400122: MasterRig_R_Finger_01_04SHJnt
-    400124: MasterRig_R_Finger_02_01SHJnt
-    400126: MasterRig_R_Finger_02_02SHJnt
-    400128: MasterRig_R_Finger_02_03SHJnt
-    400130: MasterRig_R_Finger_02_04SHJnt
-    400132: MasterRig_R_Finger_03_01SHJnt
-    400134: MasterRig_R_Finger_03_02SHJnt
-    400136: MasterRig_R_Finger_03_03SHJnt
-    400138: MasterRig_R_Finger_03_04SHJnt
-    400140: MasterRig_R_Finger_04_01SHJnt
-    400142: MasterRig_R_Finger_04_02SHJnt
-    400144: MasterRig_R_Finger_04_03SHJnt
-    400146: MasterRig_R_Finger_04_04SHJnt
-    400148: MasterRig_R_Leg_AnkleSHJnt
-    400150: MasterRig_R_Leg_BallSHJnt
-    400152: MasterRig_R_Leg_HipSHJnt
-    400154: MasterRig_R_Leg_KneeSHJnt
-    400156: MasterRig_R_Leg_ToeSHJnt
-    400158: MasterRig_R_Thumb_01_01SHJnt
-    400160: MasterRig_R_Thumb_01_02SHJnt
-    400162: MasterRig_R_Thumb_01_03SHJnt
-    400164: MasterRig_R_Thumb_01_04SHJnt
-    400166: MasterRig_ROOTSHJnt
-    400168: MasterRig_SHJntGrp
-    400170: MasterRig_Spine_01SHJnt
-    400172: MasterRig_Spine_02SHJnt
-    400174: MasterRig_Spine_03SHJnt
-    400176: MasterRig_Spine_04SHJnt
-    400178: MasterRig_Spine_TopSHJnt
-    400180: Shield
-    400182: Shrimp1
-    400184: WristBand
-    2100000: lambert3
-    2100002: Smoothed_Fork_SmoothedForkSG1
-    4300000: Helmet_ChestArmor
-    4300002: Lettuce_Dress_Shoes
-    4300004: Body_Eyes
-    4300006: WristBand
-    4300008: Shield
-    4300010: Fork_Spear
-    4300012: Eye_R
-    4300014: Eye_L
-    4300016: Braid
-    4300018: Shrimp1
-    4300020: EyeBrows
-    4300022: Eye_Lashes
+    400018: Hair_Eyes_Shrimp
+    400020: Helmet_ChestArmor
+    400022: Lettuce_Dress_Shoes
+    400024: MasterRig_Braid_01_01SHJnt
+    400026: MasterRig_Braid_01_02SHJnt
+    400028: MasterRig_Braid_01_03SHJnt
+    400030: MasterRig_Braid_01_04SHJnt
+    400032: MasterRig_Braid_01_05SHJnt
+    400034: MasterRig_Braid_01_06SHJnt
+    400036: MasterRig_Head_JawEndSHJnt
+    400038: MasterRig_Head_JawSHJnt
+    400040: MasterRig_Head_TopSHJnt
+    400042: MasterRig_L_Arm_ClavicleSHJnt
+    400044: MasterRig_L_Arm_ElbowSHJnt
+    400046: MasterRig_L_Arm_ShoulderSHJnt
+    400048: MasterRig_L_Arm_WristSHJnt
+    400050: MasterRig_L_Eye_01SHJnt
+    400052: MasterRig_L_Finger_01_01SHJnt
+    400054: MasterRig_L_Finger_01_02SHJnt
+    400056: MasterRig_L_Finger_01_03SHJnt
+    400058: MasterRig_L_Finger_01_04SHJnt
+    400060: MasterRig_L_Finger_02_01SHJnt
+    400062: MasterRig_L_Finger_02_02SHJnt
+    400064: MasterRig_L_Finger_02_03SHJnt
+    400066: MasterRig_L_Finger_02_04SHJnt
+    400068: MasterRig_L_Finger_03_01SHJnt
+    400070: MasterRig_L_Finger_03_02SHJnt
+    400072: MasterRig_L_Finger_03_03SHJnt
+    400074: MasterRig_L_Finger_03_04SHJnt
+    400076: MasterRig_L_Finger_04_01SHJnt
+    400078: MasterRig_L_Finger_04_02SHJnt
+    400080: MasterRig_L_Finger_04_03SHJnt
+    400082: MasterRig_L_Finger_04_04SHJnt
+    400084: MasterRig_L_Leg_AnkleSHJnt
+    400086: MasterRig_L_Leg_BallSHJnt
+    400088: MasterRig_L_Leg_HipSHJnt
+    400090: MasterRig_L_Leg_KneeSHJnt
+    400092: MasterRig_L_Leg_ToeSHJnt
+    400094: MasterRig_L_Thumb_01_01SHJnt
+    400096: MasterRig_L_Thumb_01_02SHJnt
+    400098: MasterRig_L_Thumb_01_03SHJnt
+    400100: MasterRig_L_Thumb_01_04SHJnt
+    400102: MasterRig_Neck_01SHJnt
+    400104: MasterRig_Neck_02SHJnt
+    400106: MasterRig_Neck_TopSHJnt
+    400108: MasterRig_R_Arm_ClavicleSHJnt
+    400110: MasterRig_R_Arm_ElbowSHJnt
+    400112: MasterRig_R_Arm_ShoulderSHJnt
+    400114: MasterRig_R_Arm_WristSHJnt
+    400116: MasterRig_R_Eye_01SHJnt
+    400118: MasterRig_R_Finger_01_01SHJnt
+    400120: MasterRig_R_Finger_01_02SHJnt
+    400122: MasterRig_R_Finger_01_03SHJnt
+    400124: MasterRig_R_Finger_01_04SHJnt
+    400126: MasterRig_R_Finger_02_01SHJnt
+    400128: MasterRig_R_Finger_02_02SHJnt
+    400130: MasterRig_R_Finger_02_03SHJnt
+    400132: MasterRig_R_Finger_02_04SHJnt
+    400134: MasterRig_R_Finger_03_01SHJnt
+    400136: MasterRig_R_Finger_03_02SHJnt
+    400138: MasterRig_R_Finger_03_03SHJnt
+    400140: MasterRig_R_Finger_03_04SHJnt
+    400142: MasterRig_R_Finger_04_01SHJnt
+    400144: MasterRig_R_Finger_04_02SHJnt
+    400146: MasterRig_R_Finger_04_03SHJnt
+    400148: MasterRig_R_Finger_04_04SHJnt
+    400150: MasterRig_R_Leg_AnkleSHJnt
+    400152: MasterRig_R_Leg_BallSHJnt
+    400154: MasterRig_R_Leg_HipSHJnt
+    400156: MasterRig_R_Leg_KneeSHJnt
+    400158: MasterRig_R_Leg_ToeSHJnt
+    400160: MasterRig_R_Thumb_01_01SHJnt
+    400162: MasterRig_R_Thumb_01_02SHJnt
+    400164: MasterRig_R_Thumb_01_03SHJnt
+    400166: MasterRig_R_Thumb_01_04SHJnt
+    400168: MasterRig_ROOTSHJnt
+    400170: MasterRig_SHJntGrp
+    400172: MasterRig_Spine_01SHJnt
+    400174: MasterRig_Spine_02SHJnt
+    400176: MasterRig_Spine_03SHJnt
+    400178: MasterRig_Spine_04SHJnt
+    400180: MasterRig_Spine_TopSHJnt
+    400182: Shield_Fork_Wristband
+    400184: Shrimp1
+    400186: Teeth1
+    400188: Teeth_Tongue
+    400190: Top_Teeth1
+    400192: transform1
+    400194: transform10
+    400196: transform11
+    400198: transform12
+    400200: transform13
+    400202: transform14
+    400204: transform15
+    400206: transform2
+    400208: transform26
+    400210: transform27
+    400212: transform3
+    400214: transform4
+    400216: transform5
+    400218: transform6
+    400220: transform7
+    400222: transform8
+    400224: transform9
+    400226: Wristband
+    400228: BottomTeeth
+    400230: Fork_Spear
+    400232: Shield
+    400234: Top_Teeth
+    400236: transform16
+    400238: transform17
+    400240: transform18
+    400242: transform19
+    400244: WristBand
+    400246: EyeBrows_Lashes
+    400248: Shrimp_Head
+    400250: Tomatoe_Shield
+    400252: Tongue
+    400254: TopTeeth
+    2100000: lambert1
+    4300000: Teeth1
+    4300002: Bottom_Teeth1
+    4300004: Top_Teeth1
+    4300006: Helmet_ChestArmor
+    4300008: Body_Eyes
+    4300010: Top_Teeth
+    4300012: BottomTeeth
+    4300014: EyeBrows_Lashes
+    4300016: Lettuce_Dress_Shoes
+    4300018: Shrimp_Head
+    4300020: Braid
+    4300022: Eye_L
+    4300024: Eye_R
+    4300026: Tomatoe_Shield
+    4300028: Fork_Spear
+    4300030: Wristband
+    4300032: Tongue
+    4300034: TopTeeth
     9500000: //RootNode
     13700000: Body_Eyes
-    13700002: Braid
-    13700004: Eye_L
-    13700006: Eye_Lashes
-    13700008: Eye_R
-    13700010: EyeBrows
-    13700012: Fork_Spear
-    13700014: Helmet_ChestArmor
-    13700016: Lettuce_Dress_Shoes
-    13700018: Shield
-    13700020: Shrimp1
-    13700022: WristBand
+    13700002: Bottom_Teeth1
+    13700004: Helmet_ChestArmor
+    13700006: Teeth1
+    13700008: Top_Teeth1
+    13700010: BottomTeeth
+    13700012: Top_Teeth
+    13700014: Braid
+    13700016: Eye_L
+    13700018: Eye_R
+    13700020: EyeBrows_Lashes
+    13700022: Fork_Spear
+    13700024: Lettuce_Dress_Shoes
+    13700026: Shrimp_Head
+    13700028: Tomatoe_Shield
+    13700030: Tongue
+    13700032: TopTeeth
+    13700034: Wristband
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -351,7 +432,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: MasterRig_Neck_01SHJnt
+    - boneName: MasterRig_Neck_02SHJnt
       humanName: Neck
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -735,6 +816,11 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: BottomTeeth
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: -0.00018226012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Braid
       parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
@@ -745,17 +831,12 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Eye_Lashes
-      parentName: General_Romaine
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Eye_R
       parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: EyeBrows
+    - name: EyeBrows_Lashes
       parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
@@ -775,17 +856,27 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Shield
+    - name: Shrimp_Head
       parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Shrimp1
+    - name: Tomatoe_Shield
       parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: WristBand
+    - name: Tongue
+      parentName: General_Romaine
+      position: {x: -0, y: 0.012850895, z: 0.0022206965}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: TopTeeth
+      parentName: General_Romaine
+      position: {x: -0, y: 0, z: -0.00029924256}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wristband
       parentName: General_Romaine
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
@@ -917,7 +1008,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_04_03SHJnt
       parentName: MasterRig_L_Finger_04_02SHJnt
-      position: {x: -0.022972697, y: 1.0630437e-10, z: 1.2499761e-11}
+      position: {x: -0.022972697, y: 1.0630437e-10, z: 1.2499725e-11}
       rotation: {x: 0.00000012293455, y: -0.017895091, z: -0.05480725, w: 0.9983366}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Finger_04_04SHJnt
@@ -1102,27 +1193,27 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_02SHJnt
       parentName: MasterRig_Braid_01_01SHJnt
-      position: {x: -0.09450233, y: 0.024000349, z: 4.5796697e-18}
+      position: {x: -0.09268411, y: 0.023538584, z: 4.9960034e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_03SHJnt
       parentName: MasterRig_Braid_01_02SHJnt
-      position: {x: -0.099865705, y: 0.006827106, z: -6.9388935e-19}
+      position: {x: -0.09605985, y: 0.0065669273, z: -1.110223e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_04SHJnt
       parentName: MasterRig_Braid_01_03SHJnt
-      position: {x: -0.08764357, y: -0.005362448, z: 8.3266725e-19}
+      position: {x: -0.08430351, y: -0.005158087, z: 8.3266725e-19}
       rotation: {x: 0, y: 0, z: 0.04300252, w: 0.999075}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_05SHJnt
       parentName: MasterRig_Braid_01_04SHJnt
-      position: {x: -0.087564886, y: -0.009946746, z: -4.0245583e-18}
+      position: {x: -0.084227815, y: -0.009567679, z: -3.6082247e-18}
       rotation: {x: 0, y: 0, z: 0.11628544, w: 0.99321586}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_Braid_01_06SHJnt
       parentName: MasterRig_Braid_01_05SHJnt
-      position: {x: -0.050611228, y: 0.0059632766, z: 5.2735593e-18}
+      position: {x: -0.04868245, y: 0.005736018, z: 4.9960034e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Eye_01SHJnt
@@ -1133,31 +1224,31 @@ ModelImporter:
     - name: MasterRig_R_Eye_01SHJnt
       parentName: MasterRig_Head_TopSHJnt
       position: {x: 0.12601547, y: -0.08738976, z: 0.03291193}
-      rotation: {x: -4.4408926e-16, y: 3.3306693e-16, z: 0.7071068, w: 0.7071068}
+      rotation: {x: -0.014179374, y: 0.014179374, z: 0.7069646, w: 0.7069646}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_HipSHJnt
       parentName: MasterRig_ROOTSHJnt
       position: {x: 0.052549064, y: -0.013034413, z: -0.099448204}
-      rotation: {x: -0.0074880496, y: 0.70826507, z: -0.7047495, w: 0.040405765}
+      rotation: {x: -0.0074880277, y: 0.70826507, z: -0.7047495, w: 0.040405776}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_KneeSHJnt
       parentName: MasterRig_L_Leg_HipSHJnt
-      position: {x: -0.42799902, y: -5.1514347e-16, z: 5.3290704e-17}
-      rotation: {x: -0.0002448384, y: -0.024872664, z: -0.0010241766, w: 0.99969006}
+      position: {x: -0.42799902, y: -5.32907e-16, z: 0.0000000066517227}
+      rotation: {x: -0.00024483853, y: -0.024872677, z: -0.0010242213, w: 0.99969006}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_AnkleSHJnt
       parentName: MasterRig_L_Leg_KneeSHJnt
-      position: {x: -0.43146187, y: -3.5527136e-17, z: 1.7763568e-17}
-      rotation: {x: 0.069178395, y: 0.03982167, z: 0.99660486, w: 0.020183163}
+      position: {x: -0.43146187, y: -2.7580044e-11, z: 0.0000000067045334}
+      rotation: {x: 0.0691784, y: 0.03982167, z: 0.99660486, w: 0.02018314}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_BallSHJnt
       parentName: MasterRig_L_Leg_AnkleSHJnt
-      position: {x: 0.03873934, y: -0.0042609856, z: 0.08555143}
-      rotation: {x: -0.70028234, y: 0.00000047499603, z: 0.713866, w: 0.0000009983816}
+      position: {x: 0.03873934, y: -0.0042609866, z: 0.08555144}
+      rotation: {x: -0.7002824, y: 0.00000047504116, z: 0.713866, w: 0.0000009984765}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_L_Leg_ToeSHJnt
       parentName: MasterRig_L_Leg_BallSHJnt
-      position: {x: -0.08665814, y: 0.0077327644, z: -0.013474786}
+      position: {x: -0.08665814, y: 0.007732765, z: -0.013474786}
       rotation: {x: 0.9999537, y: 4.9733037e-17, z: -0.009622785, w: 5.168019e-15}
       scale: {x: 1, y: 1, z: 1}
     - name: MasterRig_R_Leg_HipSHJnt
