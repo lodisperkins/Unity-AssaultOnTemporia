@@ -517,6 +517,7 @@ MonoBehaviour:
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!224 &78879388 stripped
 RectTransform:
@@ -997,6 +998,7 @@ MonoBehaviour:
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1 &250998404
 GameObject:
@@ -1384,6 +1386,9 @@ GameObject:
   m_Component:
   - component: {fileID: 311856272}
   - component: {fileID: 311856273}
+  - component: {fileID: 311856276}
+  - component: {fileID: 311856275}
+  - component: {fileID: 311856274}
   m_Layer: 0
   m_Name: Minionspawn (0)P1
   m_TagString: Untagged
@@ -1410,17 +1415,87 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 311856271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 311856272}
-  TimeBetweenEnemies: 2
+  Enemies: []
+  TimeBetweenEnemies: 4
+--- !u!114 &311856274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311856271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: b6f03411addcca34ab2a1b5a294da434, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 311856276}
+        m_MethodName: EnableSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1709781220}
+--- !u!114 &311856275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311856271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 1f8ef6d1824260d45b70bf942483a358, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 311856276}
+        m_MethodName: EnableSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 0}
+--- !u!114 &311856276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311856271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &319565726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +2027,7 @@ MonoBehaviour:
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1 &489005081
 GameObject:
@@ -2245,7 +2321,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &537429331
 Transform:
   m_ObjectHideFlags: 0
@@ -2271,11 +2347,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 537429331}
+  Enemies: []
+  TimeBetweenEnemies: 3
 --- !u!1 &542155262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,6 +3538,7 @@ MonoBehaviour:
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1 &784361579
 GameObject:
@@ -5961,6 +6039,7 @@ MonoBehaviour:
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 1197770685}
+  Enemies: []
   TimeBetweenEnemies: 4
 --- !u!1 &1200247808
 GameObject:
@@ -6515,13 +6594,15 @@ GameObject:
   m_Component:
   - component: {fileID: 1289174271}
   - component: {fileID: 1289174272}
+  - component: {fileID: 1289174274}
+  - component: {fileID: 1289174273}
   m_Layer: 0
-  m_Name: Minionspawn (1)
+  m_Name: Minionspawn (1)(P2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1289174271
 Transform:
   m_ObjectHideFlags: 0
@@ -6541,7 +6622,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1289174270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
@@ -6551,7 +6632,48 @@ MonoBehaviour:
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &1289174273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289174270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: b6f03411addcca34ab2a1b5a294da434, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1201867044}
+--- !u!114 &1289174274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289174270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1292247206
 GameObject:
   m_ObjectHideFlags: 0
@@ -7562,7 +7684,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1543902884
 Transform:
   m_ObjectHideFlags: 0
@@ -7592,6 +7714,7 @@ MonoBehaviour:
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1 &1551603930
 GameObject:
@@ -7916,6 +8039,7 @@ MonoBehaviour:
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1 &1624412850
 GameObject:
@@ -8104,6 +8228,7 @@ MonoBehaviour:
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1 &1645833082
 GameObject:
@@ -9580,6 +9705,7 @@ MonoBehaviour:
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1001 &1787093391
 Prefab:
@@ -9727,6 +9853,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1806934471}
   - component: {fileID: 1806934472}
+  - component: {fileID: 1806934475}
+  - component: {fileID: 1806934474}
+  - component: {fileID: 1806934473}
   m_Layer: 0
   m_Name: Minionspawn (0)P2
   m_TagString: Untagged
@@ -9753,17 +9882,87 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1806934470}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 1806934471}
-  TimeBetweenEnemies: 2
+  Enemies: []
+  TimeBetweenEnemies: 4
+--- !u!114 &1806934473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806934470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: b6f03411addcca34ab2a1b5a294da434, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1806934475}
+        m_MethodName: EnableSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1709781220}
+--- !u!114 &1806934474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806934470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 1f8ef6d1824260d45b70bf942483a358, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1806934475}
+        m_MethodName: EnableSpawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 0}
+--- !u!114 &1806934475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806934470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1823272344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10523,6 +10722,7 @@ MonoBehaviour:
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 0}
+  Enemies: []
   TimeBetweenEnemies: 2
 --- !u!1 &2033777963
 GameObject:
