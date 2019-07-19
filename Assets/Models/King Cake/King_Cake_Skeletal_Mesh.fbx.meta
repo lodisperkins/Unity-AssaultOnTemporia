@@ -99,6 +99,11 @@ ModelImporter:
     100186: //RootNode
     100188: Shoe_L
     100190: Shoe_R
+    100192: SmoothedFork
+    100194: Hair_Mustache
+    100196: Head_Hands
+    100198: Pants_Shoes
+    100200: Cake_Pop
     400000: Cake_Pop_Staff_proxy
     400002: Coat
     400004: Collar
@@ -195,10 +200,17 @@ ModelImporter:
     400186: //RootNode
     400188: Shoe_L
     400190: Shoe_R
+    400192: SmoothedFork
+    400194: Hair_Mustache
+    400196: Head_Hands
+    400198: Pants_Shoes
+    400200: Cake_Pop
     2100000: lambert1
     2100002: lambert2
     2300000: Cake_Pop_Staff_proxy
+    2300002: Cake_Pop
     3300000: Cake_Pop_Staff_proxy
+    3300002: Cake_Pop
     4300000: K_Cake_Pants
     4300002: K_Cake_Vest
     4300004: K_Cake_Mustache
@@ -215,6 +227,11 @@ ModelImporter:
     4300026: Shoe_L
     4300028: Shoe_R
     4300030: Cake_Pop_Staff_proxy
+    4300032: SmoothedFork
+    4300034: Hair_Mustache
+    4300036: Pants_Shoes
+    4300038: Head_Hands
+    4300040: Cake_Pop
     9500000: //RootNode
     13700000: Coat
     13700002: Collar
@@ -232,6 +249,10 @@ ModelImporter:
     13700026: Shoe_L
     13700028: Shoe_R
     13700030: Cake_Pop_Staff_proxy
+    13700032: SmoothedFork
+    13700034: Hair_Mustache
+    13700036: Head_Hands
+    13700038: Pants_Shoes
   externalObjects: {}
   materials:
     importMaterials: 0
