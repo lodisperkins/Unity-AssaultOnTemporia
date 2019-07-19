@@ -481,13 +481,14 @@ GameObject:
   m_Component:
   - component: {fileID: 66650428}
   - component: {fileID: 66650429}
+  - component: {fileID: 66650430}
   m_Layer: 0
   m_Name: Minionspawn (-1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &66650428
 Transform:
   m_ObjectHideFlags: 0
@@ -507,17 +508,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 66650427}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 66650428}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &66650430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 66650427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1826724283}
 --- !u!224 &78879388 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224366232277513888, guid: 4d48caaa2303c5e499784b69da86ff2d,
@@ -961,13 +975,14 @@ GameObject:
   m_Component:
   - component: {fileID: 231462390}
   - component: {fileID: 231462391}
+  - component: {fileID: 231462392}
   m_Layer: 0
   m_Name: Minionspawn(2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &231462390
 Transform:
   m_ObjectHideFlags: 0
@@ -987,17 +1002,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 231462389}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 231462390}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &231462392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231462389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1648515}
 --- !u!1 &250998404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311856272}
   - component: {fileID: 311856273}
+  - component: {fileID: 311856276}
   m_Layer: 0
   m_Name: Minionspawn (0)P1
   m_TagString: Untagged
@@ -1410,17 +1439,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 311856271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 311856272}
-  TimeBetweenEnemies: 2
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &311856276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311856271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1709781222}
 --- !u!1 &319565726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,13 +1958,14 @@ GameObject:
   m_Component:
   - component: {fileID: 474485257}
   - component: {fileID: 474485258}
+  - component: {fileID: 474485259}
   m_Layer: 0
   m_Name: Minionspawn (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &474485257
 Transform:
   m_ObjectHideFlags: 0
@@ -1942,17 +1985,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 474485256}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 474485257}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &474485259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474485256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1722301984}
 --- !u!1 &489005081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,13 +2295,14 @@ GameObject:
   m_Component:
   - component: {fileID: 537429331}
   - component: {fileID: 537429332}
+  - component: {fileID: 537429334}
   m_Layer: 0
   m_Name: Minionspawn (1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &537429331
 Transform:
   m_ObjectHideFlags: 0
@@ -2265,17 +2322,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 537429330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 537429331}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &537429334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537429330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1201867045}
 --- !u!1 &542155262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,13 +3495,14 @@ GameObject:
   m_Component:
   - component: {fileID: 773728193}
   - component: {fileID: 773728194}
+  - component: {fileID: 773728195}
   m_Layer: 0
   m_Name: Minionspawn (-3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &773728193
 Transform:
   m_ObjectHideFlags: 0
@@ -3451,17 +3522,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773728192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 773728193}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &773728195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773728192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1214754044}
 --- !u!1 &784361579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5925,13 +6009,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1197770685}
   - component: {fileID: 1197770686}
+  - component: {fileID: 1197770687}
   m_Layer: 0
   m_Name: Minionspawn (-3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1197770685
 Transform:
   m_ObjectHideFlags: 0
@@ -5951,17 +6036,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1197770684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 1197770685}
+  Enemies: []
   TimeBetweenEnemies: 4
+--- !u!114 &1197770687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1197770684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1214754044}
 --- !u!1 &1200247808
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,13 +6613,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1289174271}
   - component: {fileID: 1289174272}
+  - component: {fileID: 1289174274}
   m_Layer: 0
-  m_Name: Minionspawn (1)
+  m_Name: Minionspawn (1)(P2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1289174271
 Transform:
   m_ObjectHideFlags: 0
@@ -6541,17 +6640,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1289174270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 1289174271}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &1289174274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289174270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1201867045}
 --- !u!1 &1292247206
 GameObject:
   m_ObjectHideFlags: 0
@@ -7556,13 +7668,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1543902884}
   - component: {fileID: 1543902885}
+  - component: {fileID: 1543902886}
   m_Layer: 0
   m_Name: Minionspawn (-1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1543902884
 Transform:
   m_ObjectHideFlags: 0
@@ -7582,17 +7695,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1543902883}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 1543902884}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &1543902886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543902883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1826724283}
 --- !u!1 &1551603930
 GameObject:
   m_ObjectHideFlags: 0
@@ -7880,13 +8006,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1623401465}
   - component: {fileID: 1623401466}
+  - component: {fileID: 1623401467}
   m_Layer: 0
   m_Name: Minionspawn (-2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1623401465
 Transform:
   m_ObjectHideFlags: 0
@@ -7906,17 +8033,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1623401464}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 1623401465}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &1623401467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623401464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1624412852}
 --- !u!1 &1624412850
 GameObject:
   m_ObjectHideFlags: 0
@@ -8068,13 +8208,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1625675620}
   - component: {fileID: 1625675621}
+  - component: {fileID: 1625675622}
   m_Layer: 0
   m_Name: Minionspawn (-2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1625675620
 Transform:
   m_ObjectHideFlags: 0
@@ -8094,17 +8235,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625675619}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 1625675620}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &1625675622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625675619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1624412852}
 --- !u!1 &1645833082
 GameObject:
   m_ObjectHideFlags: 3
@@ -9544,13 +9698,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1778594592}
   - component: {fileID: 1778594593}
+  - component: {fileID: 1778594594}
   m_Layer: 0
   m_Name: Minionspawn (2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1778594592
 Transform:
   m_ObjectHideFlags: 0
@@ -9570,17 +9725,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1778594591}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 1778594592}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &1778594594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778594591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1648515}
 --- !u!1001 &1787093391
 Prefab:
   m_ObjectHideFlags: 0
@@ -9727,6 +9895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806934471}
   - component: {fileID: 1806934472}
+  - component: {fileID: 1806934475}
   m_Layer: 0
   m_Name: Minionspawn (0)P2
   m_TagString: Untagged
@@ -9753,17 +9922,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1806934470}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 1806934471}
-  TimeBetweenEnemies: 2
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &1806934475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806934470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1709781222}
 --- !u!1 &1823272344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10487,13 +10669,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2014197447}
   - component: {fileID: 2014197448}
+  - component: {fileID: 2014197449}
   m_Layer: 0
   m_Name: Minionspawn (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2014197447
 Transform:
   m_ObjectHideFlags: 0
@@ -10513,17 +10696,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014197446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 2014197447}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &2014197449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014197446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1722301984}
 --- !u!1 &2033777963
 GameObject:
   m_ObjectHideFlags: 0

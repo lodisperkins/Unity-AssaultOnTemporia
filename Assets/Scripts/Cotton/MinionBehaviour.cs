@@ -7,6 +7,7 @@ public class MinionBehaviour : MonoBehaviour
 {
     public Wave[] Waves; // class to hold information per wave
     public Transform[] SpawnPoints;
+    public List<GameObject> Enemies;
     public float TimeBetweenEnemies = 2f;
 
     private int _totalEnemiesInCurrentWave;
@@ -23,7 +24,7 @@ public class MinionBehaviour : MonoBehaviour
     {
         _currentWave = -1; // avoid off by 1
         _totalWaves = Waves.Length - 1; // adjust, because we're using 0 index
-
+        Enemies = new List<GameObject>();
         StartNextWave();
     }
 
@@ -32,6 +33,7 @@ public class MinionBehaviour : MonoBehaviour
     {
         public int EnemiesPerWave;
         public GameObject Enemy;
+        
     }
 
     void StartNextWave()
@@ -64,6 +66,7 @@ public class MinionBehaviour : MonoBehaviour
 
             // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
             Instantiate(enemy, position: SpawnPoints[spawnPointIndex].position, rotation: SpawnPoints[spawnPointIndex].rotation);
+            Enemies.Add(enemy);
             yield return new WaitForSeconds(seconds: TimeBetweenEnemies);
         }
             yield return null;
