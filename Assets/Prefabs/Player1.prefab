@@ -107,7 +107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1046637465822656
 GameObject:
   m_ObjectHideFlags: 1
@@ -1567,6 +1567,8 @@ GameObject:
   - component: {fileID: 4900892802395296}
   - component: {fileID: 95605602160172556}
   - component: {fileID: 114534990683184570}
+  - component: {fileID: 114309594889782768}
+  - component: {fileID: 114166257375307644}
   m_Layer: 0
   m_Name: GeneralRomaine_SkeletalMesh
   m_TagString: Untagged
@@ -3493,6 +3495,35 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   IsInvincible: 0
+--- !u!114 &114166257375307644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984216922524174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 74b1cbd4546e56f4da00942485465a82, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114534990683184570}
+        m_MethodName: GetHit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1298476621861226}
 --- !u!114 &114221647647769772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3510,6 +3541,35 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114146052911223448}
         m_MethodName: MakeVulnerable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 1298476621861226}
+--- !u!114 &114309594889782768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984216922524174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 79d4f988d11a81e43a4fea01e24daa16, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114534990683184570}
+        m_MethodName: Attack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3570,6 +3630,7 @@ MonoBehaviour:
   HasQuickshot: 0
   HasNormalShot: 0
   BulletLimit: 0.04
+  OnAttack: {fileID: 11400000, guid: 79d4f988d11a81e43a4fea01e24daa16, type: 2}
   CurrentMode: 0
 --- !u!114 &114407642942272626
 MonoBehaviour:

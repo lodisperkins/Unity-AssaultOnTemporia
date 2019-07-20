@@ -26,6 +26,8 @@ namespace Lodis.Gameplay
         private GunBehaviour Gun2;
         private GunBehaviour Gun3;
         [SerializeField]
+        Matthew.GameEvent OnAttack;
+        [SerializeField]
         private GunMode CurrentMode;
         private int Counter;
         private enum GunMode
@@ -86,6 +88,7 @@ namespace Lodis.Gameplay
                 Gun1.DespawnTime = .3f;
                 Gun2.DespawnTime = .3f;
                 Gun3.DespawnTime = .3f;
+                OnAttack.Raise(gameObject);
                 Gun1.Fire();
                 Gun2.Fire();
                 Gun3.Fire();
@@ -104,6 +107,7 @@ namespace Lodis.Gameplay
             {
                 Gun1.Player = tag;
                 Gun1.DespawnTime = 20;
+                OnAttack.Raise(gameObject);
                 Gun1.Fire();
                 Timer = 0;
             }
@@ -116,6 +120,7 @@ namespace Lodis.Gameplay
         {
             Gun1.Player = tag;
             Gun1.DespawnTime = 20;
+            OnAttack.Raise(gameObject);
             Gun1.Fire();
         }
         public void NormalShot()
@@ -125,6 +130,7 @@ namespace Lodis.Gameplay
             {
                 Gun1.Player = tag;
                 Gun1.DespawnTime = .5f;
+                OnAttack.Raise(gameObject);
                 Gun1.Fire();
                 Timer = 0;
             }

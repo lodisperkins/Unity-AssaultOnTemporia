@@ -781,6 +781,7 @@ MonoBehaviour:
   HasQuickshot: 0
   HasNormalShot: 0
   BulletLimit: 0.04
+  OnAttack: {fileID: 11400000, guid: 79d4f988d11a81e43a4fea01e24daa16, type: 2}
   CurrentMode: 0
 --- !u!114 &114731415346646862
 MonoBehaviour:
