@@ -5,9 +5,8 @@ using UnityEngine;
 namespace Lodis.Gameplay
 {
     public class SeekBehaviour : MonoBehaviour {
-
-    [SerializeField]
-    private VectorVariable target;
+        
+    public VectorVariable target;
     [SerializeField]
     private Vector3 velocity;
     [SerializeField]
@@ -36,6 +35,7 @@ namespace Lodis.Gameplay
     void Update()
     {
         seek();
+        transform.forward = target.Val; 
     }
 }
 
