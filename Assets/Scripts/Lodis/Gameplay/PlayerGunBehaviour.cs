@@ -21,6 +21,7 @@ namespace Lodis.Gameplay
         private bool HasNormalShot;
         [SerializeField]
         private float BulletLimit;
+        public Lodis.VectorVariable Target;
         private float Timer;
         private GunBehaviour Gun1;
         private GunBehaviour Gun2;
@@ -68,7 +69,7 @@ namespace Lodis.Gameplay
                     
                 case GunMode.QuickShot:
                     {
-                        QuickShot();
+                        SeekShot();
                         break;
                     }
                     
@@ -76,8 +77,10 @@ namespace Lodis.Gameplay
         }
         public void Restart()
         {
+            Gun1.canSeek = false;
             CurrentMode = 0;
             Counter = 0;
+            Timer = 0;
         }
         public void SpreadShot()
         {
@@ -116,12 +119,23 @@ namespace Lodis.Gameplay
                 Timer = newtime;
             }
         }
-        public void QuickShot()
+        public void SeekShot()
         {
-            Gun1.Player = tag;
-            Gun1.DespawnTime = 20;
-            OnAttack.Raise(gameObject);
-            Gun1.Fire();
+            var newtime = Timer + Time.deltaTime;
+            if (newtime >= BulletLimit)
+            {
+                Gun1.Player = tag;
+                Gun1.DespawnTime = 1f;
+                OnAttack.Raise(gameObject);
+                Gun1.Target = Target;
+                Gun1.canSeek = true;
+                Gun1.Fire();
+                Timer = 0;
+            }
+            else
+            {
+                Timer = newtime;
+            }
         }
         public void NormalShot()
         {
@@ -156,6 +170,7 @@ namespace Lodis.Gameplay
             }
             CurrentMode--;
             Counter--;
+            Gun1.canSeek = false;
         }
     }
 }

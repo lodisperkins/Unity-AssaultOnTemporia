@@ -3630,6 +3630,7 @@ MonoBehaviour:
   HasQuickshot: 0
   HasNormalShot: 0
   BulletLimit: 0.04
+  Target: {fileID: 11400000, guid: 060894e316d44bc49a2855e7db5f99dc, type: 2}
   OnAttack: {fileID: 11400000, guid: 79d4f988d11a81e43a4fea01e24daa16, type: 2}
   CurrentMode: 0
 --- !u!114 &114407642942272626
@@ -3729,9 +3730,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet_Emitter: {fileID: 1951453473463618}
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
+  Target: {fileID: 0}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
   Player: Player1
+  canSeek: 0
 --- !u!114 &114782115483362692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3796,9 +3799,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet_Emitter: {fileID: 1090036182387408}
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
+  Target: {fileID: 0}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
   Player: Player1
+  canSeek: 0
 --- !u!114 &114889705060681308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3812,9 +3817,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet_Emitter: {fileID: 1336722116846276}
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
+  Target: {fileID: 0}
   Bullet_Forward_Force: 1000
   DespawnTime: 0.5
   Player: Player1
+  canSeek: 0
 --- !u!114 &114952687285836112
 MonoBehaviour:
   m_ObjectHideFlags: 1
