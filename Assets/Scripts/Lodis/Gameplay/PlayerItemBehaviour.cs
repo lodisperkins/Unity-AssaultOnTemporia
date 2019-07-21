@@ -33,7 +33,6 @@ namespace Lodis.Gameplay
         {
             obj.GetComponent<MeshRenderer>().enabled = false;
             obj.GetComponent<SphereCollider>().enabled = false;
-            obj.GetComponent<Transform>().SetParent(transform);
         }
         public void Drop()
         {
@@ -43,13 +42,19 @@ namespace Lodis.Gameplay
                 KeyDropped.Invoke();
                 obj.GetComponent<MeshRenderer>().enabled = true;
                 obj.GetComponent<SphereCollider>().enabled = true;
-                obj.GetComponent<Transform>().SetParent(null);
                 obj.GetComponent<Transform>().position += new Vector3(DropDisplacement, 0, 0);
                 HasKey = false;
             }
             else
             {
                 return;
+            }
+        }
+        private void Update()
+        {
+            if(HasKey)
+            {
+                Ball.transform.position = transform.position;
             }
         }
     }

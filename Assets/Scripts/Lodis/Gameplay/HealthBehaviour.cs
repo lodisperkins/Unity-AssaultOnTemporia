@@ -56,7 +56,7 @@ namespace Lodis.Gameplay
             {
                 health -= 1;
                 HealthRef.Val = health;
-                OnHealthChanged.Raise();
+                OnHealthChanged.Raise(gameObject);
                 CheckHealth();
             }
         }
@@ -71,8 +71,8 @@ namespace Lodis.Gameplay
         public void Die()
         {
             IsAlive = false;
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
-            gameObject.GetComponent<BoxCollider>().enabled = false;
+           // gameObject.GetComponent<MeshRenderer>().enabled = false;
+            //gameObject.GetComponent<BoxCollider>().enabled = false;
             gameObject.GetComponent<CharacterController>().enabled = false;
             RespawnTime = RespawnDelay + Time.time;
         }
@@ -84,8 +84,8 @@ namespace Lodis.Gameplay
                 health = BaseHealthRef.Val;
                 HealthRef.Val = health;
                 OnHealthChanged.Raise();
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
-                gameObject.GetComponent<BoxCollider>().enabled = true;
+                //gameObject.GetComponent<MeshRenderer>().enabled = true;
+                //gameObject.GetComponent<BoxCollider>().enabled = true;
                 gameObject.GetComponent<CharacterController>().enabled = true;
                 OnPlayerRespawn.Invoke();
             }

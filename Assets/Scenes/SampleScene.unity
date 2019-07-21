@@ -292,7 +292,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_IsActive
@@ -327,7 +327,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 54
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28597581
 GameObject:
@@ -481,13 +481,14 @@ GameObject:
   m_Component:
   - component: {fileID: 66650428}
   - component: {fileID: 66650429}
+  - component: {fileID: 66650430}
   m_Layer: 0
   m_Name: Minionspawn (-1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &66650428
 Transform:
   m_ObjectHideFlags: 0
@@ -499,7 +500,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 87
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &66650429
 MonoBehaviour:
@@ -507,17 +508,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 66650427}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 66650428}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &66650430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 66650427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1826724283}
 --- !u!224 &78879388 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224366232277513888, guid: 4d48caaa2303c5e499784b69da86ff2d,
@@ -697,7 +711,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_Name
@@ -818,7 +832,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4945737964609108, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_Name
@@ -896,8 +910,9 @@ Transform:
   - {fileID: 2070517245}
   - {fileID: 1847146387}
   - {fileID: 84344532}
-  - {fileID: 2111844789}
   - {fileID: 1099667484}
+  - {fileID: 1749757883}
+  - {fileID: 2111844789}
   - {fileID: 594703929}
   - {fileID: 1412240758}
   - {fileID: 2067891811}
@@ -961,13 +976,14 @@ GameObject:
   m_Component:
   - component: {fileID: 231462390}
   - component: {fileID: 231462391}
+  - component: {fileID: 231462392}
   m_Layer: 0
   m_Name: Minionspawn(2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &231462390
 Transform:
   m_ObjectHideFlags: 0
@@ -979,7 +995,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 78
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &231462391
 MonoBehaviour:
@@ -987,17 +1003,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 231462389}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 231462390}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &231462392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231462389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1648515}
 --- !u!1 &250998404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,7 +1053,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 1.0000015}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 55
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263454649
 GameObject:
@@ -1136,7 +1165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 70
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &293786492
 SphereCollider:
@@ -1384,13 +1413,14 @@ GameObject:
   m_Component:
   - component: {fileID: 311856272}
   - component: {fileID: 311856273}
+  - component: {fileID: 311856276}
   m_Layer: 0
   m_Name: Minionspawn (0)P1
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &311856272
 Transform:
   m_ObjectHideFlags: 0
@@ -1402,7 +1432,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 85
+  m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &311856273
 MonoBehaviour:
@@ -1410,17 +1440,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 311856271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 311856272}
-  TimeBetweenEnemies: 2
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &311856276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311856271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1709781222}
 --- !u!1 &319565726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,7 +1582,7 @@ Transform:
   m_LocalScale: {x: 0.7599999, y: 1, z: 3.2099998}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 53
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &360266195
 MonoBehaviour:
@@ -1678,7 +1721,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.000101}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 73
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &375947836
 BoxCollider:
@@ -1851,7 +1894,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5.9999995}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 71
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &463915608
 BoxCollider:
@@ -1916,13 +1959,14 @@ GameObject:
   m_Component:
   - component: {fileID: 474485257}
   - component: {fileID: 474485258}
+  - component: {fileID: 474485259}
   m_Layer: 0
   m_Name: Minionspawn (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &474485257
 Transform:
   m_ObjectHideFlags: 0
@@ -1934,7 +1978,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 80
+  m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &474485258
 MonoBehaviour:
@@ -1942,17 +1986,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 474485256}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 474485257}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &474485259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474485256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1722301984}
 --- !u!1 &489005081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,7 +2132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4945737964609108, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_Name
@@ -2192,7 +2249,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -2239,13 +2296,14 @@ GameObject:
   m_Component:
   - component: {fileID: 537429331}
   - component: {fileID: 537429332}
+  - component: {fileID: 537429334}
   m_Layer: 0
   m_Name: Minionspawn (1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &537429331
 Transform:
   m_ObjectHideFlags: 0
@@ -2257,7 +2315,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 83
+  m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &537429332
 MonoBehaviour:
@@ -2265,17 +2323,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 537429330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 537429331}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &537429334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537429330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1201867045}
 --- !u!1 &542155262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,7 +2432,7 @@ Transform:
   m_LocalScale: {x: 4.256663, y: 4.256663, z: 4.256663}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &542155267
 MonoBehaviour:
@@ -2440,7 +2511,7 @@ Transform:
   m_LocalScale: {x: 0.7599999, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &579004245
 MonoBehaviour:
@@ -2673,7 +2744,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 22}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &597334740
 GameObject:
@@ -2752,7 +2823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_Name
@@ -2814,7 +2885,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 5.9999995}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 76
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &644629474
 BoxCollider:
@@ -2900,7 +2971,7 @@ RectTransform:
   m_Children:
   - {fileID: 208568693}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 92
+  m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3266,7 +3337,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.00015}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 75
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &744230032
 BoxCollider:
@@ -3425,13 +3496,14 @@ GameObject:
   m_Component:
   - component: {fileID: 773728193}
   - component: {fileID: 773728194}
+  - component: {fileID: 773728195}
   m_Layer: 0
   m_Name: Minionspawn (-3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &773728193
 Transform:
   m_ObjectHideFlags: 0
@@ -3443,7 +3515,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 90
+  m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &773728194
 MonoBehaviour:
@@ -3451,17 +3523,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773728192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 773728193}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &773728195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773728192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1214754044}
 --- !u!1 &784361579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,7 +3706,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.000051}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 61
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 102.87, z: 0}
 --- !u!65 &786055908
 BoxCollider:
@@ -3784,14 +3869,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 809139028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.83, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.01605624, z: -0, w: 0.99987113}
+  m_LocalPosition: {x: 0, y: 1.2110002, z: 0}
+  m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
   m_Children:
   - {fileID: 1699969148}
-  m_Father: {fileID: 2111844789}
+  m_Father: {fileID: 1749757883}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 1.84, z: 0}
 --- !u!212 &809139031
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3942,7 +4027,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.000051}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 60
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &829733773
 BoxCollider:
@@ -4462,7 +4547,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_Name
@@ -4504,7 +4589,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 62
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &978625770
 SphereCollider:
@@ -4742,7 +4827,7 @@ Transform:
   m_Children:
   - {fileID: 2109062265}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 57
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &1034911598
 MonoBehaviour:
@@ -4859,7 +4944,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4945737964609108, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_IsActive
@@ -4905,7 +4990,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4945737964609108, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_Name
@@ -4947,7 +5032,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.00015}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 64
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1042233040
 BoxCollider:
@@ -5057,7 +5142,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1099667480
 GameObject:
@@ -5142,7 +5227,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1119538286
 GameObject:
@@ -5351,7 +5436,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.000051}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 72
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1126415135
 BoxCollider:
@@ -5444,7 +5529,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4945737964609108, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_Name
@@ -5873,7 +5958,7 @@ Transform:
   m_Children:
   - {fileID: 302578949}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &1186114145
 MonoBehaviour:
@@ -5925,13 +6010,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1197770685}
   - component: {fileID: 1197770686}
+  - component: {fileID: 1197770687}
   m_Layer: 0
   m_Name: Minionspawn (-3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1197770685
 Transform:
   m_ObjectHideFlags: 0
@@ -5943,7 +6029,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 91
+  m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1197770686
 MonoBehaviour:
@@ -5951,17 +6037,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1197770684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
   - {fileID: 1197770685}
+  Enemies: []
   TimeBetweenEnemies: 4
+--- !u!114 &1197770687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1197770684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1214754044}
 --- !u!1 &1200247808
 GameObject:
   m_ObjectHideFlags: 0
@@ -6169,7 +6268,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_Name
@@ -6252,7 +6351,7 @@ Transform:
   m_Children:
   - {fileID: 417437156}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 52
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &1214754046
 MonoBehaviour:
@@ -6493,7 +6592,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_Name
@@ -6515,13 +6614,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1289174271}
   - component: {fileID: 1289174272}
+  - component: {fileID: 1289174274}
   m_Layer: 0
-  m_Name: Minionspawn (1)
+  m_Name: Minionspawn (1)(P2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1289174271
 Transform:
   m_ObjectHideFlags: 0
@@ -6533,7 +6633,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 82
+  m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1289174272
 MonoBehaviour:
@@ -6541,17 +6641,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1289174270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 1289174271}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &1289174274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289174270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1201867045}
 --- !u!1 &1292247206
 GameObject:
   m_ObjectHideFlags: 0
@@ -6832,7 +6945,7 @@ RectTransform:
   - {fileID: 1762167801}
   - {fileID: 93951885}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 77
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7167,7 +7280,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 22}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1463556939
 GameObject:
@@ -7556,13 +7669,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1543902884}
   - component: {fileID: 1543902885}
+  - component: {fileID: 1543902886}
   m_Layer: 0
   m_Name: Minionspawn (-1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1543902884
 Transform:
   m_ObjectHideFlags: 0
@@ -7574,7 +7688,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 86
+  m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1543902885
 MonoBehaviour:
@@ -7582,17 +7696,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1543902883}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 2
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 1543902884}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &1543902886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543902883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1826724283}
 --- !u!1 &1551603930
 GameObject:
   m_ObjectHideFlags: 0
@@ -7628,7 +7755,7 @@ RectTransform:
   - {fileID: 987983717}
   - {fileID: 1000981959}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 67
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7815,7 +7942,7 @@ Transform:
   m_LocalScale: {x: 1.0000004, y: 1, z: 7.4000015}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 74
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: -137, z: 0}
 --- !u!65 &1561717596
 BoxCollider:
@@ -7871,6 +7998,60 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1561717594}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1594913201
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 225317481}
+    m_Modifications:
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.45726037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.48799992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.905859
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179632791413852, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+      propertyPath: m_TagString
+      value: Key
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a62aa75c6afd5ad45a943aa86eb3ace7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1623401464
 GameObject:
   m_ObjectHideFlags: 0
@@ -7880,13 +8061,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1623401465}
   - component: {fileID: 1623401466}
+  - component: {fileID: 1623401467}
   m_Layer: 0
   m_Name: Minionspawn (-2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1623401465
 Transform:
   m_ObjectHideFlags: 0
@@ -7898,7 +8080,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 88
+  m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1623401466
 MonoBehaviour:
@@ -7906,17 +8088,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1623401464}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 1623401465}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &1623401467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623401464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1624412852}
 --- !u!1 &1624412850
 GameObject:
   m_ObjectHideFlags: 0
@@ -8068,13 +8263,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1625675620}
   - component: {fileID: 1625675621}
+  - component: {fileID: 1625675622}
   m_Layer: 0
   m_Name: Minionspawn (-2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1625675620
 Transform:
   m_ObjectHideFlags: 0
@@ -8086,7 +8282,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 89
+  m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1625675621
 MonoBehaviour:
@@ -8094,17 +8290,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625675619}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
+  - {fileID: 1625675620}
+  Enemies: []
   TimeBetweenEnemies: 2
+--- !u!114 &1625675622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625675619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1624412852}
 --- !u!1 &1645833082
 GameObject:
   m_ObjectHideFlags: 3
@@ -8178,7 +8387,7 @@ Transform:
   m_LocalScale: {x: 0.7599999, y: 1, z: 4.19}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 56
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1652401311
 MonoBehaviour:
@@ -8773,7 +8982,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 58
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722301982
 GameObject:
@@ -8808,7 +9017,7 @@ Transform:
   m_Children:
   - {fileID: 1941654073}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 49
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &1722301984
 MonoBehaviour:
@@ -9103,7 +9312,7 @@ RectTransform:
   m_Children:
   - {fileID: 78879388}
   m_Father: {fileID: 225317481}
-  m_RootOrder: 65
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9261,6 +9470,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1749757882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1179632791413852, guid: a62aa75c6afd5ad45a943aa86eb3ace7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1594913201}
+--- !u!4 &1749757883 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4880281993020946, guid: a62aa75c6afd5ad45a943aa86eb3ace7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1594913201}
+--- !u!135 &1749757886
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749757882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28
+  m_Center: {x: -0.04, y: -0.19, z: 0.0000008419156}
+--- !u!114 &1749757887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749757882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 6128b01dae1284e47b4dc4f6de9c97c1, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1749757888}
+        m_MethodName: Restart
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1071433582}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 0}
+--- !u!114 &1749757888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749757882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d494f8dab430d6f469f726ab42695caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gates:
+  - {fileID: 1652401309}
+  - {fileID: 360266193}
+  - {fileID: 301541193}
+  - {fileID: 708788366}
+  - {fileID: 2143639570}
+  - {fileID: 1763884926}
+  - {fileID: 28597581}
+  - {fileID: 579004243}
+  OnTriggerEnterResponse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1751135300
 GameObject:
   m_ObjectHideFlags: 0
@@ -9390,7 +9675,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 1.0000015}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 59
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763884926
 GameObject:
@@ -9425,7 +9710,7 @@ Transform:
   m_LocalScale: {x: 0.7599999, y: 1, z: 3.2099998}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1763884928
 MonoBehaviour:
@@ -9544,13 +9829,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1778594592}
   - component: {fileID: 1778594593}
+  - component: {fileID: 1778594594}
   m_Layer: 0
   m_Name: Minionspawn (2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1778594592
 Transform:
   m_ObjectHideFlags: 0
@@ -9562,7 +9848,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 81
+  m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1778594593
 MonoBehaviour:
@@ -9570,17 +9856,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1778594591}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 1778594592}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &1778594594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778594591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1648515}
 --- !u!1001 &1787093391
 Prefab:
   m_ObjectHideFlags: 0
@@ -9623,7 +9922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4108159693548104, guid: 0ec339f5399e00f498dd03b86fb331d8, type: 2}
       propertyPath: m_RootOrder
-      value: 40
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 114892877173424630, guid: 0ec339f5399e00f498dd03b86fb331d8,
         type: 2}
@@ -9665,7 +9964,13 @@ Prefab:
       propertyPath: Gates.Array.data[7]
       value: 
       objectReference: {fileID: 579004243}
-    m_RemovedComponents: []
+    - target: {fileID: 1190793220171104, guid: 0ec339f5399e00f498dd03b86fb331d8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 33262409762248974, guid: 0ec339f5399e00f498dd03b86fb331d8, type: 2}
+    - {fileID: 23393711274366028, guid: 0ec339f5399e00f498dd03b86fb331d8, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0ec339f5399e00f498dd03b86fb331d8, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1798001062
@@ -9705,7 +10010,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4945737964609108, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
       propertyPath: m_Name
@@ -9727,13 +10032,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1806934471}
   - component: {fileID: 1806934472}
+  - component: {fileID: 1806934475}
   m_Layer: 0
   m_Name: Minionspawn (0)P2
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1806934471
 Transform:
   m_ObjectHideFlags: 0
@@ -9745,7 +10051,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 84
+  m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1806934472
 MonoBehaviour:
@@ -9753,17 +10059,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1806934470}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 3
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1988416125560928, guid: 1c792a7d445b29a41959b8713cb2845a, type: 2}
   SpawnPoints:
   - {fileID: 1806934471}
-  TimeBetweenEnemies: 2
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &1806934475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806934470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1709781222}
 --- !u!1 &1823272344
 GameObject:
   m_ObjectHideFlags: 0
@@ -9790,7 +10109,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1826724281
 GameObject:
@@ -10047,7 +10366,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.000101}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 63
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1879545055
 BoxCollider:
@@ -10168,7 +10487,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_Name
@@ -10238,7 +10557,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280468677549750, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
       propertyPath: m_Name
@@ -10487,13 +10806,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2014197447}
   - component: {fileID: 2014197448}
+  - component: {fileID: 2014197449}
   m_Layer: 0
   m_Name: Minionspawn (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2014197447
 Transform:
   m_ObjectHideFlags: 0
@@ -10505,7 +10825,7 @@ Transform:
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 79
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2014197448
 MonoBehaviour:
@@ -10513,17 +10833,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014197446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 774f9cdcb583ae849b7129962212b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - EnemiesPerWave: 4
+  - EnemiesPerWave: 100
     Enemy: {fileID: 1077610173958754, guid: 2ba777d72a3af554480250a854c790ec, type: 2}
   SpawnPoints:
-  - {fileID: 0}
-  TimeBetweenEnemies: 2
+  - {fileID: 2014197447}
+  Enemies: []
+  TimeBetweenEnemies: 5
+--- !u!114 &2014197449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014197446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a773b3acb55a44d9058917d3cbf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1722301984}
 --- !u!1 &2033777963
 GameObject:
   m_ObjectHideFlags: 0
@@ -10553,7 +10886,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 6.46}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 66
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 34.7, z: 0}
 --- !u!65 &2033777965
 BoxCollider:
@@ -10744,7 +11077,7 @@ Transform:
   m_LocalScale: {x: 5.543244, y: 5.543244, z: 5.543244}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2067891812
 MonoBehaviour:
@@ -10847,7 +11180,7 @@ Transform:
   m_LocalScale: {x: 0.99999976, y: 1, z: 6.459999}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 68
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: -26.2, z: 0}
 --- !u!65 &2094382361
 BoxCollider:
@@ -10997,7 +11330,7 @@ Transform:
   m_LocalScale: {x: 1.0000015, y: 1, z: 22.000051}
   m_Children: []
   m_Father: {fileID: 225317481}
-  m_RootOrder: 69
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &2126068695
 BoxCollider:

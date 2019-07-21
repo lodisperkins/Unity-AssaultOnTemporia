@@ -59,9 +59,12 @@ GameObject:
   - component: {fileID: 65693080143200928}
   - component: {fileID: 54294221304831830}
   - component: {fileID: 114115966479766102}
+  - component: {fileID: 114097302543630172}
+  - component: {fileID: 114360751254675740}
+  - component: {fileID: 114392720968526966}
   m_Layer: 0
   m_Name: Minion P2
-  m_TagString: Player1
+  m_TagString: Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,6 +252,26 @@ MonoBehaviour:
   Bullet_Forward_Force: 1000
   DespawnTime: 0
   Player: 
+--- !u!114 &114097302543630172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988416125560928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78060fd8b9f43d4eab2a6d005e33717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
+  HealthRef: {fileID: 11400000, guid: c256a681a6ca4224bae94b1d98a7dfef, type: 2}
+  BaseHealthRef: {fileID: 11400000, guid: d4e26201af9700c4497ae3180585c34f, type: 2}
+  OnMinionDeath: {fileID: 11400000, guid: 9954c1adf96cb8843887066a93c211a7, type: 2}
+  OnMinionRespawn:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114115966479766102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,6 +286,64 @@ MonoBehaviour:
   target: {fileID: 11400000, guid: 4ecff61c8bfe864429b824e961c56228, type: 2}
   velocity: {x: 0, y: 0, z: 0}
   max_speed: 2
+--- !u!114 &114360751254675740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988416125560928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: ee8dcfa069d381d47984c1373dcfc641, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114097302543630172}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 0}
+--- !u!114 &114392720968526966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988416125560928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ea7147ebeb3c40bb63ada4eebdacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 6128b01dae1284e47b4dc4f6de9c97c1, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114097302543630172}
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  SenderObject: {fileID: 0}
 --- !u!136 &136511648497747798
 CapsuleCollider:
   m_ObjectHideFlags: 1
