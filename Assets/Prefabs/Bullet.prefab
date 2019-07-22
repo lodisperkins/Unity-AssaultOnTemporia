@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797cacec993605a4eb37ff5052f0312d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 11400000, guid: 4ecff61c8bfe864429b824e961c56228, type: 2}
+  target: {fileID: 11400000, guid: 060894e316d44bc49a2855e7db5f99dc, type: 2}
   velocity: {x: 0, y: 0, z: 0}
   max_speed: 5
 --- !u!114 &114681720538510312

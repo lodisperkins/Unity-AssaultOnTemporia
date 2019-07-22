@@ -7,6 +7,10 @@ namespace Lodis.Gameplay
 
         [SerializeField]
         private IntVariable RespawnDelayRef;
+        [SerializeField]
+        private GameObject Model;
+        [SerializeField]
+        private GameObject Explosion;
         private float RespawnDelay;
         private float RespawnTime;
         private float VulnerabilityDelay;
@@ -71,8 +75,8 @@ namespace Lodis.Gameplay
         public void Die()
         {
             IsAlive = false;
-           // gameObject.GetComponent<MeshRenderer>().enabled = false;
-            //gameObject.GetComponent<BoxCollider>().enabled = false;
+            Model.SetActive(false);
+            Explosion.GetComponent<ParticleSystem>().Play();
             gameObject.GetComponent<CharacterController>().enabled = false;
             RespawnTime = RespawnDelay + Time.time;
         }
@@ -84,8 +88,8 @@ namespace Lodis.Gameplay
                 health = BaseHealthRef.Val;
                 HealthRef.Val = health;
                 OnHealthChanged.Raise();
-                //gameObject.GetComponent<MeshRenderer>().enabled = true;
-                //gameObject.GetComponent<BoxCollider>().enabled = true;
+                Model.SetActive(true);
+                Explosion.GetComponent<ParticleSystem>().Play();
                 gameObject.GetComponent<CharacterController>().enabled = true;
                 OnPlayerRespawn.Invoke();
             }

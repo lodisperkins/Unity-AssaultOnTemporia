@@ -12,6 +12,8 @@ namespace Lodis.Gameplay
         private string Carrier;
         private UnityEvent GateFuncs;
         [SerializeField]
+        private GameObject Tracker;
+        [SerializeField]
         private UnityEvent OnTriggerEnterResponse;
         // Use this for initialization
         void Start() {
@@ -78,11 +80,27 @@ namespace Lodis.Gameplay
         }
         public void Restart(Transform keyspawn)
         {
+            GetComponent<MeshRenderer>().enabled = true;
+            GetComponent<SphereCollider>().isTrigger = true;
+            Destroy(GetComponent<Rigidbody>());
+            transform.rotation = new Quaternion(0, 0, 0, 0);
+            Tracker.SetActive(true);
             CloseGates();
             InitializeKey();
             transform.position = keyspawn.position;
+            
         }
+        public void DisableKey()
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            Tracker.SetActive(false);
+        }
+
         private void OnTriggerEnter(Collider other){
+            if(other.CompareTag("Goal"))
+            {
+                DisableKey();
+            }
             OpenGates(other.gameObject);
             Carrier = other.tag;
         }

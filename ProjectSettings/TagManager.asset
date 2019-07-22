@@ -10,6 +10,8 @@ TagManager:
   - Bullet
   - Gate
   - Minion
+  - Win Area
+  - Goal
   layers:
   - Default
   - TransparentFX
