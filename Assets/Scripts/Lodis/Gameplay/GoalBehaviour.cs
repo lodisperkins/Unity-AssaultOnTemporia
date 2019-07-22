@@ -9,6 +9,10 @@ namespace Lodis.Gameplay
         [SerializeField]
         private string Tag;
         [SerializeField]
+        private GameObject Goal;
+        [SerializeField]
+        private GameObject Explosion;
+        [SerializeField]
         private Matthew.GameEvent GameWon;
         [SerializeField]
         private CinemachineVirtualCamera CurrentCam;
@@ -20,6 +24,12 @@ namespace Lodis.Gameplay
             {
                 GameWon.Raise(gameObject);
             }
+        }
+        [ContextMenu("Test Explosion(P2)")]
+        public void ToggleChildren()
+        {
+            Goal.SetActive(!Goal.activeInHierarchy);
+            Explosion.SetActive(!Explosion.activeInHierarchy);
         }
         public void ToggleCameras()
         {

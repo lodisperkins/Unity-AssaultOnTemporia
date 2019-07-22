@@ -11,7 +11,14 @@ namespace Lodis.Movement
         void Start() {
             animator = GetComponent<Animator>();
         }
-
+        public void Attack()
+        {
+            animator.SetTrigger("Attack");
+        }
+        public void GetHit()
+        {
+            animator.SetTrigger("GetHit");
+        }
         // Update is called once per frame
         void Update() {
             animator.SetFloat("Speed",velocity.Val.magnitude);

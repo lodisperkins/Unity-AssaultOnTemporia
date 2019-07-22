@@ -22,12 +22,15 @@ public class MinionBehaviour : MonoBehaviour
 
     void Start()
     {
+       
+    }
+    private void OnEnable()
+    {
         _currentWave = -1; // avoid off by 1
         _totalWaves = Waves.Length - 1; // adjust, because we're using 0 index
         Enemies = new List<GameObject>();
         StartNextWave();
     }
-
     [System.Serializable]
     public class Wave
     {
@@ -65,8 +68,8 @@ public class MinionBehaviour : MonoBehaviour
             int spawnPointIndex = Random.Range(0, SpawnPoints.Length);
 
             // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
-            Instantiate(enemy, position: SpawnPoints[spawnPointIndex].position, rotation: SpawnPoints[spawnPointIndex].rotation);
-            Enemies.Add(enemy);
+            GameObject NewEnemy =Instantiate(enemy, position: SpawnPoints[spawnPointIndex].position, rotation: SpawnPoints[spawnPointIndex].rotation);
+            Enemies.Add(NewEnemy);
             yield return new WaitForSeconds(seconds: TimeBetweenEnemies);
         }
             yield return null;
