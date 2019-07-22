@@ -9,6 +9,10 @@ namespace Lodis.Gameplay
         public int DropDisplacement;
         public bool HasKey;
         [SerializeField]
+        private GameObject Goal;
+        [SerializeField]
+        private Vector3 ThrowingForce;
+        [SerializeField]
         private UnityEngine.Events.UnityEvent KeyDropped;
         // Use this for initialization
         void Start()
@@ -23,6 +27,13 @@ namespace Lodis.Gameplay
                 KeyDropped.AddListener(other.GetComponent<KeyBehaviour>().CloseGates);
                 Carry(other.gameObject);
             }
+            else if(other.CompareTag("Win Area"))
+            {
+                GetComponent<Lodis.PlayerInput.InputBehaviour>().enabled = false;
+                GetComponent<Lodis.Movement.PlayerMovementBehaviour>().DisableMovement();
+                transform.LookAt(Goal.transform);
+                Throw();
+            }
         }
         public void Carry(GameObject obj)
         {
@@ -33,6 +44,7 @@ namespace Lodis.Gameplay
         {
             obj.GetComponent<MeshRenderer>().enabled = false;
             obj.GetComponent<SphereCollider>().enabled = false;
+            obj.GetComponent<SphereCollider>().enabled = false;
         }
         public void Drop()
         {
@@ -42,13 +54,22 @@ namespace Lodis.Gameplay
                 KeyDropped.Invoke();
                 obj.GetComponent<MeshRenderer>().enabled = true;
                 obj.GetComponent<SphereCollider>().enabled = true;
-                obj.GetComponent<Transform>().position += new Vector3(DropDisplacement, 0, 0);
+                obj.GetComponent<Transform>().position += new Vector3(0, 0, DropDisplacement);
                 HasKey = false;
             }
             else
             {
                 return;
             }
+        }
+        [ContextMenu("Throw")]
+        public void Throw()
+        {
+            Drop();
+            Ball.AddComponent<Rigidbody>();
+            Ball.GetComponent<SphereCollider>().isTrigger = false;
+            var temporary_RigidBody = Ball.GetComponent<Rigidbody>();
+            temporary_RigidBody.AddForce(ThrowingForce);
         }
         private void Update()
         {

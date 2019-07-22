@@ -20,6 +20,10 @@ namespace Lodis.Gameplay
         [SerializeField]
         private bool HasNormalShot;
         [SerializeField]
+        private GameObject NormalBullet;
+        [SerializeField]
+        private GameObject SpecialBullet;
+        [SerializeField]
         private float BulletLimit;
         public Lodis.VectorVariable Target;
         private float Timer;
@@ -88,6 +92,7 @@ namespace Lodis.Gameplay
             if (newtime >= BulletLimit)
             {
                 Gun1.Player = tag;
+                Gun1.Bullet = NormalBullet;
                 Gun1.DespawnTime = .3f;
                 Gun2.DespawnTime = .3f;
                 Gun3.DespawnTime = .3f;
@@ -108,6 +113,7 @@ namespace Lodis.Gameplay
             var newtime = Timer + Time.deltaTime;
             if (newtime >= BulletLimit)
             {
+                Gun1.Bullet = NormalBullet;
                 Gun1.Player = tag;
                 Gun1.DespawnTime = 20;
                 OnAttack.Raise(gameObject);
@@ -125,6 +131,7 @@ namespace Lodis.Gameplay
             if (newtime >= BulletLimit)
             {
                 Gun1.Player = tag;
+                Gun1.Bullet = SpecialBullet;
                 Gun1.DespawnTime = 1f;
                 OnAttack.Raise(gameObject);
                 Gun1.Target = Target;
@@ -143,6 +150,7 @@ namespace Lodis.Gameplay
             if (newtime >= BulletLimit)
             {
                 Gun1.Player = tag;
+                Gun1.Bullet = NormalBullet;
                 Gun1.DespawnTime = .5f;
                 OnAttack.Raise(gameObject);
                 Gun1.Fire();
