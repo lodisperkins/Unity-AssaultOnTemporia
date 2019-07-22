@@ -16,16 +16,33 @@ namespace Lodis.Gameplay
             isPaused = false;
             StartCoroutine("PauseInput");
         }
+
         public void Pause()
         {
             Time.timeScale = 0;
             image.SetActive(true);
         }
+
+        bool togglePause()
+        {
+            if (Time.timeScale == 0f)
+            {
+                Time.timeScale = 1f;
+                return (false);
+            }
+            else
+            {
+                Time.timeScale = 0f;
+                return (true);
+            }
+        }
+
         public void UnPause()
         {
             Time.timeScale = 1;
             image.SetActive(false);
         }
+
         IEnumerator PauseInput()
         {
             while(true)
