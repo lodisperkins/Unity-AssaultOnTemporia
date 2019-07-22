@@ -73,7 +73,6 @@ namespace Cotton.Gameplay
             {
                 IsAlive = true;
                 health = BaseHealthRef.Val;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
                 gameObject.GetComponent<BoxCollider>().enabled = true;
                 OnMinionRespawn.Invoke();
             }
