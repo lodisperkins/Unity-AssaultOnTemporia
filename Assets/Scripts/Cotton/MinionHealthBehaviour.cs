@@ -11,6 +11,7 @@ namespace Cotton.Gameplay
         private IntVariable RespawnDelayRef;
         private float RespawnDelay;
         private float RespawnTime;
+        private GameObject TempTrans;
         [SerializeField]
         private IntVariable HealthRef;
         [SerializeField]
@@ -63,9 +64,8 @@ namespace Cotton.Gameplay
         public void Die()
         {
             IsAlive = false;
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
-            gameObject.GetComponent<BoxCollider>().enabled = false;
-            RespawnTime = RespawnDelay + Time.time;
+            TempTrans = gameObject;
+            Destroy(TempTrans);
         }
         private void Respawn()
         {
@@ -73,7 +73,7 @@ namespace Cotton.Gameplay
             {
                 IsAlive = true;
                 health = BaseHealthRef.Val;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                //gameObject.GetComponent<MeshRenderer>().enabled = true;
                 gameObject.GetComponent<BoxCollider>().enabled = true;
                 OnMinionRespawn.Invoke();
             }
