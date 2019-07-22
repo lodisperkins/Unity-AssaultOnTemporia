@@ -3599,7 +3599,7 @@ MonoBehaviour:
   BulletLimit: 0.04
   Target: {fileID: 11400000, guid: 4ecff61c8bfe864429b824e961c56228, type: 2}
   OnAttack: {fileID: 11400000, guid: 79d4f988d11a81e43a4fea01e24daa16, type: 2}
-  CurrentMode: 3
+  CurrentMode: 0
 --- !u!114 &114698828667669706
 MonoBehaviour:
   m_ObjectHideFlags: 1

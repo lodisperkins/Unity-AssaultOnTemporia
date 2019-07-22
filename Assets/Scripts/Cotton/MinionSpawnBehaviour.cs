@@ -5,6 +5,7 @@ using Cinemachine;
 public class MinionSpawnBehaviour : MonoBehaviour
 {
     MinionBehaviour Spawnpoint;
+    
     [SerializeField]
     private CinemachineVirtualCamera Camera;
     // Use this for initialization

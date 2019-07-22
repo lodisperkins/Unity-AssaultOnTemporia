@@ -41,28 +41,37 @@ namespace Lodis.Gameplay
         }
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Bullet"))
+            if (other.CompareTag("Bullet") || other.CompareTag("Minion"))
             {
                 TakeDamage(other.gameObject);
             }
         }
         private void TakeDamage(GameObject bullet)
         {
-            if (CompareTag(bullet.GetComponent<BulletBehaviour>().shooter))
+            if (bullet.CompareTag("Bullet"))
+            {
+
+                if (CompareTag(bullet.GetComponent<BulletBehaviour>().shooter))
+                {
+                    return;
+                }
+            }
+            else if (IsInvincible)
             {
                 return;
             }
-            else if(IsInvincible)
+            else if(bullet.CompareTag("Minion"))
             {
-                return;
+                if(!CompareTag(bullet.GetComponent<SeekBehaviour>().Target))
+                {
+                    return;
+                }
             }
-            else
-            {
+           
                 health -= 1;
                 HealthRef.Val = health;
                 OnHealthChanged.Raise(gameObject);
                 CheckHealth();
-            }
         }
         private void CheckHealth()
         {
