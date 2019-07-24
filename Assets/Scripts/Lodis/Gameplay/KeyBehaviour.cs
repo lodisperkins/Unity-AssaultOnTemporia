@@ -15,6 +15,8 @@ namespace Lodis.Gameplay
         private GameObject Tracker;
         [SerializeField]
         private UnityEvent OnTriggerEnterResponse;
+        [SerializeField]
+        public int dropval;
         // Use this for initialization
         void Start() {
             InitializeKey();
@@ -97,12 +99,19 @@ namespace Lodis.Gameplay
         }
 
         private void OnTriggerEnter(Collider other){
-            if(other.CompareTag("Goal"))
+            if (other.CompareTag("Goal"))
             {
                 DisableKey();
             }
-            OpenGates(other.gameObject);
-            Carrier = other.tag;
+            else if (other.CompareTag("Player1") || other.CompareTag("Player2"))
+            {
+                OpenGates(other.gameObject);
+                Carrier = other.tag;
+            }
+            else
+            {
+                transform.position += new Vector3(0,0,dropval);
+            }
         }
     }
 }
