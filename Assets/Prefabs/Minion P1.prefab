@@ -156,13 +156,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4280468677549750}
   - component: {fileID: 23081232714665892}
-  - component: {fileID: 65814108029113784}
-  - component: {fileID: 54525528265462274}
   - component: {fileID: 114292344443018072}
   - component: {fileID: 114754824415949442}
   - component: {fileID: 114887941356789454}
   - component: {fileID: 114050854461547384}
   - component: {fileID: 114564848639109896}
+  - component: {fileID: 135976719104351342}
+  - component: {fileID: 65361037312119974}
+  - component: {fileID: 95652920543413680}
   m_Layer: 0
   m_Name: Minion P1
   m_TagString: Minion
@@ -1689,7 +1690,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077610173958754}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.3826904, y: 2.03, z: 20.1}
+  m_LocalPosition: {x: -6.131212, y: 4.15, z: 2.7255392}
   m_LocalScale: {x: 0.39466, y: 0.39466, z: 0.39466}
   m_Children:
   - {fileID: 4224360361334754}
@@ -2640,22 +2641,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!54 &54525528265462274
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1077610173958754}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65814108029113784
+--- !u!65 &65361037312119974
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2667,6 +2653,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95652920543413680
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077610173958754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6940611342bde3c43b6303b706e0e88f, type: 3}
+  m_Controller: {fileID: 9100000, guid: a9e6646469c016d4b94867254af1ed54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &95824289827808736
 Animator:
   serializedVersion: 3
@@ -2725,6 +2729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797cacec993605a4eb37ff5052f0312d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Target: Player2
   target: {fileID: 11400000, guid: 060894e316d44bc49a2855e7db5f99dc, type: 2}
   velocity: {x: 0, y: 0, z: 0}
   max_speed: 2
@@ -2770,9 +2775,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet_Emitter: {fileID: 1867761651376408}
   Bullet: {fileID: 1945204183813630, guid: 80704bbc4e27c5e4bb7f624ae4865151, type: 2}
+  Target: {fileID: 0}
   Bullet_Forward_Force: 1000
   DespawnTime: 0
   Player: 
+  canSeek: 0
 --- !u!114 &114754824415949442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2844,6 +2851,18 @@ MonoBehaviour:
     m_TypeName: Matthew.GameEventResponse, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   SenderObject: {fileID: 0}
+--- !u!135 &135976719104351342
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077610173958754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0.64, z: 0}
 --- !u!136 &136023160440744304
 CapsuleCollider:
   m_ObjectHideFlags: 1

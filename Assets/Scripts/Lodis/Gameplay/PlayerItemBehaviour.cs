@@ -14,6 +14,8 @@ namespace Lodis.Gameplay
         private Vector3 ThrowingForce;
         [SerializeField]
         private UnityEngine.Events.UnityEvent KeyDropped;
+        [SerializeField]
+        private Matthew.GameEvent Victory;
         // Use this for initialization
         void Start()
         {
@@ -32,7 +34,7 @@ namespace Lodis.Gameplay
                 GetComponent<Lodis.PlayerInput.InputBehaviour>().enabled = false;
                 GetComponent<Lodis.Movement.PlayerMovementBehaviour>().DisableMovement();
                 transform.LookAt(Goal.transform);
-                Throw();
+                Victory.Raise(gameObject);
             }
         }
         public void Carry(GameObject obj)

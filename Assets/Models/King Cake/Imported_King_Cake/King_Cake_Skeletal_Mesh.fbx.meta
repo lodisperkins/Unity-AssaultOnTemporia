@@ -1,0 +1,1258 @@
+fileFormatVersion: 2
+guid: c78d6edebcd341444984c14f97db70d4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cake_Pop_Staff_proxy
+    100002: Coat
+    100004: Collar
+    100006: Eye_L
+    100008: Eye_R
+    100010: EyeBrow_L
+    100012: EyeBrow_R
+    100014: Hand_L
+    100016: Hand_R
+    100018: K_Cake_Coat
+    100020: K_Cake_EyeBrows
+    100022: K_Cake_Eyes
+    100024: K_Cake_Hair
+    100026: K_Cake_Hands
+    100028: K_Cake_Head
+    100030: K_Cake_Master_Head_JawEndSHJnt
+    100032: K_Cake_Master_Head_JawSHJnt
+    100034: K_Cake_Master_Head_TopSHJnt
+    100036: K_Cake_Master_L_Arm_ClavicleSHJnt
+    100038: K_Cake_Master_L_Arm_ElbowSHJnt
+    100040: K_Cake_Master_L_Arm_ShoulderSHJnt
+    100042: K_Cake_Master_L_Arm_WristSHJnt
+    100044: K_Cake_Master_L_Eye_01SHJnt
+    100046: K_Cake_Master_L_Finger_01_01SHJnt
+    100048: K_Cake_Master_L_Finger_01_02SHJnt
+    100050: K_Cake_Master_L_Finger_01_03SHJnt
+    100052: K_Cake_Master_L_Finger_01_04SHJnt
+    100054: K_Cake_Master_L_Finger_02_01SHJnt
+    100056: K_Cake_Master_L_Finger_02_02SHJnt
+    100058: K_Cake_Master_L_Finger_02_03SHJnt
+    100060: K_Cake_Master_L_Finger_02_04SHJnt
+    100062: K_Cake_Master_L_Finger_03_01SHJnt
+    100064: K_Cake_Master_L_Finger_03_02SHJnt
+    100066: K_Cake_Master_L_Finger_03_03SHJnt
+    100068: K_Cake_Master_L_Finger_03_04SHJnt
+    100070: K_Cake_Master_L_Finger_04_01SHJnt
+    100072: K_Cake_Master_L_Finger_04_02SHJnt
+    100074: K_Cake_Master_L_Finger_04_03SHJnt
+    100076: K_Cake_Master_L_Finger_04_04SHJnt
+    100078: K_Cake_Master_L_Leg_AnkleSHJnt
+    100080: K_Cake_Master_L_Leg_BallSHJnt
+    100082: K_Cake_Master_L_Leg_HipSHJnt
+    100084: K_Cake_Master_L_Leg_KneeSHJnt
+    100086: K_Cake_Master_L_Leg_ToeSHJnt
+    100088: K_Cake_Master_L_Thumb_01_01SHJnt
+    100090: K_Cake_Master_L_Thumb_01_02SHJnt
+    100092: K_Cake_Master_L_Thumb_01_03SHJnt
+    100094: K_Cake_Master_L_Thumb_01_04SHJnt
+    100096: K_Cake_Master_Neck_01SHJnt
+    100098: K_Cake_Master_Neck_02SHJnt
+    100100: K_Cake_Master_Neck_TopSHJnt
+    100102: K_Cake_Master_R_Arm_ClavicleSHJnt
+    100104: K_Cake_Master_R_Arm_ElbowSHJnt
+    100106: K_Cake_Master_R_Arm_ShoulderSHJnt
+    100108: K_Cake_Master_R_Arm_WristSHJnt
+    100110: K_Cake_Master_R_Eye_01SHJnt
+    100112: K_Cake_Master_R_Finger_01_01SHJnt
+    100114: K_Cake_Master_R_Finger_01_02SHJnt
+    100116: K_Cake_Master_R_Finger_01_03SHJnt
+    100118: K_Cake_Master_R_Finger_01_04SHJnt
+    100120: K_Cake_Master_R_Finger_02_01SHJnt
+    100122: K_Cake_Master_R_Finger_02_02SHJnt
+    100124: K_Cake_Master_R_Finger_02_03SHJnt
+    100126: K_Cake_Master_R_Finger_02_04SHJnt
+    100128: K_Cake_Master_R_Finger_03_01SHJnt
+    100130: K_Cake_Master_R_Finger_03_02SHJnt
+    100132: K_Cake_Master_R_Finger_03_03SHJnt
+    100134: K_Cake_Master_R_Finger_03_04SHJnt
+    100136: K_Cake_Master_R_Finger_04_01SHJnt
+    100138: K_Cake_Master_R_Finger_04_02SHJnt
+    100140: K_Cake_Master_R_Finger_04_03SHJnt
+    100142: K_Cake_Master_R_Finger_04_04SHJnt
+    100144: K_Cake_Master_R_Leg_AnkleSHJnt
+    100146: K_Cake_Master_R_Leg_BallSHJnt
+    100148: K_Cake_Master_R_Leg_HipSHJnt
+    100150: K_Cake_Master_R_Leg_KneeSHJnt
+    100152: K_Cake_Master_R_Leg_ToeSHJnt
+    100154: K_Cake_Master_R_Thumb_01_01SHJnt
+    100156: K_Cake_Master_R_Thumb_01_02SHJnt
+    100158: K_Cake_Master_R_Thumb_01_03SHJnt
+    100160: K_Cake_Master_R_Thumb_01_04SHJnt
+    100162: K_Cake_Master_ROOTSHJnt
+    100164: K_Cake_Master_SHJntGrp
+    100166: K_Cake_Master_Spine_01SHJnt
+    100168: K_Cake_Master_Spine_02SHJnt
+    100170: K_Cake_Master_Spine_03SHJnt
+    100172: K_Cake_Master_Spine_04SHJnt
+    100174: K_Cake_Master_Spine_TopSHJnt
+    100176: K_Cake_Mustache
+    100178: K_Cake_Pants
+    100180: K_Cake_Shoes
+    100182: K_Cake_Vest
+    100184: King_Cake
+    100186: //RootNode
+    100188: Shoe_L
+    100190: Shoe_R
+    100192: SmoothedFork
+    100194: Hair_Mustache
+    100196: Head_Hands
+    100198: Pants_Shoes
+    100200: Cake_Pop
+    400000: Cake_Pop_Staff_proxy
+    400002: Coat
+    400004: Collar
+    400006: Eye_L
+    400008: Eye_R
+    400010: EyeBrow_L
+    400012: EyeBrow_R
+    400014: Hand_L
+    400016: Hand_R
+    400018: K_Cake_Coat
+    400020: K_Cake_EyeBrows
+    400022: K_Cake_Eyes
+    400024: K_Cake_Hair
+    400026: K_Cake_Hands
+    400028: K_Cake_Head
+    400030: K_Cake_Master_Head_JawEndSHJnt
+    400032: K_Cake_Master_Head_JawSHJnt
+    400034: K_Cake_Master_Head_TopSHJnt
+    400036: K_Cake_Master_L_Arm_ClavicleSHJnt
+    400038: K_Cake_Master_L_Arm_ElbowSHJnt
+    400040: K_Cake_Master_L_Arm_ShoulderSHJnt
+    400042: K_Cake_Master_L_Arm_WristSHJnt
+    400044: K_Cake_Master_L_Eye_01SHJnt
+    400046: K_Cake_Master_L_Finger_01_01SHJnt
+    400048: K_Cake_Master_L_Finger_01_02SHJnt
+    400050: K_Cake_Master_L_Finger_01_03SHJnt
+    400052: K_Cake_Master_L_Finger_01_04SHJnt
+    400054: K_Cake_Master_L_Finger_02_01SHJnt
+    400056: K_Cake_Master_L_Finger_02_02SHJnt
+    400058: K_Cake_Master_L_Finger_02_03SHJnt
+    400060: K_Cake_Master_L_Finger_02_04SHJnt
+    400062: K_Cake_Master_L_Finger_03_01SHJnt
+    400064: K_Cake_Master_L_Finger_03_02SHJnt
+    400066: K_Cake_Master_L_Finger_03_03SHJnt
+    400068: K_Cake_Master_L_Finger_03_04SHJnt
+    400070: K_Cake_Master_L_Finger_04_01SHJnt
+    400072: K_Cake_Master_L_Finger_04_02SHJnt
+    400074: K_Cake_Master_L_Finger_04_03SHJnt
+    400076: K_Cake_Master_L_Finger_04_04SHJnt
+    400078: K_Cake_Master_L_Leg_AnkleSHJnt
+    400080: K_Cake_Master_L_Leg_BallSHJnt
+    400082: K_Cake_Master_L_Leg_HipSHJnt
+    400084: K_Cake_Master_L_Leg_KneeSHJnt
+    400086: K_Cake_Master_L_Leg_ToeSHJnt
+    400088: K_Cake_Master_L_Thumb_01_01SHJnt
+    400090: K_Cake_Master_L_Thumb_01_02SHJnt
+    400092: K_Cake_Master_L_Thumb_01_03SHJnt
+    400094: K_Cake_Master_L_Thumb_01_04SHJnt
+    400096: K_Cake_Master_Neck_01SHJnt
+    400098: K_Cake_Master_Neck_02SHJnt
+    400100: K_Cake_Master_Neck_TopSHJnt
+    400102: K_Cake_Master_R_Arm_ClavicleSHJnt
+    400104: K_Cake_Master_R_Arm_ElbowSHJnt
+    400106: K_Cake_Master_R_Arm_ShoulderSHJnt
+    400108: K_Cake_Master_R_Arm_WristSHJnt
+    400110: K_Cake_Master_R_Eye_01SHJnt
+    400112: K_Cake_Master_R_Finger_01_01SHJnt
+    400114: K_Cake_Master_R_Finger_01_02SHJnt
+    400116: K_Cake_Master_R_Finger_01_03SHJnt
+    400118: K_Cake_Master_R_Finger_01_04SHJnt
+    400120: K_Cake_Master_R_Finger_02_01SHJnt
+    400122: K_Cake_Master_R_Finger_02_02SHJnt
+    400124: K_Cake_Master_R_Finger_02_03SHJnt
+    400126: K_Cake_Master_R_Finger_02_04SHJnt
+    400128: K_Cake_Master_R_Finger_03_01SHJnt
+    400130: K_Cake_Master_R_Finger_03_02SHJnt
+    400132: K_Cake_Master_R_Finger_03_03SHJnt
+    400134: K_Cake_Master_R_Finger_03_04SHJnt
+    400136: K_Cake_Master_R_Finger_04_01SHJnt
+    400138: K_Cake_Master_R_Finger_04_02SHJnt
+    400140: K_Cake_Master_R_Finger_04_03SHJnt
+    400142: K_Cake_Master_R_Finger_04_04SHJnt
+    400144: K_Cake_Master_R_Leg_AnkleSHJnt
+    400146: K_Cake_Master_R_Leg_BallSHJnt
+    400148: K_Cake_Master_R_Leg_HipSHJnt
+    400150: K_Cake_Master_R_Leg_KneeSHJnt
+    400152: K_Cake_Master_R_Leg_ToeSHJnt
+    400154: K_Cake_Master_R_Thumb_01_01SHJnt
+    400156: K_Cake_Master_R_Thumb_01_02SHJnt
+    400158: K_Cake_Master_R_Thumb_01_03SHJnt
+    400160: K_Cake_Master_R_Thumb_01_04SHJnt
+    400162: K_Cake_Master_ROOTSHJnt
+    400164: K_Cake_Master_SHJntGrp
+    400166: K_Cake_Master_Spine_01SHJnt
+    400168: K_Cake_Master_Spine_02SHJnt
+    400170: K_Cake_Master_Spine_03SHJnt
+    400172: K_Cake_Master_Spine_04SHJnt
+    400174: K_Cake_Master_Spine_TopSHJnt
+    400176: K_Cake_Mustache
+    400178: K_Cake_Pants
+    400180: K_Cake_Shoes
+    400182: K_Cake_Vest
+    400184: King_Cake
+    400186: //RootNode
+    400188: Shoe_L
+    400190: Shoe_R
+    400192: SmoothedFork
+    400194: Hair_Mustache
+    400196: Head_Hands
+    400198: Pants_Shoes
+    400200: Cake_Pop
+    2100000: lambert1
+    2100002: lambert2
+    2300000: Cake_Pop_Staff_proxy
+    2300002: Cake_Pop
+    3300000: Cake_Pop_Staff_proxy
+    3300002: Cake_Pop
+    4300000: K_Cake_Pants
+    4300002: K_Cake_Vest
+    4300004: K_Cake_Mustache
+    4300006: K_Cake_Head
+    4300008: K_Cake_Hair
+    4300010: Collar
+    4300012: Coat
+    4300014: Eye_R
+    4300016: Eye_L
+    4300018: Hand_L
+    4300020: Hand_R
+    4300022: EyeBrow_L
+    4300024: EyeBrow_R
+    4300026: Shoe_L
+    4300028: Shoe_R
+    4300030: Cake_Pop_Staff_proxy
+    4300032: SmoothedFork
+    4300034: Hair_Mustache
+    4300036: Pants_Shoes
+    4300038: Head_Hands
+    4300040: Cake_Pop
+    9500000: //RootNode
+    13700000: Coat
+    13700002: Collar
+    13700004: Eye_L
+    13700006: Eye_R
+    13700008: EyeBrow_L
+    13700010: EyeBrow_R
+    13700012: Hand_L
+    13700014: Hand_R
+    13700016: K_Cake_Hair
+    13700018: K_Cake_Head
+    13700020: K_Cake_Mustache
+    13700022: K_Cake_Pants
+    13700024: K_Cake_Vest
+    13700026: Shoe_L
+    13700028: Shoe_R
+    13700030: Cake_Pop_Staff_proxy
+    13700032: SmoothedFork
+    13700034: Hair_Mustache
+    13700036: Head_Hands
+    13700038: Pants_Shoes
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: K_Cake_Master_ROOTSHJnt
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Leg_HipSHJnt
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Leg_HipSHJnt
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Leg_KneeSHJnt
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Leg_KneeSHJnt
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Leg_AnkleSHJnt
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Leg_AnkleSHJnt
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_Spine_01SHJnt
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_Spine_03SHJnt
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_Neck_01SHJnt
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_Neck_TopSHJnt
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Arm_ClavicleSHJnt
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Arm_ClavicleSHJnt
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Arm_ShoulderSHJnt
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Arm_ShoulderSHJnt
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Arm_ElbowSHJnt
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Arm_ElbowSHJnt
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Arm_WristSHJnt
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Arm_WristSHJnt
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Leg_ToeSHJnt
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Leg_ToeSHJnt
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Eye_01SHJnt
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Eye_01SHJnt
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_Head_JawSHJnt
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Thumb_01_01SHJnt
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Thumb_01_02SHJnt
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Thumb_01_03SHJnt
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_01_01SHJnt
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_01_02SHJnt
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_01_03SHJnt
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_02_01SHJnt
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_02_02SHJnt
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_02_03SHJnt
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_03_01SHJnt
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_03_02SHJnt
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_03_03SHJnt
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_04_01SHJnt
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_04_02SHJnt
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_L_Finger_04_03SHJnt
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Thumb_01_01SHJnt
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Thumb_01_02SHJnt
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Thumb_01_03SHJnt
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_01_01SHJnt
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_01_02SHJnt
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_01_03SHJnt
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_02_01SHJnt
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_02_02SHJnt
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_02_03SHJnt
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_03_01SHJnt
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_03_02SHJnt
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_03_03SHJnt
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_04_01SHJnt
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_04_02SHJnt
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_R_Finger_04_03SHJnt
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: K_Cake_Master_Spine_04SHJnt
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: King_Cake_Skeletal_Mesh(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_SHJntGrp
+      parentName: King_Cake_Skeletal_Mesh(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_ROOTSHJnt
+      parentName: K_Cake_Master_SHJntGrp
+      position: {x: -0, y: 0.768887, z: 0}
+      rotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Spine_01SHJnt
+      parentName: K_Cake_Master_ROOTSHJnt
+      position: {x: -0.10572196, y: -0.032808952, z: 3.076004e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Spine_02SHJnt
+      parentName: K_Cake_Master_Spine_01SHJnt
+      position: {x: -0.10572196, y: -0.01651556, z: 2.7142181e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Spine_03SHJnt
+      parentName: K_Cake_Master_Spine_02SHJnt
+      position: {x: -0.10572196, y: 0.014382369, z: 2.0281464e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Spine_04SHJnt
+      parentName: K_Cake_Master_Spine_03SHJnt
+      position: {x: -0.10572196, y: 0.03874933, z: 1.487091e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Spine_TopSHJnt
+      parentName: K_Cake_Master_Spine_04SHJnt
+      position: {x: -0.10572196, y: 0.05317849, z: 1.1666995e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Arm_ClavicleSHJnt
+      parentName: K_Cake_Master_Spine_TopSHJnt
+      position: {x: 0.029377889, y: -0.015583861, z: -0.105009355}
+      rotation: {x: -0.5072927, y: 0.50684464, z: -0.49305385, w: 0.49260592}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Arm_ShoulderSHJnt
+      parentName: K_Cake_Master_L_Arm_ClavicleSHJnt
+      position: {x: -0.0007747766, y: 0.065531895, z: 0.024631329}
+      rotation: {x: -0.41714227, y: 0.45307967, z: -0.5424598, w: 0.57135683}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Arm_ElbowSHJnt
+      parentName: K_Cake_Master_L_Arm_ShoulderSHJnt
+      position: {x: -0.24778919, y: 4.2632563e-16, z: -2.1316282e-16}
+      rotation: {x: -0.0023088153, y: 0.030562617, z: -0.025490412, w: 0.9992051}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Arm_WristSHJnt
+      parentName: K_Cake_Master_L_Arm_ElbowSHJnt
+      position: {x: -0.24236986, y: -2.842171e-16, z: -2.3092638e-16}
+      rotation: {x: -0.16725388, y: 0.039153844, z: 0.14091899, w: 0.97500515}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_01_01SHJnt
+      parentName: K_Cake_Master_L_Arm_WristSHJnt
+      position: {x: -0.11924033, y: 0.0229772, z: 0.033961687}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_01_02SHJnt
+      parentName: K_Cake_Master_L_Finger_01_01SHJnt
+      position: {x: -0.02265346, y: 0.0022542104, z: 0.0013724198}
+      rotation: {x: -0.004474833, y: -0.0037533971, z: -0.032584492, w: 0.99945194}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_01_03SHJnt
+      parentName: K_Cake_Master_L_Finger_01_02SHJnt
+      position: {x: -0.026329177, y: -0.0011447443, z: 0.0019136715}
+      rotation: {x: -0.00091765285, y: -0.0041207704, z: -0.015090158, w: 0.9998773}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_01_04SHJnt
+      parentName: K_Cake_Master_L_Finger_01_03SHJnt
+      position: {x: -0.02985911, y: -0.004606714, z: 0.0030737277}
+      rotation: {x: -0.17427927, y: -0.020171124, z: 0.11318947, w: 0.9779612}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_02_01SHJnt
+      parentName: K_Cake_Master_L_Arm_WristSHJnt
+      position: {x: -0.13090484, y: 0.018066857, z: 0.01114818}
+      rotation: {x: 0.007041989, y: 0.018961456, z: 0.013726836, w: 0.99970126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_02_02SHJnt
+      parentName: K_Cake_Master_L_Finger_02_01SHJnt
+      position: {x: -0.028271228, y: 0.006211396, z: -0.0031779783}
+      rotation: {x: -0.0030159978, y: -0.069735065, z: -0.071973056, w: 0.9949612}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_02_03SHJnt
+      parentName: K_Cake_Master_L_Finger_02_02SHJnt
+      position: {x: -0.026792383, y: 0.00029288945, z: 0.0014465132}
+      rotation: {x: -0.0019274661, y: 0.01123326, z: -0.037974928, w: 0.99921376}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_02_04SHJnt
+      parentName: K_Cake_Master_L_Finger_02_03SHJnt
+      position: {x: -0.028213885, y: -0.0040104515, z: 0.00024573656}
+      rotation: {x: -0.11581232, y: 0, z: -0, w: 0.9932711}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_03_01SHJnt
+      parentName: K_Cake_Master_L_Arm_WristSHJnt
+      position: {x: -0.122548796, y: 0.018864287, z: -0.013388849}
+      rotation: {x: 0.004471419, y: -0.040548544, z: -0.014923127, w: 0.9990561}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_03_02SHJnt
+      parentName: K_Cake_Master_L_Finger_03_01SHJnt
+      position: {x: -0.025221745, y: 0.0015935991, z: 0.00023233163}
+      rotation: {x: 0.000704333, y: 0.009778752, z: 0.00017273006, w: 0.999952}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_03_03SHJnt
+      parentName: K_Cake_Master_L_Finger_03_02SHJnt
+      position: {x: -0.025733132, y: -0.00016017776, z: -0.00039431162}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_03_04SHJnt
+      parentName: K_Cake_Master_L_Finger_03_03SHJnt
+      position: {x: -0.027517747, y: 0.0014210674, z: -0.00016144845}
+      rotation: {x: -0.18641719, y: 0, z: -0, w: 0.9824707}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_04_01SHJnt
+      parentName: K_Cake_Master_L_Arm_WristSHJnt
+      position: {x: -0.11064307, y: 0.013175028, z: -0.029296383}
+      rotation: {x: 0.011518984, y: 0.045545306, z: -0.06513572, w: 0.99676996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_04_02SHJnt
+      parentName: K_Cake_Master_L_Finger_04_01SHJnt
+      position: {x: -0.024529226, y: -0.0010116566, z: -0.0036229827}
+      rotation: {x: -0.12984636, y: -0.07005811, z: 0.111303985, w: 0.98277324}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_04_03SHJnt
+      parentName: K_Cake_Master_L_Finger_04_02SHJnt
+      position: {x: -0.02096071, y: 0.002755932, z: 0.0007891909}
+      rotation: {x: -0.0035807032, y: -0.0116507225, z: -0.054416787, w: 0.9984439}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Finger_04_04SHJnt
+      parentName: K_Cake_Master_L_Finger_04_03SHJnt
+      position: {x: -0.026979052, y: -0.0014771746, z: 0.0020914988}
+      rotation: {x: 0, y: 0.06248736, z: -0, w: 0.9980458}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Thumb_01_01SHJnt
+      parentName: K_Cake_Master_L_Arm_WristSHJnt
+      position: {x: -0.04595148, y: -0.0025722266, z: 0.047027256}
+      rotation: {x: 0.709965, y: 0.26744175, z: 0.0020307668, w: 0.65147567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Thumb_01_02SHJnt
+      parentName: K_Cake_Master_L_Thumb_01_01SHJnt
+      position: {x: -0.019905265, y: 0.0127274785, z: -0.0051357904}
+      rotation: {x: 0.020867221, y: -0.15703589, z: -0.19761878, w: 0.967394}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Thumb_01_03SHJnt
+      parentName: K_Cake_Master_L_Thumb_01_02SHJnt
+      position: {x: -0.026055083, y: 0.002605843, z: 0.0019866766}
+      rotation: {x: -0.004349362, y: 0.025847735, z: -0.01510464, w: 0.99954236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Thumb_01_04SHJnt
+      parentName: K_Cake_Master_L_Thumb_01_03SHJnt
+      position: {x: -0.021924166, y: -0.000005853754, z: 0.00023813116}
+      rotation: {x: 0.052406423, y: -0, z: -0, w: 0.9986259}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Arm_ClavicleSHJnt
+      parentName: K_Cake_Master_Spine_TopSHJnt
+      position: {x: 0.029377889, y: -0.015583861, z: 0.105009355}
+      rotation: {x: -0.5072927, y: 0.50684464, z: 0.49305382, w: -0.49260595}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Arm_ShoulderSHJnt
+      parentName: K_Cake_Master_R_Arm_ClavicleSHJnt
+      position: {x: -0.0007747766, y: 0.065531895, z: -0.024631329}
+      rotation: {x: 0.5366583, y: 0.5060026, z: -0.49438614, w: -0.45993662}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Arm_ElbowSHJnt
+      parentName: K_Cake_Master_R_Arm_ShoulderSHJnt
+      position: {x: 0.24778919, y: 2.842171e-16, z: -4.0856205e-16}
+      rotation: {x: -0.002224147, y: 0.037211265, z: -0.014112471, w: 0.9992053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Arm_WristSHJnt
+      parentName: K_Cake_Master_R_Arm_ElbowSHJnt
+      position: {x: 0.24236986, y: -7.105427e-16, z: -1.7763567e-16}
+      rotation: {x: -0.0035613647, y: 0.015288428, z: 0.14545597, w: 0.9892402}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_01_01SHJnt
+      parentName: K_Cake_Master_R_Arm_WristSHJnt
+      position: {x: 0.11924031, y: -0.022977224, z: -0.033961643}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_01_02SHJnt
+      parentName: K_Cake_Master_R_Finger_01_01SHJnt
+      position: {x: 0.02265346, y: -0.0022542104, z: -0.0013724198}
+      rotation: {x: -0.0044747908, y: -0.0037524821, z: -0.032583885, w: 0.99945194}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_01_03SHJnt
+      parentName: K_Cake_Master_R_Finger_01_02SHJnt
+      position: {x: 0.026329177, y: 0.0011447443, z: -0.0019136715}
+      rotation: {x: -0.0009176835, y: -0.004120654, z: -0.015089756, w: 0.9998773}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_01_04SHJnt
+      parentName: K_Cake_Master_R_Finger_01_03SHJnt
+      position: {x: 0.02985911, y: 0.004606714, z: -0.0030737277}
+      rotation: {x: -0.17427927, y: -0.020171124, z: 0.11318947, w: 0.9779612}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_02_01SHJnt
+      parentName: K_Cake_Master_R_Arm_WristSHJnt
+      position: {x: 0.13090481, y: -0.018066881, z: -0.011148134}
+      rotation: {x: 0.007041917, y: 0.018960977, z: 0.013726682, w: 0.9997012}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_02_02SHJnt
+      parentName: K_Cake_Master_R_Finger_02_01SHJnt
+      position: {x: 0.028271228, y: -0.006211396, z: 0.0031779783}
+      rotation: {x: -0.0030162067, y: -0.06973459, z: -0.07197217, w: 0.99496126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_02_03SHJnt
+      parentName: K_Cake_Master_R_Finger_02_02SHJnt
+      position: {x: 0.026792383, y: -0.00029288945, z: -0.0014465132}
+      rotation: {x: -0.0019273935, y: 0.011232897, z: -0.037972815, w: 0.9992139}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_02_04SHJnt
+      parentName: K_Cake_Master_R_Finger_02_03SHJnt
+      position: {x: 0.028213885, y: 0.0040104515, z: -0.00024573656}
+      rotation: {x: -0.11581232, y: 0, z: -0, w: 0.9932711}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_03_01SHJnt
+      parentName: K_Cake_Master_R_Arm_WristSHJnt
+      position: {x: 0.12254878, y: -0.018864311, z: 0.0133888945}
+      rotation: {x: 0.004471445, y: -0.04054909, z: -0.01492297, w: 0.99905616}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_03_02SHJnt
+      parentName: K_Cake_Master_R_Finger_03_01SHJnt
+      position: {x: 0.025221745, y: -0.0015935991, z: -0.00023233163}
+      rotation: {x: 0.0007043209, y: 0.009778081, z: 0.0001727223, w: 0.999952}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_03_03SHJnt
+      parentName: K_Cake_Master_R_Finger_03_02SHJnt
+      position: {x: 0.025733132, y: 0.00016017776, z: 0.00039431162}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_03_04SHJnt
+      parentName: K_Cake_Master_R_Finger_03_03SHJnt
+      position: {x: 0.027517747, y: -0.0014210674, z: 0.00016144845}
+      rotation: {x: -0.18641719, y: 0, z: -0, w: 0.9824707}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_04_01SHJnt
+      parentName: K_Cake_Master_R_Arm_WristSHJnt
+      position: {x: 0.11064305, y: -0.013175051, z: 0.029296428}
+      rotation: {x: 0.0115193045, y: 0.045543503, z: -0.0651339, w: 0.9967702}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_04_02SHJnt
+      parentName: K_Cake_Master_R_Finger_04_01SHJnt
+      position: {x: 0.024529226, y: 0.0010116566, z: 0.0036229827}
+      rotation: {x: -0.12984687, y: -0.07005965, z: 0.11130489, w: 0.98277295}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_04_03SHJnt
+      parentName: K_Cake_Master_R_Finger_04_02SHJnt
+      position: {x: 0.02096071, y: -0.002755932, z: -0.0007891909}
+      rotation: {x: -0.0035807337, y: -0.011649302, z: -0.054417487, w: 0.99844396}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Finger_04_04SHJnt
+      parentName: K_Cake_Master_R_Finger_04_03SHJnt
+      position: {x: 0.026979052, y: 0.0014771746, z: -0.0020914988}
+      rotation: {x: 0, y: 0.06248736, z: -0, w: 0.9980458}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Thumb_01_01SHJnt
+      parentName: K_Cake_Master_R_Arm_WristSHJnt
+      position: {x: 0.045951467, y: 0.0025722038, z: -0.04702721}
+      rotation: {x: 0.709965, y: 0.2674423, z: 0.0020309386, w: 0.65147537}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Thumb_01_02SHJnt
+      parentName: K_Cake_Master_R_Thumb_01_01SHJnt
+      position: {x: 0.019905265, y: -0.0127274785, z: 0.0051357904}
+      rotation: {x: 0.020867018, y: -0.15703644, z: -0.1976181, w: 0.9673941}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Thumb_01_03SHJnt
+      parentName: K_Cake_Master_R_Thumb_01_02SHJnt
+      position: {x: 0.026055083, y: -0.002605843, z: -0.0019866766}
+      rotation: {x: -0.0043494035, y: 0.025846979, z: -0.015102868, w: 0.9995424}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Thumb_01_04SHJnt
+      parentName: K_Cake_Master_R_Thumb_01_03SHJnt
+      position: {x: 0.021924166, y: 0.000005853754, z: -0.00023813116}
+      rotation: {x: 0.052406423, y: -0, z: -0, w: 0.9986259}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Neck_01SHJnt
+      parentName: K_Cake_Master_Spine_TopSHJnt
+      position: {x: -0.07871567, y: 0.014606216, z: 1.4235158e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Neck_02SHJnt
+      parentName: K_Cake_Master_Neck_01SHJnt
+      position: {x: -0.05116834, y: -0.0045980373, z: 1.2382623e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Neck_TopSHJnt
+      parentName: K_Cake_Master_Neck_02SHJnt
+      position: {x: -0.040046196, y: -0.010008179, z: 1.1114305e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Head_JawSHJnt
+      parentName: K_Cake_Master_Neck_TopSHJnt
+      position: {x: 0.035440344, y: -0.032616064, z: 4.7840247e-18}
+      rotation: {x: 1.1102232e-16, y: -8.7157646e-33, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Head_JawEndSHJnt
+      parentName: K_Cake_Master_Head_JawSHJnt
+      position: {x: -0.09848691, y: -0.033191342, z: -7.369958e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_Head_TopSHJnt
+      parentName: K_Cake_Master_Neck_TopSHJnt
+      position: {x: -0.2136104, y: 0, z: 4.7431036e-17}
+      rotation: {x: 1.110223e-16, y: 0, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Eye_01SHJnt
+      parentName: K_Cake_Master_Head_TopSHJnt
+      position: {x: 0.1499753, y: -0.079931475, z: -0.038824767}
+      rotation: {x: 2.7755578e-15, y: -2.6645355e-15, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Eye_01SHJnt
+      parentName: K_Cake_Master_Head_TopSHJnt
+      position: {x: 0.1499753, y: -0.079931475, z: 0.038824767}
+      rotation: {x: 2.2204463e-16, y: -1.1102232e-16, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Leg_HipSHJnt
+      parentName: K_Cake_Master_ROOTSHJnt
+      position: {x: 0.048055436, y: -4.1998782e-17, z: -0.09611087}
+      rotation: {x: -0.025267586, y: 0.7152246, z: 0.69841945, w: 0.0050713}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Leg_KneeSHJnt
+      parentName: K_Cake_Master_L_Leg_HipSHJnt
+      position: {x: -0.32782212, y: -6.128431e-16, z: 7.562839e-15}
+      rotation: {x: -0.0012079913, y: 0.06842935, z: -0.0072195013, w: 0.99762917}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Leg_AnkleSHJnt
+      parentName: K_Cake_Master_L_Leg_KneeSHJnt
+      position: {x: -0.3263355, y: -4.7073454e-16, z: 2.6645352e-17}
+      rotation: {x: 0.9807738, y: 0.02967657, z: 0.18742186, w: 0.04555293}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Leg_BallSHJnt
+      parentName: K_Cake_Master_L_Leg_AnkleSHJnt
+      position: {x: -0.08304779, y: 0.0010235764, z: 0.09086243}
+      rotation: {x: -0.000000008446754, y: 0.6291985, z: -0.00000014542115, w: 0.77724475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_L_Leg_ToeSHJnt
+      parentName: K_Cake_Master_L_Leg_BallSHJnt
+      position: {x: -0.100238174, y: -0.0021584965, z: -0.00061865896}
+      rotation: {x: 0, y: 0.10468612, z: -0, w: 0.9945053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Leg_HipSHJnt
+      parentName: K_Cake_Master_ROOTSHJnt
+      position: {x: 0.048055436, y: -1.8541025e-17, z: 0.09611087}
+      rotation: {x: 0.7152248, y: 0.025265412, z: -0.0050688824, w: 0.6984193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Leg_KneeSHJnt
+      parentName: K_Cake_Master_R_Leg_HipSHJnt
+      position: {x: 0.32782212, y: -9.7699626e-17, z: -2.509104e-15}
+      rotation: {x: -0.0012069026, y: 0.06842892, z: -0.0072260974, w: 0.9976291}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Leg_AnkleSHJnt
+      parentName: K_Cake_Master_R_Leg_KneeSHJnt
+      position: {x: 0.3263355, y: 5.506706e-16, z: -1.1546319e-16}
+      rotation: {x: 0.9807737, y: 0.02968002, z: 0.18742172, w: 0.045553606}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Leg_BallSHJnt
+      parentName: K_Cake_Master_R_Leg_AnkleSHJnt
+      position: {x: 0.08304779, y: -0.0010235764, z: -0.09086243}
+      rotation: {x: -0.000000008608415, y: 0.6291985, z: -0.00000014823611, w: 0.77724475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Master_R_Leg_ToeSHJnt
+      parentName: K_Cake_Master_R_Leg_BallSHJnt
+      position: {x: 0.100238174, y: 0.0021584965, z: 0.00061865896}
+      rotation: {x: 0, y: 0.10468612, z: -0, w: 0.9945053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: King_Cake
+      parentName: King_Cake_Skeletal_Mesh(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cake_Pop_Staff_proxy
+      parentName: King_Cake
+      position: {x: -0.56018007, y: 0.7862593, z: -0.42991439}
+      rotation: {x: -0.13245088, y: 0.70940787, z: -0.6782363, w: -0.13853829}
+      scale: {x: 0.96461546, y: 0.96461546, z: 0.96461546}
+    - name: K_Cake_Coat
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Coat
+      parentName: K_Cake_Coat
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Collar
+      parentName: K_Cake_Coat
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_EyeBrows
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrow_L
+      parentName: K_Cake_EyeBrows
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrow_R
+      parentName: K_Cake_EyeBrows
+      position: {x: -0.09764893, y: -0.0012723383, z: 0.0037396892}
+      rotation: {x: -0.008659097, y: 0.8688355, z: -0.004933337, w: -0.49500063}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Eyes
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye_L
+      parentName: K_Cake_Eyes
+      position: {x: 0.0741925, y: 0, z: -0.0035235633}
+      rotation: {x: 0, y: -0.18932876, z: -0, w: 0.98191375}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye_R
+      parentName: K_Cake_Eyes
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Hair
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Hands
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_L
+      parentName: K_Cake_Hands
+      position: {x: -0, y: 0.7970511, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 36.717613, y: 36.717613, z: 36.717613}
+    - name: Hand_R
+      parentName: K_Cake_Hands
+      position: {x: -0, y: 0.7970511, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 36.717613, y: 36.717613, z: 36.717613}
+    - name: K_Cake_Head
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Mustache
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Pants
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: K_Cake_Shoes
+      parentName: King_Cake
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoe_L
+      parentName: K_Cake_Shoes
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: Shoe_R
+      parentName: K_Cake_Shoes
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: K_Cake_Vest
+      parentName: King_Cake
+      position: {x: -0, y: 0.7970511, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 36.717613, y: 36.717613, z: 36.717613}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

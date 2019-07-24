@@ -21,10 +21,15 @@ namespace Cotton.Gameplay
         private Matthew.GameEvent OnMinionDeath;
         [SerializeField]
         private UnityEngine.Events.UnityEvent OnMinionRespawn;
+        [SerializeField]
+        Animator animator;
+        [SerializeField]
+        public string target;
         private bool IsAlive;
 
         void Start()
         {
+            animator = GetComponent<Animator>();
             RespawnDelay = RespawnDelayRef.Val;
             health = BaseHealthRef.Val;
         }
@@ -38,6 +43,19 @@ namespace Cotton.Gameplay
             if (other.CompareTag("Bullet"))
             {
                 TakeDamage(other.gameObject);
+            }
+            else if (other.CompareTag(target))
+            {
+                animator.SetBool("InRange",true);
+                var temp = gameObject;
+                Destroy(temp, 3);
+            }
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag(target))
+            {
+                animator.SetBool("InRange", false);
             }
         }
         private void TakeDamage(GameObject bullet)

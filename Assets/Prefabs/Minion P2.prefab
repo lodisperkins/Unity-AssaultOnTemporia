@@ -1316,14 +1316,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4945737964609108}
-  - component: {fileID: 54294221304831830}
   - component: {fileID: 114115966479766102}
   - component: {fileID: 114097302543630172}
   - component: {fileID: 114360751254675740}
   - component: {fileID: 114392720968526966}
   - component: {fileID: 114036222917520262}
-  - component: {fileID: 65693080143200928}
   - component: {fileID: 135133812085294046}
+  - component: {fileID: 65351225988436562}
+  - component: {fileID: 95468950163430102}
   m_Layer: 0
   m_Name: Minion P2
   m_TagString: Minion
@@ -2439,7 +2439,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1988416125560928}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -14.2061, y: 1.5931149, z: 14.94873}
+  m_LocalPosition: {x: -10.305015, y: 3.7758608, z: 5.631506}
   m_LocalScale: {x: 0.39466, y: 0.39466, z: 0.39466}
   m_Children:
   - {fileID: 4169583620531688}
@@ -2605,22 +2605,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!54 &54294221304831830
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1988416125560928}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65693080143200928
+--- !u!65 &65351225988436562
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2630,7 +2615,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95231914006443204
 Animator:
@@ -2643,6 +2628,24 @@ Animator:
   m_Avatar: {fileID: 9000000, guid: a3fa85bd9c4d92d4e9066a94e039f082, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &95468950163430102
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988416125560928}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a3fa85bd9c4d92d4e9066a94e039f082, type: 3}
+  m_Controller: {fileID: 9100000, guid: a9e6646469c016d4b94867254af1ed54, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -2822,7 +2825,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 2
   m_Center: {x: 0, y: 0.64, z: 0}
 --- !u!136 &136511648497747798
 CapsuleCollider:
