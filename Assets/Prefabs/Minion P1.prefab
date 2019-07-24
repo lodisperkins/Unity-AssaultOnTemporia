@@ -2811,6 +2811,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  animator: {fileID: 95652920543413680}
+  target: Player2
 --- !u!114 &114887941356789454
 MonoBehaviour:
   m_ObjectHideFlags: 1
