@@ -3871,8 +3871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespawnDelayRef: {fileID: 11400000, guid: 868b3e85acff8674786ee1f17bf77a34, type: 2}
-  Model: {fileID: 1564985310995778}
-  Explosion: {fileID: 1523811456751266}
+  Model: {fileID: 0}
+  Explosion: {fileID: 0}
   HealthRef: {fileID: 11400000, guid: 3d1d18ed0b64d1c4b8dbcbb22d56fce9, type: 2}
   BaseHealthRef: {fileID: 11400000, guid: cfe6608967593254f8b9049f53f24ad6, type: 2}
   OnPlayerDeath: {fileID: 11400000, guid: faa071a8845f1354a97634e7e196fdbb, type: 2}
@@ -3909,7 +3909,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
-          m_FloatArgument: 1
+          m_FloatArgument: 2
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2

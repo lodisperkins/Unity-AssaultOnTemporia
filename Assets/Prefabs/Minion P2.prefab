@@ -1322,6 +1322,7 @@ GameObject:
   - component: {fileID: 114392720968526966}
   - component: {fileID: 114036222917520262}
   - component: {fileID: 135133812085294046}
+  - component: {fileID: 65351225988436562}
   - component: {fileID: 95468950163430102}
   m_Layer: 0
   m_Name: Minion P2
@@ -2604,6 +2605,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &65351225988436562
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988416125560928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95231914006443204
 Animator:
   serializedVersion: 3

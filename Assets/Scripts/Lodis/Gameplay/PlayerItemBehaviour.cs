@@ -56,7 +56,7 @@ namespace Lodis.Gameplay
                 KeyDropped.Invoke();
                 obj.GetComponent<MeshRenderer>().enabled = true;
                 obj.GetComponent<SphereCollider>().enabled = true;
-                
+                obj.GetComponent<Transform>().position += new Vector3(0, 0, DropDisplacement);
                 HasKey = false;
             }
             else
@@ -68,7 +68,6 @@ namespace Lodis.Gameplay
         public void Throw()
         {
             Drop();
-            Ball.GetComponent<Transform>().position += new Vector3(0, 0, DropDisplacement);
             Ball.AddComponent<Rigidbody>();
             Ball.GetComponent<SphereCollider>().isTrigger = false;
             var temporary_RigidBody = Ball.GetComponent<Rigidbody>();
